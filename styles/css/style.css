@@ -47,8 +47,62 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+body {
+  font-family: 'Fira Sans', sans-serif; }
+
 .page {
   width: 9200px;
-  background-color: black;
+  background-color: #121212;
   height: 100vh;
-  color: white; }
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.half-top {
+  width: 100%; }
+
+.half-bottom {
+  width: 100%; }
+
+.flex {
+  display: flex; }
+
+.title {
+  padding: 50px 0 32px 100px;
+  height: 188px;
+  width: 250px;
+  font-weight: 800;
+  line-height: 94px;
+  font-size: 104px;
+  color: #fff; }
+
+.text-intro {
+  font-size: 24px;
+  line-height: 32px;
+  padding-left: 100px;
+  width: 650px; }
+
+.text {
+  color: #fff;
+  font-size: 21px; }
+
+.accent {
+  color: #eca3a1; }
+
+.timeline {
+  width: 100%; }
+  .timeline__scale {
+    height: 2px; }
+    .timeline__scale_miocene {
+      width: 2873px;
+      background-color: #eca3a1; }
+    .timeline__scale_pliocene {
+      width: 2740px;
+      background-color: #cb859d; }
+    .timeline__scale_pleistocene {
+      width: 2576px;
+      background-color: #799ec9; }
+    .timeline__scale_holocene {
+      width: 20px;
+      background-color: #8abf9f; }
