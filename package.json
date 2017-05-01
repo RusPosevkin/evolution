@@ -1,0 +1,11 @@
+{
+  "name": "evolution",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}

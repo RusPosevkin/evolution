@@ -1,0 +1,9 @@
+@import "_reset";
+$column-width: 50px;
+
+.page {
+  width: 184 * $column-width;
+  background-color: black;
+  height: 100vh;
+  color: white;
+}
