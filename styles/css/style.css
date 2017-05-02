@@ -106,3 +106,30 @@ body {
     .timeline__scale_holocene {
       width: 20px;
       background-color: #8abf9f; }
+  .timeline__tick {
+    height: 10px;
+    border-left: 1px solid #aaa; }
+    .timeline__tick:first-child {
+      margin-left: 100px; }
+    .timeline__tick_million {
+      width: 1000px; }
+    .timeline__tick_half-million {
+      width: 500px; }
+    .timeline__tick_quarter-million {
+      width: 250px; }
+  .timeline__label {
+    font-size: 12px;
+    color: #aaa;
+    padding-bottom: 6px; }
+    .timeline__label:first-child {
+      margin-left: 98px; }
+    .timeline__label_million {
+      width: 1002px; }
+    .timeline__label_half-million {
+      width: 502px; }
+    .timeline__label_fractional {
+      margin-left: -6px;
+      width: 506px; }
+    .timeline__label_hundreds {
+      margin-left: -8px;
+      width: 258px; }

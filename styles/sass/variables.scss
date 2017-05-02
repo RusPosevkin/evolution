@@ -1,0 +1,14 @@
+$color-accent: #eca3a1;
+$color-base: #fff;
+$color-secondary: #aaa;
+$column-width: 50px;
+$full-width: 184 * $column-width;
+$first-padding: 2 * $column-width;
+
+$timeline-million: 20 * $column-width;
+$timeline-half-million: 0.5 * $timeline-million;
+$timeline-quarter-million: 0.25 * $timeline-million;
+
+$timeline-label-displacement: 2px;
+$timeline-fractional-label-displacement: 6px;
+$timeline-hundreds-label-displacement: 8px;

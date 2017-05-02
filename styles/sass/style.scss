@@ -1,10 +1,5 @@
 @import "_reset";
-$color-accent: #eca3a1;
-$color-base: #fff;
-$column-width: 50px;
-$full-width: 184 * $column-width;
-$first-padding: 2 * $column-width;
-
+@import "variables";
 
 body {
   font-family: 'Fira Sans', sans-serif;
@@ -84,6 +79,55 @@ body {
     &_holocene {
       width: 20px;
       background-color: #8abf9f;
+    }
+  }
+
+  &__tick {
+    height: 10px;
+    border-left: 1px solid $color-secondary;
+
+    &:first-child {
+      margin-left: $first-padding;
+    }
+
+    &_million {
+      width: $timeline-million;
+    }
+
+    &_half-million {
+      width: $timeline-half-million;
+    }
+
+    &_quarter-million {
+      width: $timeline-quarter-million;
+    }
+  }
+
+  &__label {
+    font-size: 12px;
+    color: $color-secondary;
+    padding-bottom: 6px;
+
+    &:first-child {
+      margin-left: $first-padding - $timeline-label-displacement;
+    }
+
+    &_million {
+      width: $timeline-million + $timeline-label-displacement;
+    }
+
+    &_half-million {
+      width: $timeline-half-million + $timeline-label-displacement;
+    }
+
+    &_fractional {
+      margin-left: -$timeline-fractional-label-displacement;
+      width: $timeline-half-million + $timeline-fractional-label-displacement;
+    }
+
+    &_hundreds {
+      margin-left: -$timeline-hundreds-label-displacement;
+      width: $timeline-quarter-million + $timeline-hundreds-label-displacement;
     }
   }
 }
