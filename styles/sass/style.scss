@@ -70,19 +70,13 @@ body {
   line-height: 1.33;
 }
 
-.species {
+.species-name {
+  font-size: $fontsize-m;
+  line-height: 1.33;
+  text-shadow: 0.5px 0.5px 1px #121212;
 
-  &__ru-name {
-    font-size: $fontsize-m;
-    line-height: 1.33;
-    text-shadow: 0.5px 0.5px 1px #121212;
-  }
-
-  &__la-name {
+  &_name_la {
     font-family: 'Georgia', 'Times New Roman', serif;
-    font-size: $fontsize-m;
-    line-height: 1.33;
-    text-shadow: 0.5px 0.5px 1px #121212;
   }
 
 }
