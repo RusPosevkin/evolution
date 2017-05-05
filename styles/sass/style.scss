@@ -3,6 +3,7 @@
 
 body {
   font-family: 'Fira Sans', 'Helvetica', sans-serif;
+  font-weight: 300;
 }
 
 .page {
@@ -33,33 +34,33 @@ body {
 /* Text styles */
 
 .title {
-  padding: $column-width 0 32px $first-padding;
-  height: 188px;
-  width: 5 * $column-width;
+  padding: $column-width 0 30px $first-padding;
+  width: 10 * $column-width;
   font-weight: 800;
   line-height: 87px;
   font-size: 102px;
 }
 
 .text-intro {
-  font-size: 24px;
-  line-height: 32px;
+  font-size: $fontsize-xl;
+  line-height: 1.33;
   padding-left: $first-padding;
-  width: 13 * $column-width;
+  width: 11 * $column-width;
 }
 
 .text {
-  font-size: 21px;
-  line-height: 29px;
+  font-size: $fontsize-l;
+  line-height: 1.381;
 }
 
 .accent {
   color: $color-accent;
-  font-weight: 600;
+  font-weight: 500;
+  white-space: nowrap;
 }
 
 .source-link {
-  font-size: 12px;
+  font-size: $fontsize-s;
   line-height: 1.33;
 }
 
@@ -72,14 +73,14 @@ body {
 .species {
 
   &__ru-name {
-    font-size: 15px;
+    font-size: $fontsize-m;
     line-height: 1.33;
     text-shadow: 0.5px 0.5px 1px #121212;
   }
 
   &__la-name {
     font-family: 'Georgia', 'Times New Roman', serif;
-    font-size: 15px;
+    font-size: $fontsize-m;
     line-height: 1.33;
     text-shadow: 0.5px 0.5px 1px #121212;
   }
