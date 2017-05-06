@@ -1,7 +1,15 @@
 {
   "name": "evolution",
   "version": "1.0.0",
-  "description": "",
+  "description": "Project 'Timeline of human evolution'",
+  "author": {
+    "name" : "Ruslan Posevkin",
+    "url" : "http://posevkin.ru/"
+  },
+  "contributors":[{
+    "name" : "Gleb Krauklish",
+    "url" : "https://github.com/krauklish"
+  }],
   "main": "gulpfile.js",
   "license": "MIT",
   "devDependencies": {
