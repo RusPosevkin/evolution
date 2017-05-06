@@ -1,5 +1,6 @@
 @import "_reset";
 @import "variables";
+@import "../../node_modules/flexboxgrid-sass/flexboxgrid";
 
 body {
   font-family: 'Fira Sans', 'Helvetica', sans-serif;
@@ -18,34 +19,25 @@ body {
 
 .half-top {
   width: 100%;
-  // background-color: tomato;
 }
 
 .half-bottom {
   width: 100%;
-  // background-color: blue;
 }
-
-.flex {
-  display: flex;
-}
-
 
 /* Text styles */
 
 .title {
-  padding: $column-width 0 30px $first-padding;
-  width: 10 * $column-width;
+  margin-top: 50px;
   font-weight: 800;
   line-height: 87px;
-  font-size: 102px;
+  font-size: $fontsize-h1;
 }
 
 .text-intro {
+  margin-top: 30px;
   font-size: $fontsize-xl;
   line-height: 1.33;
-  padding-left: $first-padding;
-  width: 11 * $column-width;
 }
 
 .text {
@@ -78,9 +70,7 @@ body {
   &_name_la {
     font-family: 'Georgia', 'Times New Roman', serif;
   }
-
 }
-
 
 /* Timeline */
 
@@ -115,14 +105,6 @@ body {
     height: 10px;
     border-left: 1px solid $color-secondary;
 
-    &:first-child {
-      margin-left: $first-padding;
-    }
-
-    &_million {
-      width: $timeline-million;
-    }
-
     &_half-million {
       width: $timeline-half-million;
     }
@@ -137,18 +119,12 @@ body {
     color: $color-secondary;
     padding-bottom: 6px;
 
+    // negative margin for tick and label alignment
     &:first-child {
       margin-left: $first-padding - $timeline-label-displacement;
     }
 
-    &_million {
-      width: $timeline-million + $timeline-label-displacement;
-    }
-
-    &_half-million {
-      width: $timeline-half-million + $timeline-label-displacement;
-    }
-
+    // fractional numbers and hundreds need different displacement value
     &_fractional {
       margin-left: -$timeline-fractional-label-displacement;
       width: $timeline-half-million + $timeline-fractional-label-displacement;

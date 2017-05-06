@@ -5,6 +5,7 @@
   "main": "gulpfile.js",
   "license": "MIT",
   "devDependencies": {
+    "flexboxgrid-sass": "^8.0.5",
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0"
   }
