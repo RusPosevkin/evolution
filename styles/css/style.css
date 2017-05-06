@@ -48,13 +48,14 @@ table {
   border-spacing: 0; }
 
 body {
-  font-family: 'Fira Sans', sans-serif; }
+  font-family: 'Fira Sans', 'Helvetica', sans-serif;
+  font-weight: 300; }
 
 .page {
   width: 9200px;
   background-color: #121212;
   height: 100vh;
-  color: white;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
@@ -68,28 +69,50 @@ body {
 .flex {
   display: flex; }
 
+/* Text styles */
 .title {
-  padding: 50px 0 32px 100px;
-  height: 188px;
-  width: 250px;
+  padding: 50px 0 30px 100px;
+  width: 500px;
   font-weight: 800;
-  line-height: 94px;
-  font-size: 104px;
-  color: #fff; }
+  line-height: 87px;
+  font-size: 102px; }
 
 .text-intro {
   font-size: 24px;
-  line-height: 32px;
+  line-height: 1.33;
   padding-left: 100px;
-  width: 650px; }
+  width: 550px; }
 
 .text {
-  color: #fff;
-  font-size: 21px; }
+  font-size: 21px;
+  line-height: 1.381; }
 
 .accent {
-  color: #eca3a1; }
+  color: #eca3a1;
+  font-weight: 500;
+  white-space: nowrap; }
 
+.source-link {
+  font-size: 12px;
+  line-height: 1.33; }
+
+.comment {
+  color: #aaa;
+  font-size: 15px;
+  line-height: 1.33; }
+
+.species__ru-name {
+  font-size: 15px;
+  line-height: 1.33;
+  text-shadow: 0.5px 0.5px 1px #121212; }
+
+.species__la-name {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 15px;
+  line-height: 1.33;
+  text-shadow: 0.5px 0.5px 1px #121212; }
+
+/* Timeline */
 .timeline {
   width: 100%; }
   .timeline__scale {

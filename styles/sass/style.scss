@@ -2,14 +2,15 @@
 @import "variables";
 
 body {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Fira Sans', 'Helvetica', sans-serif;
+  font-weight: 300;
 }
 
 .page {
   width: $full-width;
   background-color: #121212;
   height: 100vh;
-  color: white;
+  color: $color-base;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -29,31 +30,59 @@ body {
   display: flex;
 }
 
+
+/* Text styles */
+
 .title {
-  padding: $column-width 0 32px $first-padding;
-  height: 188px;
-  width: 5 * $column-width;
+  padding: $column-width 0 30px $first-padding;
+  width: 10 * $column-width;
   font-weight: 800;
-  line-height: 94px;
-  font-size: 104px;
-  color: $color-base;
+  line-height: 87px;
+  font-size: 102px;
 }
 
 .text-intro {
-  font-size: 24px;
-  line-height: 32px;
+  font-size: $fontsize-xl;
+  line-height: 1.33;
   padding-left: $first-padding;
-  width: 13 * $column-width;
+  width: 11 * $column-width;
 }
 
 .text {
-  color: $color-base;
-  font-size: 21px;
+  font-size: $fontsize-l;
+  line-height: 1.381;
 }
 
 .accent {
   color: $color-accent;
+  font-weight: 500;
+  white-space: nowrap;
 }
+
+.source-link {
+  font-size: $fontsize-s;
+  line-height: 1.33;
+}
+
+.comment {
+  color: $color-secondary;
+  font-size: 15px;
+  line-height: 1.33;
+}
+
+.species-name {
+  font-size: $fontsize-m;
+  line-height: 1.33;
+  text-shadow: 0.5px 0.5px 1px #121212;
+
+  &_name_la {
+    font-family: 'Georgia', 'Times New Roman', serif;
+  }
+
+}
+
+
+/* Timeline */
 
 .timeline {
   width: 100%;
