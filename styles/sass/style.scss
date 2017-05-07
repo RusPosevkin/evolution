@@ -37,7 +37,7 @@ body {
 .text-intro {
   margin-top: 30px;
   font-size: $fontsize-xl;
-  line-height: 1.33;
+  line-height: $lineheight-basic;
 }
 
 .text {
@@ -62,7 +62,7 @@ body {
 
 .source-link {
   font-size: $fontsize-s;
-  line-height: 1.33;
+  line-height: $lineheight-basic;
   color: $color-link;
   display: inline-block;
   margin-top: 20px;
@@ -85,12 +85,12 @@ body {
 .comment {
   color: $color-secondary;
   font-size: $fontsize-m;
-  line-height: 1.33;
+  line-height: $lineheight-basic;
 }
 
 .species-name {
   font-size: $fontsize-m;
-  line-height: 1.33;
+  line-height: $lineheight-basic;
   text-shadow: 0.5px 0.5px 1px $color-dark;
 
   &_name_la {
