@@ -9,7 +9,7 @@ body {
 
 .page {
   width: $full-width;
-  background-color: #121212;
+  background-color: $color-dark;
   height: 100vh;
   color: $color-base;
   display: flex;
@@ -43,6 +43,12 @@ body {
 .text {
   font-size: $fontsize-l;
   line-height: 1.381;
+  margin-top: 75px;
+
+  //TODO: fix paragraph indentation
+  p + p {
+    margin-top: 20px;
+  }
 }
 
 .accent {
@@ -51,21 +57,40 @@ body {
   white-space: nowrap;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .source-link {
   font-size: $fontsize-s;
   line-height: 1.33;
+  color: $color-link;
+  display: inline-block;
+  margin-top: 20px;
+
+  &::before {
+    content: "";
+    display: block;
+    //TODO: update link to local icon
+    background: url("https://cdn3.iconfinder.com/data/icons/sweet-16s/16/book-open.png") no-repeat;
+    width: 16px;
+    height: 16px;
+    float: left;
+    // margin-left = width(16px) + margin-right(7px)
+    margin: 0 7px 0 -23px;
+  }
 }
 
 .comment {
   color: $color-secondary;
-  font-size: 15px;
+  font-size: $fontsize-m;
   line-height: 1.33;
 }
 
 .species-name {
   font-size: $fontsize-m;
   line-height: 1.33;
-  text-shadow: 0.5px 0.5px 1px #121212;
+  text-shadow: 0.5px 0.5px 1px $color-dark;
 
   &_name_la {
     font-family: 'Georgia', 'Times New Roman', serif;
@@ -81,7 +106,7 @@ body {
     height: 2px;
 
     &_miocene {
-      width: 2873px;
+      width: 1763px;
       background-color: $color-accent;
     }
 

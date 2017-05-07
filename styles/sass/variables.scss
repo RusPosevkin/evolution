@@ -1,5 +1,7 @@
 $column-width: 50px;
-$full-width: 184 * $column-width;
+//TODO: update it in final version - we should know full width - it's fixed!
+$count-of-columns: 182;
+$full-width: $count-of-columns * $column-width;
 $first-padding: 2 * $column-width;
 
 $grid-columns: $full-width / $column-width;
@@ -9,6 +11,8 @@ $outer-margin: 0;
 $color-accent: #eca3a1;
 $color-base: #fff;
 $color-secondary: #aaa;
+$color-link: #799ec9;
+$color-dark: #121212;
 
 $fontsize-h1: 102px;
 $fontsize-xl: 24px;
