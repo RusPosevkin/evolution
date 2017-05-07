@@ -45,9 +45,8 @@ body {
   line-height: 1.381;
   margin-top: 75px;
 
-  //TODO: fix paragraph indentation
   p + p {
-    margin-top: 20px;
+    margin-top: 16px;
   }
 }
 
@@ -67,6 +66,8 @@ body {
   color: $color-link;
   display: inline-block;
   margin-top: 20px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(95,132,147,.3);
 
   &::before {
     content: "";
