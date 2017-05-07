@@ -24148,7 +24148,7 @@ body {
   line-height: 1.381;
   margin-top: 75px; }
   .text p + p {
-    margin-top: 20px; }
+    margin-top: 16px; }
 
 .accent {
   color: #eca3a1;
@@ -24163,7 +24163,9 @@ body {
   line-height: 1.33;
   color: #799ec9;
   display: inline-block;
-  margin-top: 20px; }
+  margin-top: 20px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(95, 132, 147, 0.3); }
   .source-link::before {
     content: "";
     display: block;
