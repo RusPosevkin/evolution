@@ -45,7 +45,7 @@ body {
   line-height: 1.381;
   margin-top: 75px;
   position: relative;
-  z-index: 2;
+  z-index: 10;
 
   p + p {
     margin-top: 16px;
@@ -184,4 +184,22 @@ body {
   position: absolute;
   bottom: 36px;
   left: 1132px;
+}
+
+.ardi-woman {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 3022px;
+  max-height: calc(100vh - 29px);
+  margin-bottom: 29px;
+}
+
+.ardi-skeleton {
+  position: absolute;
+  z-index: 1;
+  top: 169px;
+  left: 3271px;
+  max-height: calc(100vh - 46px - 169px);
+  margin-bottom: 46px;
 }
