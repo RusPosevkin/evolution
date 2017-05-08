@@ -24141,7 +24141,7 @@ body {
 .text-intro {
   margin-top: 30px;
   font-size: 24px;
-  line-height: 1.33; }
+  line-height: 1.33333; }
 
 .text {
   font-size: 21px;
@@ -24160,8 +24160,8 @@ body {
 
 .source-link {
   font-size: 12px;
-  line-height: 1.33;
-  color: #799ec9;
+  line-height: 1.33333;
+  color: #799fca;
   display: inline-block;
   margin-top: 20px;
   text-decoration: none;
@@ -24169,20 +24169,21 @@ body {
   .source-link::before {
     content: "";
     display: block;
-    background: url("https://cdn3.iconfinder.com/data/icons/sweet-16s/16/book-open.png") no-repeat;
-    width: 16px;
-    height: 16px;
+    background: url("../../img/source-link-icon.svg") no-repeat;
+    background-size: 18px 18px;
+    width: 18px;
+    height: 18px;
     float: left;
-    margin: 0 7px 0 -23px; }
+    margin: 0 6px 0 -24px; }
 
 .comment {
   color: #aaa;
   font-size: 15px;
-  line-height: 1.33; }
+  line-height: 1.33333; }
 
 .species-name {
   font-size: 15px;
-  line-height: 1.33;
+  line-height: 1.33333;
   text-shadow: 0.5px 0.5px 1px #121212; }
   .species-name_name_la {
     font-family: 'Georgia', 'Times New Roman', serif; }
