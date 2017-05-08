@@ -72,8 +72,7 @@ body {
   &::before {
     content: "";
     display: block;
-    //TODO: update link to local icon
-    background: url("https://cdn3.iconfinder.com/data/icons/sweet-16s/16/book-open.png") no-repeat;
+    background: url("../../img/source-link-icon.svg") no-repeat;
     width: 16px;
     height: 16px;
     float: left;
