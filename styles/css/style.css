@@ -24146,7 +24146,9 @@ body {
 .text {
   font-size: 21px;
   line-height: 1.381;
-  margin-top: 75px; }
+  margin-top: 75px;
+  position: relative;
+  z-index: 2; }
   .text p + p {
     margin-top: 16px; }
 
@@ -24224,3 +24226,15 @@ body {
     .timeline__label_hundreds {
       margin-left: -6px;
       width: 256px; }
+
+.africa {
+  position: absolute;
+  top: 14px;
+  left: 1339px;
+  max-height: 100vh;
+  z-index: 1; }
+  .africa__continent {
+    height: calc(100vh - 58px);
+    margin-bottom: 44px;
+    max-width: 608px;
+    max-height: 647px; }

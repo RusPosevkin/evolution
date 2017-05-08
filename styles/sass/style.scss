@@ -44,6 +44,8 @@ body {
   font-size: $fontsize-l;
   line-height: 1.381;
   margin-top: 75px;
+  position: relative;
+  z-index: 2;
 
   p + p {
     margin-top: 16px;
@@ -160,5 +162,20 @@ body {
       margin-left: -$timeline-hundreds-label-displacement;
       width: $timeline-quarter-million + $timeline-hundreds-label-displacement;
     }
+  }
+}
+
+.africa {
+  position: absolute;
+  top: 14px;
+  left: 1339px;
+  max-height: 100vh;
+  z-index: 1;
+
+  &__continent {
+    height: calc(100vh - 58px);
+    margin-bottom: 44px;
+    max-width: 608px;
+    max-height: 647px;
   }
 }
