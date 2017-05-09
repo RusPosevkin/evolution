@@ -167,16 +167,58 @@ body {
 
 .africa {
   position: absolute;
-  top: 14px;
+  top: 27px;
   left: 1339px;
-  max-height: 100vh;
   z-index: 1;
+  margin-bottom: 44px;
+
+  .container {
+    position: relative;
+    width: 100%;
+  }
 
   &__continent {
-    height: calc(100vh - 58px);
-    margin-bottom: 44px;
+    height: calc(100vh - 71px);
     max-width: 608px;
     max-height: 647px;
+  }
+
+  &__chad {
+    width: 100%;
+    position: absolute;
+    background: url('../../img/africa-tchad.svg') no-repeat;
+    background-size: contain;
+    top: 16%;
+    left: 43.5%;
+    height: 30%;
+    max-width: 92px;
+    max-height: 159px;
+  }
+
+  &__kenya {
+    width: 100%;
+    position: absolute;
+    background: url('../../img/africa-kenya.svg') no-repeat;
+    background-size: contain;
+    top: 42%;
+    left: 75%;
+    height: 16%;
+  }
+
+  &__label {
+    position: absolute;
+    color: $color-base;
+    font-size: 12px;
+
+    &_chad {
+      top: 28%;
+      left: 49%;
+    }
+
+    &_kenya {
+      top: 49%;
+      left: 78%;
+    }
   }
 }
 
