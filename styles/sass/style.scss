@@ -88,6 +88,10 @@ body {
   color: $color-secondary;
   font-size: $fontsize-m;
   line-height: $lineheight-basic;
+
+  &_top {
+    margin-top: 75px;
+  }
 }
 
 .species-name {

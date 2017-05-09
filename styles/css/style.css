@@ -24182,6 +24182,8 @@ body {
   color: #aaa;
   font-size: 15px;
   line-height: 1.33333; }
+  .comment_top {
+    margin-top: 75px; }
 
 .species-name {
   font-size: 15px;
