@@ -23,6 +23,7 @@ body {
 
 .half-bottom {
   width: 100%;
+  display: flex;
 }
 
 /* Text styles */
@@ -228,7 +229,7 @@ body {
 
 .chadensis {
   position: absolute;
-  bottom: 36px;
+  bottom: 40px;
   left: 1132px;
 }
 
@@ -265,4 +266,74 @@ body {
   left: 5266px;
   max-height: calc(100vh - 30px);
   margin-bottom: 30px;
+}
+
+.minimap {
+  height: 40px;
+  background-color: #444;
+  display: flex;
+  flex-direction: column-reverse;
+
+  &_intro {
+    width: 16 * $column-width;
+    display: flex;
+  }
+
+  &_main {
+    width: 100vw;
+  }
+
+  &__tick {
+    height: 6px;
+    border-left: $tick-width solid $color-secondary;
+
+    &_multicellular {
+      margin-left: $first-padding;
+      width: $minimap-intro-multicellular;
+    }
+
+    &_vertebrates {
+      width: $minimap-intro-vertebrates;
+    }
+
+    &_mammal {
+      width: $minimap-intro-mammal;
+    }
+
+    &_monkeys {
+      width: $minimap-intro-monkeys;
+    }
+
+    &_anthropoid {
+      width: $minimap-intro-anthropoid;
+    }
+  }
+
+  &__label {
+    margin-bottom: 2px;
+    font-size: $fontsize-xs;
+    color: $color-minimap;
+    line-height: 12px;
+
+    &_multicellular {
+      margin-left: $first-padding - $tick-width;
+      width: $minimap-intro-multicellular;
+    }
+
+    &_vertebrates {
+      width: $minimap-intro-vertebrates + $tick-width;
+    }
+
+    &_mammal {
+      width: $minimap-intro-mammal + $tick-width;
+    }
+
+    &_monkeys {
+      width: $minimap-intro-monkeys + $tick-width;
+    }
+
+    &_anthropoid {
+      width: $minimap-intro-anthropoid + $tick-width;
+    }
+  }
 }

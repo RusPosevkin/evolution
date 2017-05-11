@@ -24129,7 +24129,8 @@ body {
   width: 100%; }
 
 .half-bottom {
-  width: 100%; }
+  width: 100%;
+  display: flex; }
 
 /* Text styles */
 .title {
@@ -24273,7 +24274,7 @@ body {
 
 .chadensis {
   position: absolute;
-  bottom: 36px;
+  bottom: 40px;
   left: 1132px; }
 
 .ardi-woman {
@@ -24306,3 +24307,44 @@ body {
   left: 5266px;
   max-height: calc(100vh - 30px);
   margin-bottom: 30px; }
+
+.minimap {
+  height: 40px;
+  background-color: #444;
+  display: flex;
+  flex-direction: column-reverse; }
+  .minimap_intro {
+    width: 800px;
+    display: flex; }
+  .minimap_main {
+    width: 100vw; }
+  .minimap__tick {
+    height: 6px;
+    border-left: 1px solid #aaa; }
+    .minimap__tick_multicellular {
+      margin-left: 100px;
+      width: 143px; }
+    .minimap__tick_vertebrates {
+      width: 129px; }
+    .minimap__tick_mammal {
+      width: 169px; }
+    .minimap__tick_monkeys {
+      width: 115px; }
+    .minimap__tick_anthropoid {
+      width: 139px; }
+  .minimap__label {
+    margin-bottom: 2px;
+    font-size: 10px;
+    color: #ddd;
+    line-height: 12px; }
+    .minimap__label_multicellular {
+      margin-left: 99px;
+      width: 143px; }
+    .minimap__label_vertebrates {
+      width: 130px; }
+    .minimap__label_mammal {
+      width: 170px; }
+    .minimap__label_monkeys {
+      width: 116px; }
+    .minimap__label_anthropoid {
+      width: 140px; }

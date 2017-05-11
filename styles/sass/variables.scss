@@ -13,12 +13,14 @@ $color-base: #fff;
 $color-secondary: #aaa;
 $color-link: #799fca;
 $color-dark: #121212;
+$color-minimap: #ddd;
 
 $fontsize-h1: 102px;
 $fontsize-xl: 24px;
 $fontsize-l: 21px;
 $fontsize-m: 15px;
 $fontsize-s: 12px;
+$fontsize-xs: 10px;
 $lineheight-basic: 1.333333333;
 
 $timeline-half-million: 10 * $column-width;
@@ -26,3 +28,12 @@ $timeline-quarter-million: 5 * $column-width;
 $timeline-label-displacement: 2px;
 $timeline-fractional-label-displacement: 5px;
 $timeline-hundreds-label-displacement: 6px;
+
+$tick-width: 1px;
+
+// minimap intro scale positioning
+$minimap-intro-multicellular: 143px;
+$minimap-intro-vertebrates: 129px;
+$minimap-intro-mammal: 169px;
+$minimap-intro-monkeys: 115px;
+$minimap-intro-anthropoid: 139px;
