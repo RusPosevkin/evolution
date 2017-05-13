@@ -24196,20 +24196,6 @@ body {
 /* Timeline */
 .timeline {
   width: 100%; }
-  .timeline__scale {
-    height: 2px; }
-    .timeline__scale_miocene {
-      width: 1763px;
-      background-color: #eca3a1; }
-    .timeline__scale_pliocene {
-      width: 2740px;
-      background-color: #cb859d; }
-    .timeline__scale_pleistocene {
-      width: 2576px;
-      background-color: #799ec9; }
-    .timeline__scale_holocene {
-      width: 20px;
-      background-color: #8abf9f; }
   .timeline__tick {
     height: 10px;
     border-left: 1px solid #aaa; }

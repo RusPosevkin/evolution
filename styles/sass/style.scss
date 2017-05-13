@@ -110,30 +110,6 @@ body {
 .timeline {
   width: 100%;
 
-  &__scale {
-    height: 2px;
-
-    &_miocene {
-      width: 1763px;
-      background-color: $color-accent;
-    }
-
-    &_pliocene {
-      width: 2740px;
-      background-color: #cb859d;
-    }
-
-    &_pleistocene {
-      width: 2576px;
-      background-color: #799ec9;
-    }
-
-    &_holocene {
-      width: 20px;
-      background-color: #8abf9f;
-    }
-  }
-
   &__tick {
     height: 10px;
     border-left: 1px solid $color-secondary;
