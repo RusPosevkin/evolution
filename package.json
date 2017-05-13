@@ -12,6 +12,9 @@
   }],
   "main": "gulpfile.js",
   "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
   "devDependencies": {
     "flexboxgrid-sass": "^8.0.5",
     "gulp": "^3.9.1",

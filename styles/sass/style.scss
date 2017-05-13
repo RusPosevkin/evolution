@@ -5,12 +5,13 @@
 body {
   font-family: 'Fira Sans', 'Helvetica', sans-serif;
   font-weight: 300;
+  overflow-y: hidden;
 }
 
 .page {
   width: $full-width;
   background-color: $color-dark;
-  height: 100vh;
+  visibility: hidden;
   color: $color-base;
   display: flex;
   flex-direction: column;
@@ -111,7 +112,7 @@ body {
   width: 100%;
 
   &__tick {
-    height: 10px;
+    height: $tick-height;
     border-left: 1px solid $color-secondary;
 
     &_half-million {
@@ -260,7 +261,7 @@ body {
   }
 
   &__tick {
-    height: 6px;
+    height: $tick-height;
     border-left: $tick-width solid $color-secondary;
 
     &_multicellular {

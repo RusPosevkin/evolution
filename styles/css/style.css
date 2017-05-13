@@ -24114,12 +24114,13 @@ table {
 
 body {
   font-family: 'Fira Sans', 'Helvetica', sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  overflow-y: hidden; }
 
 .page {
   width: 9100px;
   background-color: #121212;
-  height: 100vh;
+  visibility: hidden;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -24197,7 +24198,7 @@ body {
 .timeline {
   width: 100%; }
   .timeline__tick {
-    height: 10px;
+    height: 6px;
     border-left: 1px solid #aaa; }
     .timeline__tick_half-million {
       width: 500px; }
