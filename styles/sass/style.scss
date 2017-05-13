@@ -260,6 +260,13 @@ body {
     width: 100vw;
   }
 
+  &_fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+  }
+
   &__tick {
     height: $tick-height;
     border-left: $tick-width solid $color-secondary;

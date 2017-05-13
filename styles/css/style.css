@@ -24305,6 +24305,11 @@ body {
     display: flex; }
   .minimap_main {
     width: 100vw; }
+  .minimap_fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    overflow: hidden; }
   .minimap__tick {
     height: 6px;
     border-left: 1px solid #aaa; }
