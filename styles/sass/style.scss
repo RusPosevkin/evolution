@@ -291,6 +291,31 @@ body {
     &_anthropoid {
       width: $minimap-intro-anthropoid;
     }
+
+    &_sahelantropus {
+      margin-left: $minimap-main-sahelantropus-margin;
+      width: $minimap-main-sahelantropus;
+    }
+
+    &_australopitecus {
+      width: $minimap-main-australopitecus;
+    }
+
+    &_heidelbergensis {
+      width: $minimap-main-heidelbergensis;
+    }
+
+    &_sapiens {
+      width: $minimap-main-sapiens;
+    }
+
+    &_africa {
+      width: $minimap-main-africa;
+    }
+
+    &_today {
+      width: $minimap-main-today;
+    }
   }
 
   &__label {
@@ -318,6 +343,33 @@ body {
 
     &_anthropoid {
       width: $minimap-intro-anthropoid + $tick-width;
+    }
+
+    &_sahelantropus {
+      margin-left: calc(#{$minimap-main-sahelantropus-margin} - #{$tick-width});
+      width: $minimap-main-sahelantropus;
+    }
+
+    &_australopitecus {
+      width: calc(#{$minimap-main-australopitecus} + #{$tick-width});
+    }
+
+    &_heidelbergensis {
+      width: calc(#{$minimap-main-heidelbergensis} + #{$tick-width});
+    }
+
+    &_sapiens {
+      width: calc(#{$minimap-main-sapiens} + #{$tick-width});
+    }
+
+    &_africa {
+      width: calc(#{$minimap-main-africa} + #{$tick-width});
+    }
+
+    &_today {
+      width: calc(#{$minimap-main-today} + #{$tick-width});
+      display: flex;
+      align-items: flex-end;
     }
   }
 }

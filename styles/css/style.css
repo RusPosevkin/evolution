@@ -24324,6 +24324,19 @@ body {
       width: 115px; }
     .minimap__tick_anthropoid {
       width: 139px; }
+    .minimap__tick_sahelantropus {
+      margin-left: 4%;
+      width: 10%; }
+    .minimap__tick_australopitecus {
+      width: 15%; }
+    .minimap__tick_heidelbergensis {
+      width: 15%; }
+    .minimap__tick_sapiens {
+      width: 10%; }
+    .minimap__tick_africa {
+      width: 35%; }
+    .minimap__tick_today {
+      width: 10%; }
   .minimap__label {
     margin-bottom: 2px;
     font-size: 10px;
@@ -24340,3 +24353,18 @@ body {
       width: 116px; }
     .minimap__label_anthropoid {
       width: 140px; }
+    .minimap__label_sahelantropus {
+      margin-left: calc(4% - 1px);
+      width: 10%; }
+    .minimap__label_australopitecus {
+      width: calc(15% + 1px); }
+    .minimap__label_heidelbergensis {
+      width: calc(15% + 1px); }
+    .minimap__label_sapiens {
+      width: calc(10% + 1px); }
+    .minimap__label_africa {
+      width: calc(35% + 1px); }
+    .minimap__label_today {
+      width: calc(10% + 1px);
+      display: flex;
+      align-items: flex-end; }
