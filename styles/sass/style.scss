@@ -64,14 +64,18 @@ body {
   font-style: italic;
 }
 
-.source-link {
-  font-size: $fontsize-s;
-  line-height: $lineheight-basic;
+.link {
   color: $color-link;
-  display: inline-block;
-  margin-top: 20px;
   text-decoration: none;
   border-bottom: 1px solid rgba(95,132,147,.3);
+}
+
+.source {
+  font-size: $fontsize-s;
+  line-height: $lineheight-basic;
+  max-width: 5 * $column-width;
+  display: inline-block;
+  margin-top: 20px;
 
   &::before {
     content: "";
@@ -82,7 +86,7 @@ body {
     height: 18px;
     float: left;
     // margin-left = width(18px) + margin-right(6px)
-    margin: 0 6px 0 -24px;
+    margin: -2px 6px 0 -24px;
   }
 }
 
