@@ -24166,7 +24166,7 @@ body {
 .link {
   color: #799ec9;
   border-bottom: 1px solid rgba(121, 158, 201, 0.3);
-  transition: color 0.2s ease-in, border-color 0.15s ease-in;
+  transition: color .2s ease-in, border-color .15s ease-in;
   text-decoration: none; }
   .link:visited {
     color: #799ec9;

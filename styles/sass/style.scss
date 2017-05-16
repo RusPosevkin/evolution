@@ -73,7 +73,7 @@ body {
 
 .link {
   @include link-style($color-link);
-  transition: $transition-link;
+  transition: color .2s ease-in, border-color .15s ease-in;
   text-decoration: none;
 
   &:visited {
