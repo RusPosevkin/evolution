@@ -64,10 +64,26 @@ body {
   font-style: italic;
 }
 
+/* Links */
+
+@mixin link-style($color) {
+  color: $color;
+  border-bottom: 1px solid rgba($color, .3);
+}
+
 .link {
-  color: $color-link;
+  @include link-style($color-link);
+  transition: $transition-link;
   text-decoration: none;
-  border-bottom: 1px solid rgba(95,132,147,.3);
+
+  &:visited {
+    @include link-style($color-link-visited);
+  }
+
+  &:hover {
+    @include link-style($color-link-hover);
+    transition-duration: 0s;
+  }
 }
 
 .source {

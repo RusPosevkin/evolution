@@ -11,9 +11,13 @@ $outer-margin: 0;
 $color-accent: #eca3a1;
 $color-base: #fff;
 $color-secondary: #aaa;
-$color-link: #799fca;
+$color-link: rgba(121,158,201,1);
+$color-link-visited: $color-link;
+$color-link-hover: $color-accent;
 $color-dark: #121212;
 $color-minimap: #ddd;
+
+$transition-link: color .2s ease-in, border-color .15s ease-in;
 
 $fontsize-h1: 102px;
 $fontsize-xl: 24px;
@@ -46,4 +50,4 @@ $minimap-main-australopitecus: 15%;
 $minimap-main-heidelbergensis: 15%;
 $minimap-main-sapiens: 10%;
 $minimap-main-africa: 35%;
-$minimap-main-today: 10%; 
+$minimap-main-today: 10%;
