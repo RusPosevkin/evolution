@@ -270,6 +270,7 @@ body {
   &__tick {
     height: $tick-height;
     border-left: $tick-width solid $color-secondary;
+    z-index: 2;
 
     &_multicellular {
       margin-left: $first-padding;
@@ -323,6 +324,7 @@ body {
     font-size: $fontsize-xs;
     color: $color-minimap;
     line-height: 12px;
+    z-index: 2;
 
     &_multicellular {
       margin-left: $first-padding - $tick-width;
@@ -371,5 +373,16 @@ body {
       display: flex;
       align-items: flex-end;
     }
+  }
+
+  &__window {
+    position: absolute;
+    border: 1px solid $color-minimap-window-border;
+    background-color: $color-minimap-window;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    margin-left: 3.2%;
+    z-index: 1;
   }
 }

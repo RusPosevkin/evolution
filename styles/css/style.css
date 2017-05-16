@@ -24312,7 +24312,8 @@ body {
     overflow: hidden; }
   .minimap__tick {
     height: 6px;
-    border-left: 1px solid #aaa; }
+    border-left: 1px solid #aaa;
+    z-index: 2; }
     .minimap__tick_multicellular {
       margin-left: 100px;
       width: 143px; }
@@ -24341,7 +24342,8 @@ body {
     margin-bottom: 2px;
     font-size: 10px;
     color: #ddd;
-    line-height: 12px; }
+    line-height: 12px;
+    z-index: 2; }
     .minimap__label_multicellular {
       margin-left: 99px;
       width: 143px; }
@@ -24368,3 +24370,12 @@ body {
       width: calc(10% + 1px);
       display: flex;
       align-items: flex-end; }
+  .minimap__window {
+    position: absolute;
+    border: 1px solid #c9869d;
+    background-color: #6d5b5b;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    margin-left: 3.2%;
+    z-index: 1; }
