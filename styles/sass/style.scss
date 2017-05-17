@@ -64,14 +64,34 @@ body {
   font-style: italic;
 }
 
-.source-link {
+/* Links */
+
+@mixin link-style($color) {
+  color: $color;
+  border-bottom: 1px solid rgba($color, .3);
+}
+
+.link {
+  @include link-style($color-link);
+  transition: color .2s ease-in, border-color .15s ease-in;
+  text-decoration: none;
+
+  &:visited {
+    @include link-style($color-link-visited);
+  }
+
+  &:hover {
+    @include link-style($color-link-hover);
+    transition-duration: 0s;
+  }
+}
+
+.source {
   font-size: $fontsize-s;
   line-height: $lineheight-basic;
-  color: $color-link;
+  max-width: 5 * $column-width;
   display: inline-block;
   margin-top: 20px;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(95,132,147,.3);
 
   &::before {
     content: "";
@@ -82,7 +102,7 @@ body {
     height: 18px;
     float: left;
     // margin-left = width(18px) + margin-right(6px)
-    margin: 0 6px 0 -24px;
+    margin: -2px 6px 0 -24px;
   }
 }
 
