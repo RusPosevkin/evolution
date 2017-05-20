@@ -49,13 +49,13 @@ body {
   position: relative;
   z-index: 10;
 
+  &_bottom {
+    margin-top: 100px;
+  }
+
   p + p {
     margin-top: 16px;
   }
-}
-
-.text + .text {
-  margin-top: 100px;
 }
 
 .accent {
@@ -152,7 +152,7 @@ body {
   }
 
   &__label {
-    font-size: 12px;
+    font-size: $fontsize-s;
     color: $color-secondary;
     padding-top: 6px;
 
@@ -167,9 +167,9 @@ body {
       width: $timeline-half-million + $timeline-fractional-label-displacement;
     }
 
-    &_hundreds {
+    &_200-hundred {
       margin-left: -$timeline-hundreds-label-displacement;
-      width: $timeline-quarter-million + $timeline-hundreds-label-displacement;
+      width: 4 * $column-width + $timeline-hundreds-label-displacement;
     }
   }
 }

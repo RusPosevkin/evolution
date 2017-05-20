@@ -24151,11 +24151,10 @@ body {
   margin-top: 75px;
   position: relative;
   z-index: 10; }
+  .text_bottom {
+    margin-top: 100px; }
   .text p + p {
     margin-top: 16px; }
-
-.text + .text {
-  margin-top: 100px; }
 
 .accent {
   color: #eca3a1;
@@ -24231,7 +24230,7 @@ body {
       width: 505px; }
     .timeline__label_hundreds {
       margin-left: -6px;
-      width: 256px; }
+      width: 206px; }
 
 .africa {
   position: absolute;
