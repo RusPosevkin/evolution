@@ -24154,6 +24154,9 @@ body {
   .text p + p {
     margin-top: 16px; }
 
+.text + .text {
+  margin-top: 100px; }
+
 .accent {
   color: #eca3a1;
   font-weight: 500;
@@ -24179,9 +24182,10 @@ body {
 .source {
   font-size: 12px;
   line-height: 1.33333;
-  max-width: 250px;
   display: inline-block;
   margin-top: 20px; }
+  .source_short {
+    max-width: 250px; }
   .source::before {
     content: "";
     display: block;

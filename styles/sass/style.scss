@@ -54,6 +54,10 @@ body {
   }
 }
 
+.text + .text {
+  margin-top: 100px;
+}
+
 .accent {
   color: $color-accent;
   font-weight: 500;
@@ -89,9 +93,12 @@ body {
 .source {
   font-size: $fontsize-s;
   line-height: $lineheight-basic;
-  max-width: 5 * $column-width;
   display: inline-block;
   margin-top: 20px;
+
+  &_short {
+    max-width: 5 * $column-width;
+  }
 
   &::before {
     content: "";
