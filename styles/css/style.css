@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Eric Meyer's CSS Reset
    http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -24393,6 +24394,8 @@ body {
 .species-tree {
   width: 9100px;
   margin-bottom: 28px; }
+  .species-tree > .row > div {
+    position: relative; }
   .species-tree__circle {
     width: 6px;
     height: 6px;
@@ -24401,12 +24404,27 @@ body {
     z-index: 6;
     position: absolute;
     margin-top: -2px; }
+  .species-tree__cross {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    color: #dedede;
+    right: -6px;
+    bottom: -6px;
+    z-index: 11; }
+    .species-tree__cross:after {
+      position: absolute;
+      content: "×";
+      font-size: 28px;
+      line-height: 12px; }
   .species-tree__line {
     width: 100%;
     height: 1px;
     background-color: #444;
     z-index: 5;
     position: absolute; }
+    .species-tree__line_accent {
+      background-color: #8abf9f; }
   .species-tree__name {
     font-size: 15px;
     line-height: 1.33333;

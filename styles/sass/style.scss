@@ -409,6 +409,10 @@ body {
   width: $full-width;
   margin-bottom: 28px;
 
+  & > .row > div {
+    position: relative;
+  }
+
   &__circle {
     width: 6px;
     height: 6px;
@@ -419,12 +423,33 @@ body {
     margin-top: -2px;
   }
 
+  &__cross {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    color: #dedede;
+    right: -6px;
+    bottom: -6px;
+    z-index: 11;
+
+    &:after {
+      position: absolute;
+      content: "×";
+      font-size: 28px;
+      line-height: 12px;
+    }
+  }
+
   &__line {
     width: 100%;
     height: $species-tree-line-height;
     background-color: $color-species-tree-secondary;
     z-index: 5;
     position: absolute;
+
+    &_accent {
+      background-color: $color-species-tree-base;
+    }
   }
 
   &__name {
