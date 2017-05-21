@@ -18,6 +18,8 @@ $color-dark: #121212;
 $color-minimap: #ddd;
 $color-minimap-window: #6d5b5b;
 $color-minimap-window-border: #c9869d;
+$color-species-tree-base: #8abf9f;
+$color-species-tree-secondary: #444;
 
 $fontsize-h1: 102px;
 $fontsize-xl: 24px;
@@ -25,6 +27,7 @@ $fontsize-l: 21px;
 $fontsize-m: 15px;
 $fontsize-s: 12px;
 $fontsize-xs: 10px;
+$fontsize-latin: 17px;
 $lineheight-basic: 1.333333333;
 
 $timeline-half-million: 10 * $column-width;
@@ -50,3 +53,5 @@ $minimap-main-heidelbergensis: 15%;
 $minimap-main-sapiens: 10%;
 $minimap-main-africa: 35%;
 $minimap-main-today: 10%;
+
+$species-tree-line-height: 1px;

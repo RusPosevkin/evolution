@@ -24131,7 +24131,8 @@ body {
 
 .half-bottom {
   width: 100%;
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
 
 /* Text styles */
 .title {
@@ -24198,16 +24199,11 @@ body {
 .comment {
   color: #aaa;
   font-size: 15px;
-  line-height: 1.33333; }
+  line-height: 1.33333;
+  position: relative;
+  z-index: 10; }
   .comment_top {
     margin-top: 75px; }
-
-.species-name {
-  font-size: 15px;
-  line-height: 1.33333;
-  text-shadow: 0.5px 0.5px 1px #121212; }
-  .species-name_name_la {
-    font-family: 'Georgia', 'Times New Roman', serif; }
 
 /* Timeline */
 .timeline {
@@ -24217,8 +24213,6 @@ body {
     border-left: 1px solid #aaa; }
     .timeline__tick_half-million {
       width: 500px; }
-    .timeline__tick_quarter-million {
-      width: 250px; }
   .timeline__label {
     font-size: 12px;
     color: #aaa;
@@ -24228,7 +24222,7 @@ body {
     .timeline__label_fractional {
       margin-left: -5px;
       width: 505px; }
-    .timeline__label_hundreds {
+    .timeline__label_200-hundred {
       margin-left: -6px;
       width: 206px; }
 
@@ -24236,7 +24230,7 @@ body {
   position: absolute;
   top: 27px;
   left: 1339px;
-  z-index: 1;
+  z-index: 6;
   margin-bottom: 44px; }
   .africa .container {
     position: relative;
@@ -24277,7 +24271,8 @@ body {
 .chadensis {
   position: absolute;
   bottom: 40px;
-  left: 1132px; }
+  left: 1132px;
+  z-index: 1; }
 
 .ardi-woman {
   position: absolute;
@@ -24394,3 +24389,31 @@ body {
     box-sizing: border-box;
     margin-left: 3.2%;
     z-index: 1; }
+
+.species-tree {
+  width: 9100px;
+  margin-bottom: 28px; }
+  .species-tree__circle {
+    width: 6px;
+    height: 6px;
+    background: #8abf9f;
+    border-radius: 3px;
+    z-index: 6;
+    position: absolute;
+    margin-top: -2px; }
+  .species-tree__line {
+    width: 100%;
+    height: 1px;
+    background-color: #444;
+    z-index: 5;
+    position: absolute; }
+  .species-tree__name {
+    font-size: 15px;
+    line-height: 1.33333;
+    text-shadow: 0.5px 0.5px 1px #121212; }
+    .species-tree__name_latin {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      color: #aaa;
+      font-style: italic;
+      font-size: 17px;
+      margin-bottom: 10px; }

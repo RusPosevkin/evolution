@@ -25,6 +25,7 @@ body {
 .half-bottom {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 
 /* Text styles */
@@ -117,21 +118,14 @@ body {
   color: $color-secondary;
   font-size: $fontsize-m;
   line-height: $lineheight-basic;
+  position: relative;
+  z-index: 10;
 
   &_top {
     margin-top: 75px;
   }
 }
 
-.species-name {
-  font-size: $fontsize-m;
-  line-height: $lineheight-basic;
-  text-shadow: 0.5px 0.5px 1px $color-dark;
-
-  &_name_la {
-    font-family: 'Georgia', 'Times New Roman', serif;
-  }
-}
 
 /* Timeline */
 
@@ -144,10 +138,6 @@ body {
 
     &_half-million {
       width: $timeline-half-million;
-    }
-
-    &_quarter-million {
-      width: $timeline-quarter-million;
     }
   }
 
@@ -178,7 +168,7 @@ body {
   position: absolute;
   top: 27px;
   left: 1339px;
-  z-index: 1;
+  z-index: 6;
   margin-bottom: 44px;
 
   .container {
@@ -235,6 +225,7 @@ body {
   position: absolute;
   bottom: 40px;
   left: 1132px;
+  z-index: 1;
 }
 
 .ardi-woman {
@@ -412,4 +403,42 @@ body {
     margin-left: 3.2%;
     z-index: 1;
   }
+}
+
+.species-tree {
+  width: $full-width;
+  margin-bottom: 28px;
+
+  &__circle {
+    width: 6px;
+    height: 6px;
+    background: $color-species-tree-base;
+    border-radius: 3px;
+    z-index: 6;
+    position: absolute;
+    margin-top: -2px;
+  }
+
+  &__line {
+    width: 100%;
+    height: $species-tree-line-height;
+    background-color: $color-species-tree-secondary;
+    z-index: 5;
+    position: absolute;
+  }
+
+  &__name {
+  font-size: $fontsize-m;
+  line-height: $lineheight-basic;
+  text-shadow: 0.5px 0.5px 1px $color-dark;
+
+    &_latin {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      color: $color-secondary;
+      font-style: italic;
+      font-size: $fontsize-latin;
+      margin-bottom: 10px;
+    }
+  }
+
 }
