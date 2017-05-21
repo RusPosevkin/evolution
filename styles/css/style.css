@@ -24151,6 +24151,8 @@ body {
   margin-top: 75px;
   position: relative;
   z-index: 10; }
+  .text_bottom {
+    margin-top: 100px; }
   .text p + p {
     margin-top: 16px; }
 
@@ -24179,9 +24181,10 @@ body {
 .source {
   font-size: 12px;
   line-height: 1.33333;
-  max-width: 250px;
   display: inline-block;
   margin-top: 20px; }
+  .source_short {
+    max-width: 250px; }
   .source::before {
     content: "";
     display: block;
@@ -24227,7 +24230,7 @@ body {
       width: 505px; }
     .timeline__label_hundreds {
       margin-left: -6px;
-      width: 256px; }
+      width: 206px; }
 
 .africa {
   position: absolute;

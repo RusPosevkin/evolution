@@ -49,6 +49,10 @@ body {
   position: relative;
   z-index: 10;
 
+  &_bottom {
+    margin-top: 100px;
+  }
+
   p + p {
     margin-top: 16px;
   }
@@ -89,9 +93,12 @@ body {
 .source {
   font-size: $fontsize-s;
   line-height: $lineheight-basic;
-  max-width: 5 * $column-width;
   display: inline-block;
   margin-top: 20px;
+
+  &_short {
+    max-width: 5 * $column-width;
+  }
 
   &::before {
     content: "";
@@ -145,7 +152,7 @@ body {
   }
 
   &__label {
-    font-size: 12px;
+    font-size: $fontsize-s;
     color: $color-secondary;
     padding-top: 6px;
 
@@ -160,9 +167,9 @@ body {
       width: $timeline-half-million + $timeline-fractional-label-displacement;
     }
 
-    &_hundreds {
+    &_200-hundred {
       margin-left: -$timeline-hundreds-label-displacement;
-      width: $timeline-quarter-million + $timeline-hundreds-label-displacement;
+      width: 4 * $column-width + $timeline-hundreds-label-displacement;
     }
   }
 }
