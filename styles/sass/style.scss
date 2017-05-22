@@ -414,8 +414,10 @@ body {
   }
 
   &__level {
-    &_two {
-      margin-bottom: 2 * $column-width - $species-tree-line-height;
+    margin-bottom: $column-width;
+
+    &_zero {
+      margin-bottom: 0;
     }
   }
 

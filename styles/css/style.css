@@ -24396,8 +24396,10 @@ body {
   margin-bottom: 28px; }
   .species-tree > .row > div {
     position: relative; }
-  .species-tree__level_two {
-    margin-bottom: 99px; }
+  .species-tree__level {
+    margin-bottom: 50px; }
+    .species-tree__level_zero {
+      margin-bottom: 0; }
   .species-tree__circle {
     width: 6px;
     height: 6px;
