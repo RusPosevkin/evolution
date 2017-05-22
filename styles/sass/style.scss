@@ -223,7 +223,7 @@ body {
 
 .chadensis {
   position: absolute;
-  bottom: 40px;
+  bottom: 67px;
   left: 1132px;
   z-index: 1;
 }
@@ -413,6 +413,12 @@ body {
     position: relative;
   }
 
+  &__level {
+    &_two {
+      margin-bottom: 2 * $column-width - $species-tree-line-height;
+    }
+  }
+
   &__circle {
     width: 6px;
     height: 6px;
@@ -450,6 +456,11 @@ body {
     &_accent {
       background-color: $color-species-tree-base;
     }
+
+    &_placeholder {
+      position: absolute;
+      bottom: -1px;
+    }
   }
 
   &__name {
@@ -461,7 +472,7 @@ body {
       font-family: 'Georgia', 'Times New Roman', serif;
       color: $color-secondary;
       font-style: italic;
-      font-size: $fontsize-latin;
+      font-size: $fontsize-m;
       margin-bottom: 10px;
     }
   }

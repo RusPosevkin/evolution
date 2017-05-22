@@ -24271,7 +24271,7 @@ body {
 
 .chadensis {
   position: absolute;
-  bottom: 40px;
+  bottom: 67px;
   left: 1132px;
   z-index: 1; }
 
@@ -24396,6 +24396,8 @@ body {
   margin-bottom: 28px; }
   .species-tree > .row > div {
     position: relative; }
+  .species-tree__level_two {
+    margin-bottom: 99px; }
   .species-tree__circle {
     width: 6px;
     height: 6px;
@@ -24425,6 +24427,9 @@ body {
     position: absolute; }
     .species-tree__line_accent {
       background-color: #8abf9f; }
+    .species-tree__line_placeholder {
+      position: absolute;
+      bottom: -1px; }
   .species-tree__name {
     font-size: 15px;
     line-height: 1.33333;
@@ -24433,5 +24438,5 @@ body {
       font-family: 'Georgia', 'Times New Roman', serif;
       color: #aaa;
       font-style: italic;
-      font-size: 17px;
+      font-size: 15px;
       margin-bottom: 10px; }
