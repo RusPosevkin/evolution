@@ -420,6 +420,10 @@ body {
     &_zero {
       margin-bottom: 0;
     }
+
+    &_top {
+      margin-bottom: 2 * $column-width;
+    }
   }
 
   &__circle {

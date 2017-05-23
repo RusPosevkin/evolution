@@ -24426,6 +24426,8 @@ body {
     margin-bottom: 50px; }
     .species-tree__level_zero {
       margin-bottom: 0; }
+    .species-tree__level_top {
+      margin-bottom: 100px; }
   .species-tree__circle {
     width: 6px;
     height: 6px;
