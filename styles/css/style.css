@@ -1,4 +1,30 @@
 @charset "UTF-8";
+/**
+ * @license
+ * MyFonts Webfont Build ID 3388899, 2017-05-13T20:05:08-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+
+ * Webfont: NocturneSerif-LightItalic by BORUTTA GROUP
+ * URL: https://www.myfonts.com/fonts/borutta/nocturne-serif/light-italic/
+ *
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3388899
+ * Licensed pageviews: 10,000
+ * Webfonts copyright: Copyright &#x00A9; 2016 by Mateusz Machalski. All rights reserved.
+ *
+ * © 2017 MyFonts Inc
+*/
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/33b5e3");
+@font-face {
+  font-family: 'NocturneSerif-LightItalic';
+  src: url("webfonts/33B5E3_2_0.eot");
+  src: url("webfonts/33B5E3_2_0.eot?#iefix") format("embedded-opentype"), url("webfonts/33B5E3_2_0.woff2") format("woff2"), url("webfonts/33B5E3_2_0.woff") format("woff"); }
+
 /* Eric Meyer's CSS Reset
    http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -24437,7 +24463,7 @@ body {
     line-height: 1.33333;
     text-shadow: 0.5px 0.5px 1px #121212; }
     .species-tree__name_latin {
-      font-family: 'Georgia', 'Times New Roman', serif;
+      font-family: 'NocturneSerif-LightItalic', 'Times New Roman', serif;
       color: #aaa;
       font-style: italic;
       font-size: 15px;

@@ -1,3 +1,4 @@
+@import "webfonts";
 @import "_reset";
 @import "variables";
 @import "../../node_modules/flexboxgrid-sass/flexboxgrid";
@@ -471,7 +472,7 @@ body {
   text-shadow: 0.5px 0.5px 1px $color-dark;
 
     &_latin {
-      font-family: 'Georgia', 'Times New Roman', serif;
+      font-family: 'NocturneSerif-LightItalic', 'Times New Roman', serif;
       color: $color-secondary;
       font-style: italic;
       font-size: $fontsize-m;
