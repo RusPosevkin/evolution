@@ -447,6 +447,11 @@ body {
       font-size: 28px;
       line-height: 12px;
     }
+
+    &_reversed {
+      bottom: 0;
+      top: -6px;
+    }
   }
 
   &__line {
@@ -477,6 +482,10 @@ body {
       font-style: italic;
       font-size: $fontsize-m;
       margin-bottom: 10px;
+    }
+
+    &_reversed {
+      margin-top: 11px;
     }
   }
 

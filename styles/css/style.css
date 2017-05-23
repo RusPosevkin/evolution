@@ -24447,6 +24447,9 @@ body {
       content: "×";
       font-size: 28px;
       line-height: 12px; }
+    .species-tree__cross_reversed {
+      bottom: 0;
+      top: -6px; }
   .species-tree__line {
     width: 100%;
     height: 1px;
@@ -24468,3 +24471,5 @@ body {
       font-style: italic;
       font-size: 15px;
       margin-bottom: 10px; }
+    .species-tree__name_reversed {
+      margin-top: 11px; }
