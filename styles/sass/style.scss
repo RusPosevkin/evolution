@@ -222,10 +222,10 @@ body {
   }
 }
 
-.chadensis {
+.sahelanthropus {
   position: absolute;
   bottom: 67px;
-  left: 1132px;
+  left: 1032px;
   z-index: 1;
 }
 
@@ -267,6 +267,8 @@ body {
 .minimap {
   height: 40px;
   background-color: #444;
+//TODO: hide side shodow between the intro & main parts
+  box-shadow: inset 0 1px 2px 0 rgba(0,0,0,.4);
   display: flex;
   flex-direction: column-reverse;
 
@@ -321,16 +323,16 @@ body {
       width: $minimap-main-australopitecus;
     }
 
+    &_homo {
+      width: $minimap-main-homo;
+    }
+
+    &_erectus {
+      width: $minimap-main-erectus;
+    }
+
     &_heidelbergensis {
       width: $minimap-main-heidelbergensis;
-    }
-
-    &_sapiens {
-      width: $minimap-main-sapiens;
-    }
-
-    &_africa {
-      width: $minimap-main-africa;
     }
 
     &_today {
@@ -375,16 +377,16 @@ body {
       width: calc(#{$minimap-main-australopitecus} + #{$tick-width});
     }
 
+    &_homo {
+      width: calc(#{$minimap-main-homo} + #{$tick-width});
+    }
+
+    &_erectus {
+      width: calc(#{$minimap-main-erectus} + #{$tick-width});
+    }
+
     &_heidelbergensis {
       width: calc(#{$minimap-main-heidelbergensis} + #{$tick-width});
-    }
-
-    &_sapiens {
-      width: calc(#{$minimap-main-sapiens} + #{$tick-width});
-    }
-
-    &_africa {
-      width: calc(#{$minimap-main-africa} + #{$tick-width});
     }
 
     &_today {
@@ -398,7 +400,7 @@ body {
     position: absolute;
     border: 1px solid $color-minimap-window-border;
     background-color: $color-minimap-window;
-    width: 40px;
+    width: calc(100vw / 7);
     height: 40px;
     box-sizing: border-box;
     margin-left: 3.2%;
