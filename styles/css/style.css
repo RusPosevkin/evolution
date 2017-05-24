@@ -24163,7 +24163,7 @@ body {
 
 /* Text styles */
 .title {
-  margin-top: 50px;
+  margin-top: 30px;
   font-weight: 800;
   line-height: 87px;
   font-size: 102px; }
@@ -24176,7 +24176,7 @@ body {
 .text {
   font-size: 21px;
   line-height: 1.381;
-  margin-top: 75px;
+  margin-top: 50px;
   position: relative;
   z-index: 10; }
   .text_bottom {
@@ -24212,7 +24212,7 @@ body {
   display: inline-block;
   margin-top: 20px; }
   .source_short {
-    max-width: 250px; }
+    max-width: 268px; }
   .source::before {
     content: "";
     display: block;
@@ -24221,7 +24221,7 @@ body {
     width: 18px;
     height: 18px;
     float: left;
-    margin: -2px 6px 0 -24px; }
+    margin: -2px 6px 0 0; }
 
 .comment {
   color: #aaa;
@@ -24230,7 +24230,7 @@ body {
   position: relative;
   z-index: 10; }
   .comment_top {
-    margin-top: 75px; }
+    margin-top: 50px; }
 
 /* Timeline */
 .timeline {
