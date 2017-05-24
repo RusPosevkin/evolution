@@ -24335,6 +24335,7 @@ body {
 .minimap {
   height: 40px;
   background-color: #444;
+  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column-reverse; }
   .minimap_intro {
@@ -24367,11 +24368,11 @@ body {
       width: 10%; }
     .minimap__tick_australopitecus {
       width: 15%; }
-    .minimap__tick_heidelbergensis {
+    .minimap__tick_homo {
       width: 15%; }
-    .minimap__tick_sapiens {
+    .minimap__tick_erectus {
       width: 10%; }
-    .minimap__tick_africa {
+    .minimap__tick_heidelbergensis {
       width: 35%; }
     .minimap__tick_today {
       width: 10%; }
@@ -24397,11 +24398,11 @@ body {
       width: 10%; }
     .minimap__label_australopitecus {
       width: calc(15% + 1px); }
-    .minimap__label_heidelbergensis {
+    .minimap__label_homo {
       width: calc(15% + 1px); }
-    .minimap__label_sapiens {
+    .minimap__label_erectus {
       width: calc(10% + 1px); }
-    .minimap__label_africa {
+    .minimap__label_heidelbergensis {
       width: calc(35% + 1px); }
     .minimap__label_today {
       width: calc(10% + 1px);
