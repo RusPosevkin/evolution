@@ -24430,7 +24430,7 @@ body {
   .species-tree__circle {
     width: 6px;
     height: 6px;
-    background: #8abf9f;
+    background: #ffffff;
     border-radius: 3px;
     z-index: 6;
     position: absolute;
@@ -24455,7 +24455,7 @@ body {
     z-index: 5;
     position: absolute; }
     .species-tree__line_accent {
-      background-color: #8abf9f; }
+      background-color: #ffffff; }
     .species-tree__line_placeholder {
       position: absolute;
       bottom: -1px; }
