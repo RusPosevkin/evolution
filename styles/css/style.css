@@ -24412,7 +24412,7 @@ body {
     position: absolute;
     border: 1px solid #c9869d;
     background-color: #6d5b5b;
-    width: 40px;
+    width: calc(100vw / 7);
     height: 40px;
     box-sizing: border-box;
     margin-left: 3.2%;
