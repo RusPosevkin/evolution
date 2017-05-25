@@ -125,6 +125,10 @@ body {
   &_top {
     margin-top: $text-top-margin;
   }
+
+  &__dot {
+    color: #fff;
+  }
 }
 
 
@@ -417,7 +421,10 @@ body {
   }
 
   &__level {
-    margin-bottom: $column-width;
+    margin-bottom: 0;
+    // We can probably reduce this height on small screens
+    height:  $column-width;
+    overflow-y: visible;
 
     &_zero {
       margin-bottom: 0;

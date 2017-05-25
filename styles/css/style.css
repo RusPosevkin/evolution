@@ -24231,6 +24231,8 @@ body {
   z-index: 10; }
   .comment_top {
     margin-top: 50px; }
+  .comment__dot {
+    color: #fff; }
 
 /* Timeline */
 .timeline {
@@ -24424,7 +24426,9 @@ body {
   .species-tree > .row > div {
     position: relative; }
   .species-tree__level {
-    margin-bottom: 50px; }
+    margin-bottom: 0;
+    height: 50px;
+    overflow-y: visible; }
     .species-tree__level_zero {
       margin-bottom: 0; }
     .species-tree__level_top {
