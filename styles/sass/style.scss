@@ -429,8 +429,8 @@ body {
   }
 
   &__circle {
-    width: 6px;
-    height: 6px;
+    width: 5px;
+    height: 5px;
     background: $color-species-tree-base;
     border-radius: 3px;
     z-index: 6;
@@ -442,7 +442,7 @@ body {
     position: absolute;
     width: 12px;
     height: 12px;
-    color: #dedede;
+    color: $color-species-tree-base;
     right: -6px;
     bottom: -6px;
     z-index: 11;
@@ -450,7 +450,7 @@ body {
     &:after {
       position: absolute;
       content: "×";
-      font-size: 28px;
+      font-size: 18px;
       line-height: 12px;
     }
 

@@ -24430,9 +24430,9 @@ body {
     .species-tree__level_top {
       margin-bottom: 100px; }
   .species-tree__circle {
-    width: 6px;
-    height: 6px;
-    background: #ffffff;
+    width: 5px;
+    height: 5px;
+    background: #ddd;
     border-radius: 3px;
     z-index: 6;
     position: absolute;
@@ -24441,14 +24441,14 @@ body {
     position: absolute;
     width: 12px;
     height: 12px;
-    color: #dedede;
+    color: #ddd;
     right: -6px;
     bottom: -6px;
     z-index: 11; }
     .species-tree__cross:after {
       position: absolute;
       content: "×";
-      font-size: 28px;
+      font-size: 18px;
       line-height: 12px; }
     .species-tree__cross_reversed {
       bottom: 0;
@@ -24460,7 +24460,7 @@ body {
     z-index: 5;
     position: absolute; }
     .species-tree__line_accent {
-      background-color: #ffffff; }
+      background-color: #ddd; }
     .species-tree__line_placeholder {
       position: absolute;
       bottom: -1px; }
