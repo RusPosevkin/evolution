@@ -24452,7 +24452,7 @@ body {
     height: 12px;
     color: #ddd;
     right: -6px;
-    bottom: -6px;
+    bottom: -4px;
     z-index: 11; }
     .species-tree__cross:after {
       position: absolute;
