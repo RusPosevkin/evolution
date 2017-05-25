@@ -145,7 +145,7 @@ body {
   &__label {
     font-size: $fontsize-s;
     color: $color-secondary;
-    padding-top: 6px;
+    padding-top: 3px;
 
     // negative margin for tick and label alignment
     &:first-child {
