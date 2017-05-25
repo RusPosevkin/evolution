@@ -24231,6 +24231,11 @@ body {
   z-index: 10; }
   .comment_top {
     margin-top: 50px; }
+  .comment_sub {
+    margin-top: 12px; }
+  .comment_middle {
+    padding-left: 40px;
+    padding-right: 10px; }
   .comment__dot {
     color: #fff; }
 

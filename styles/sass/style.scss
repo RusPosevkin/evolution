@@ -126,6 +126,15 @@ body {
     margin-top: $text-top-margin;
   }
 
+  &_sub {
+    margin-top: $column-width / 5 + 2px;
+  }
+
+  &_middle {
+    padding-left: $column-width * 0.8;
+    padding-right: $column-width * 0.2;
+  }
+
   &__dot {
     color: #fff;
   }
