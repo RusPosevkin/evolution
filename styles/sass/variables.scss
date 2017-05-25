@@ -8,6 +8,8 @@ $grid-columns: $full-width / $column-width;
 $gutter-width: 0;
 $outer-margin: 0;
 
+$text-top-margin: 50px;
+
 $color-accent: #eca3a1;
 $color-base: #fff;
 $color-secondary: #aaa;
@@ -18,7 +20,7 @@ $color-dark: #121212;
 $color-minimap: #ddd;
 $color-minimap-window: #6d5b5b;
 $color-minimap-window-border: #c9869d;
-$color-species-tree-base: #ffffff;
+$color-species-tree-base: #ddd;
 $color-species-tree-secondary: #444;
 
 $fontsize-h1: 102px;

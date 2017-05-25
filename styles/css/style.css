@@ -24163,7 +24163,7 @@ body {
 
 /* Text styles */
 .title {
-  margin-top: 50px;
+  margin-top: 30px;
   font-weight: 800;
   line-height: 87px;
   font-size: 102px; }
@@ -24176,7 +24176,7 @@ body {
 .text {
   font-size: 21px;
   line-height: 1.381;
-  margin-top: 75px;
+  margin-top: 50px;
   position: relative;
   z-index: 10; }
   .text_bottom {
@@ -24212,7 +24212,7 @@ body {
   display: inline-block;
   margin-top: 20px; }
   .source_short {
-    max-width: 250px; }
+    max-width: 268px; }
   .source::before {
     content: "";
     display: block;
@@ -24221,7 +24221,7 @@ body {
     width: 18px;
     height: 18px;
     float: left;
-    margin: -2px 6px 0 -24px; }
+    margin: -2px 6px 0 0; }
 
 .comment {
   color: #aaa;
@@ -24230,7 +24230,14 @@ body {
   position: relative;
   z-index: 10; }
   .comment_top {
-    margin-top: 75px; }
+    margin-top: 50px; }
+  .comment_sub {
+    margin-top: 12px; }
+  .comment_middle {
+    padding-left: 40px;
+    padding-right: 10px; }
+  .comment__dot {
+    color: #fff; }
 
 /* Timeline */
 .timeline {
@@ -24243,7 +24250,7 @@ body {
   .timeline__label {
     font-size: 12px;
     color: #aaa;
-    padding-top: 6px; }
+    padding-top: 3px; }
     .timeline__label:first-child {
       margin-left: 98px; }
     .timeline__label_fractional {
@@ -24424,15 +24431,17 @@ body {
   .species-tree > .row > div {
     position: relative; }
   .species-tree__level {
-    margin-bottom: 50px; }
+    margin-bottom: 0;
+    height: 50px;
+    overflow-y: visible; }
     .species-tree__level_zero {
       margin-bottom: 0; }
     .species-tree__level_top {
       margin-bottom: 100px; }
   .species-tree__circle {
-    width: 6px;
-    height: 6px;
-    background: #ffffff;
+    width: 5px;
+    height: 5px;
+    background: #ddd;
     border-radius: 3px;
     z-index: 6;
     position: absolute;
@@ -24441,14 +24450,14 @@ body {
     position: absolute;
     width: 12px;
     height: 12px;
-    color: #dedede;
+    color: #ddd;
     right: -6px;
-    bottom: -6px;
+    bottom: -4px;
     z-index: 11; }
     .species-tree__cross:after {
       position: absolute;
       content: "×";
-      font-size: 28px;
+      font-size: 18px;
       line-height: 12px; }
     .species-tree__cross_reversed {
       bottom: 0;
@@ -24460,7 +24469,7 @@ body {
     z-index: 5;
     position: absolute; }
     .species-tree__line_accent {
-      background-color: #ffffff; }
+      background-color: #ddd; }
     .species-tree__line_placeholder {
       position: absolute;
       bottom: -1px; }

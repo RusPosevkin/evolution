@@ -32,7 +32,7 @@ body {
 /* Text styles */
 
 .title {
-  margin-top: 50px;
+  margin-top: $text-top-margin - 20px;
   font-weight: 800;
   line-height: 87px;
   font-size: $fontsize-h1;
@@ -47,7 +47,7 @@ body {
 .text {
   font-size: $fontsize-l;
   line-height: 1.381;
-  margin-top: 75px;
+  margin-top: $text-top-margin;
   position: relative;
   z-index: 10;
 
@@ -99,7 +99,7 @@ body {
   margin-top: 20px;
 
   &_short {
-    max-width: 5 * $column-width;
+    max-width: 5 * $column-width + 18px;
   }
 
   &::before {
@@ -110,8 +110,7 @@ body {
     width: 18px;
     height: 18px;
     float: left;
-    // margin-left = width(18px) + margin-right(6px)
-    margin: -2px 6px 0 -24px;
+    margin: -2px 6px 0 0;
   }
 }
 
@@ -123,7 +122,20 @@ body {
   z-index: 10;
 
   &_top {
-    margin-top: 75px;
+    margin-top: $text-top-margin;
+  }
+
+  &_sub {
+    margin-top: $column-width / 5 + 2px;
+  }
+
+  &_middle {
+    padding-left: $column-width * 0.8;
+    padding-right: $column-width * 0.2;
+  }
+
+  &__dot {
+    color: #fff;
   }
 }
 
@@ -145,7 +157,7 @@ body {
   &__label {
     font-size: $fontsize-s;
     color: $color-secondary;
-    padding-top: 6px;
+    padding-top: 3px;
 
     // negative margin for tick and label alignment
     &:first-child {
@@ -417,7 +429,10 @@ body {
   }
 
   &__level {
-    margin-bottom: $column-width;
+    margin-bottom: 0;
+    // We can probably reduce this height on small screens
+    height:  $column-width;
+    overflow-y: visible;
 
     &_zero {
       margin-bottom: 0;
@@ -429,8 +444,8 @@ body {
   }
 
   &__circle {
-    width: 6px;
-    height: 6px;
+    width: 5px;
+    height: 5px;
     background: $color-species-tree-base;
     border-radius: 3px;
     z-index: 6;
@@ -442,15 +457,15 @@ body {
     position: absolute;
     width: 12px;
     height: 12px;
-    color: #dedede;
+    color: $color-species-tree-base;
     right: -6px;
-    bottom: -6px;
+    bottom: -4px;
     z-index: 11;
 
     &:after {
       position: absolute;
       content: "×";
-      font-size: 28px;
+      font-size: 18px;
       line-height: 12px;
     }
 
