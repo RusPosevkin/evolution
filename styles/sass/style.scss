@@ -130,8 +130,8 @@ body {
   }
 
   &_middle {
-    padding-left: $column-width * 0.8;
-    padding-right: $column-width * 0.2;
+    padding-left: $column-width / 2;
+    padding-right: $column-width / 2;
   }
 
   &__dot {
@@ -428,6 +428,20 @@ body {
     position: relative;
   }
 
+  &__new-branch {
+
+    &::before {
+      content: " ";
+      position: absolute;
+      left: -$column-width * 4;
+      bottom: -$column-width * 2 + 1px;
+      width: $column-width * 4;
+      height: $column-width * 2 + 1px;
+      background: url('../../img/species-tree__new-branch.svg') no-repeat;
+      background-size: $column-width * 4 $column-width * 2;
+    }
+  }
+
   &__level {
     margin-bottom: 0;
     // We can probably reduce this height on small screens
@@ -488,7 +502,7 @@ body {
 
     &_placeholder {
       position: absolute;
-      bottom: -1px;
+      bottom: 1px;
     }
   }
 
