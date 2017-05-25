@@ -24442,33 +24442,14 @@ body {
     background-origin: border-box;
     background: url("../../img/species-tree__branch.svg") no-repeat; }
   .species-tree__branch_down::before {
-    content: " ";
-    position: absolute;
-    left: -200px;
     bottom: 0;
-    width: 200px;
-    height: 101px;
-    background-origin: border-box;
     background: url("../../img/species-tree__branch_down.svg") no-repeat; }
   .species-tree__branch_reversed::before {
-    content: " ";
-    position: absolute;
-    left: -200px;
-    bottom: -51px;
-    width: 200px;
-    height: 101px;
-    background-origin: border-box;
-    background: url("../../img/species-tree__branch.svg") no-repeat; }
+    bottom: -201px; }
   .species-tree__branch_double::before {
-    content: " ";
-    position: absolute;
-    left: -200px;
     bottom: -199px;
-    width: 200px;
-    height: 101px;
-    background-origin: border-box;
-    background: url("../../img/species-tree__branch_double.svg") no-repeat;
-    height: 201px; }
+    height: 201px;
+    background: url("../../img/species-tree__branch_double.svg") no-repeat; }
   .species-tree__level {
     margin-bottom: 0;
     height: 50px;

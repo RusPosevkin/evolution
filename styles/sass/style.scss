@@ -431,33 +431,30 @@ body {
   }
 
   &__branch {
-
-  @mixin branch-style($direction, $position-y) {
-    content: " ";
-    position: absolute;
-    left: -$column-width * 4;
-    bottom: $position-y;
-    width: $column-width * 4;
-    height: $column-width * 2 + 1px;
-    background-origin: border-box;
-    background: url($direction) no-repeat;
-  }
-
     &::before {
-      @include branch-style('../../img/species-tree__branch.svg', -$column-width * 2 + 1px);
+      content: " ";
+      position: absolute;
+      left: -$column-width * 4;
+      bottom: -$column-width * 2 + 1px;
+      width: $column-width * 4;
+      height: $column-width * 2 + 1px;
+      background-origin: border-box;
+      background: url('../../img/species-tree__branch.svg') no-repeat;
     }
 
     &_down::before {
-      @include branch-style('../../img/species-tree__branch_down.svg', 0);
+      bottom: 0;
+      background: url('../../img/species-tree__branch_down.svg') no-repeat;
     }
 
     &_reversed::before {
-      @include branch-style('../../img/species-tree__branch.svg', -$column-width - 1px);
+      bottom: -$column-width * 4 - 1px;
     }
 
     &_double::before {
-      @include branch-style('../../img/species-tree__branch_double.svg', -$column-width * 4 + 1px);
+      bottom: -$column-width * 4 + 1px;
       height: $column-width * 4 + 1px;
+      background: url('../../img/species-tree__branch_double.svg') no-repeat;
     }
   }
 
