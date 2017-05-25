@@ -24430,15 +24430,43 @@ body {
   margin-bottom: 28px; }
   .species-tree > .row > div {
     position: relative; }
-  .species-tree__new-branch::before {
+  .species-tree__branch::before {
     content: " ";
     position: absolute;
     left: -200px;
     bottom: -99px;
     width: 200px;
     height: 101px;
-    background: url("../../img/species-tree__new-branch.svg") no-repeat;
-    background-size: 200px 100px; }
+    background-origin: border-box;
+    background: url("../../img/species-tree__branch.svg") no-repeat; }
+  .species-tree__branch_down::before {
+    content: " ";
+    position: absolute;
+    left: -200px;
+    bottom: 0;
+    width: 200px;
+    height: 101px;
+    background-origin: border-box;
+    background: url("../../img/species-tree__branch_down.svg") no-repeat; }
+  .species-tree__branch_reversed::before {
+    content: " ";
+    position: absolute;
+    left: -200px;
+    bottom: -51px;
+    width: 200px;
+    height: 101px;
+    background-origin: border-box;
+    background: url("../../img/species-tree__branch.svg") no-repeat; }
+  .species-tree__branch_double::before {
+    content: " ";
+    position: absolute;
+    left: -200px;
+    bottom: -199px;
+    width: 200px;
+    height: 101px;
+    background-origin: border-box;
+    background: url("../../img/species-tree__branch_double.svg") no-repeat;
+    height: 201px; }
   .species-tree__level {
     margin-bottom: 0;
     height: 50px;
