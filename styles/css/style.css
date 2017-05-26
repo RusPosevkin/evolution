@@ -24427,6 +24427,20 @@ body {
     margin-left: 3.2%;
     z-index: 1; }
 
+.homo-georgicus {
+  display: flex;
+  position: absolute;
+  width: 500px;
+  height: 150px;
+  top: 0;
+  left: 250px; }
+  .homo-georgicus__text {
+    width: 350px; }
+    .homo-georgicus__text p + p {
+      margin-top: 41px; }
+  .homo-georgicus__skull {
+    width: 150px; }
+
 .species-tree {
   width: 9100px;
   margin-bottom: 28px; }
