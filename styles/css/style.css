@@ -24334,10 +24334,11 @@ body {
 
 .hand-chopper {
   position: absolute;
-  top: 0;
-  left: 5266px;
-  max-height: calc(100vh - 30px);
-  margin-bottom: 30px; }
+  top: 0; }
+
+.homo-heidelbergensis {
+  position: absolute;
+  top: 45px; }
 
 .minimap {
   height: 40px;
