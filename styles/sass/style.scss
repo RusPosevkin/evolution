@@ -49,10 +49,10 @@ body {
   line-height: 1.381;
   margin-top: $text-top-margin;
   position: relative;
-  z-index: 10;
+  z-index: $index-text;
 
   &_bottom {
-    margin-top: 100px;
+    margin-top: 48px;
   }
 
   p + p {
@@ -129,9 +129,13 @@ body {
     margin-top: $column-width / 5 + 2px;
   }
 
+  &_pop {
+    margin-top: 10px - $column-width;
+  }
+
   &_middle {
-    padding-left: $column-width * 0.8;
-    padding-right: $column-width * 0.2;
+    padding-left: $column-width / 2;
+    padding-right: $column-width / 2;
   }
 
   &__dot {
@@ -181,7 +185,7 @@ body {
   position: absolute;
   top: 27px;
   left: 1339px;
-  z-index: 6;
+  z-index: $index-img-top;
   margin-bottom: 44px;
 
   .container {
@@ -234,16 +238,9 @@ body {
   }
 }
 
-.sahelanthropus {
-  position: absolute;
-  bottom: 67px;
-  left: 1032px;
-  z-index: 1;
-}
-
 .ardi-woman {
   position: absolute;
-  z-index: 2;
+  z-index: $index-img-top;
   top: 0;
   left: 3022px;
   max-height: calc(100vh - 29px);
@@ -252,7 +249,7 @@ body {
 
 .ardi-skeleton {
   position: absolute;
-  z-index: 1;
+  z-index: $index-img-top;
   top: 169px;
   left: 3271px;
   max-height: calc(100vh - 46px - 169px);
@@ -261,6 +258,7 @@ body {
 
 .australopithecus-couple {
   position: absolute;
+  z-index: $index-img-top;
   top: 162px;
   left: 4232px;
   max-height: calc(100vh - 30px - 162px);
@@ -271,18 +269,22 @@ body {
 .hand-chopper {
   position: absolute;
   top: 0;
-  left: 5266px;
-  max-height: calc(100vh - 30px);
-  margin-bottom: 30px;
+}
+
+//TODO: crop and reposition the image
+.homo-heidelbergensis {
+  position: absolute;
+  top: 45px;
 }
 
 .minimap {
   height: 40px;
   background-color: #444;
-//TODO: hide side shodow between the intro & main parts
+//TODO: hide side shadow between the intro & main parts
   box-shadow: inset 0 1px 2px 0 rgba(0,0,0,.4);
   display: flex;
   flex-direction: column-reverse;
+  position: relative;
 
   &_intro {
     width: 16 * $column-width;
@@ -410,6 +412,7 @@ body {
 
   &__window {
     position: absolute;
+    top: 0;
     border: 1px solid $color-minimap-window-border;
     background-color: $color-minimap-window;
     width: calc(100vw / 7);
@@ -420,12 +423,71 @@ body {
   }
 }
 
+.homo-georgicus {
+  display: flex;
+  position: absolute;
+  width: $column-width * 10;
+  height: $column-width * 3;
+  top: 0;
+  left: $column-width * 5;
+
+  &__text {
+    width: $column-width * 7;
+
+    & p + p {
+      margin-top: 31px + $column-width / 5;
+    }
+  }
+
+  &__skull {
+    width: $column-width * 3;
+  }
+}
+
 .species-tree {
   width: $full-width;
   margin-bottom: 28px;
 
   & > .row > div {
     position: relative;
+  }
+
+  &__branch {
+    &::before {
+      content: " ";
+      position: absolute;
+      left: -$column-width * 4;
+      bottom: -$column-width * 2 + 1px;
+      width: $column-width * 4;
+      height: $column-width * 2 + 1px;
+      background-origin: border-box;
+      background: url('../../img/species-tree__branch.svg') no-repeat;
+    }
+
+    &_down::before {
+      bottom: 0;
+      background: url('../../img/species-tree__branch_down.svg') no-repeat;
+    }
+
+    &_reversed::before {
+      bottom: -$column-width * 4 - 1px;
+    }
+
+    &_double::before {
+      bottom: -$column-width * 4 + 1px;
+      height: $column-width * 4 + 1px;
+      background: url('../../img/species-tree__branch_double.svg') no-repeat;
+    }
+
+    &_florensis::before {
+      bottom: 0;
+      background: url('../../img/species-tree__branch_florensis.svg') no-repeat;
+      width: $column-width * 20;
+      left: -$column-width * 20;
+      height: $column-width * 6;
+      background-position: 0 0;
+      z-index: 21;
+      }
   }
 
   &__level {
@@ -479,7 +541,7 @@ body {
     width: 100%;
     height: $species-tree-line-height;
     background-color: $color-species-tree-secondary;
-    z-index: 5;
+    z-index: 22;
     position: absolute;
 
     &_accent {
@@ -488,7 +550,7 @@ body {
 
     &_placeholder {
       position: absolute;
-      bottom: -1px;
+      bottom: 1px;
     }
   }
 
@@ -510,4 +572,46 @@ body {
     }
   }
 
+  // Small images
+  &__sahelanthropus {
+    position: absolute;
+    bottom: 2px;
+    left: 180px;
+    z-index: $index-img-top;
+  }
+
+  &__australopithecus-africanus {
+    position: absolute;
+    bottom: 2px;
+    left: 226px;
+    z-index: $index-img-top;
+  }
+
+  &__paranthropus-boisei {
+    position: absolute;
+    bottom: -35px;
+    left: 140px;
+    z-index: $index-img-top;
+  }
+
+  &__paranthropus-robustus {
+    position: absolute;
+    bottom: -5px;
+    left: 170px;
+    z-index: $index-img-top;
+    }
+
+  &__star {
+    position: absolute;
+    bottom: calc(4px - 50%);
+    right: -70px;
+    z-index: $index-sticker;
+  }
+
+  &__homo-florensis {
+    position: absolute;
+    bottom: 2px;
+    left: -107px;
+    z-index: $index-img-top;
+  }
 }

@@ -42,7 +42,6 @@ $(document).ready(function() {
       if (isMinimapFixed)  {
         $miniMap.removeClass('minimap_fixed');
         isMinimapFixed = false;
-        $minimapWindow.css('left', MINIMAP_MARGIN + 'px');
       }
     } else {
       if (!isMinimapFixed) {

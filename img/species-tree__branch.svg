@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="100px" viewBox="0 0 200 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>species-tree__branch</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="branch" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="species-tree__branch" stroke="#444444">
+            <path d="M0,100.5 L19.994863,100.5 C36.5662426,100.5 59.4979117,91.0020883 71.207428,79.292572 L128.792572,21.707428 C140.505111,9.99488892 163.431958,0.5 180.005137,0.5 L200,0.5" id="new-branch_top"></path>
+        </g>
+    </g>
+</svg>
