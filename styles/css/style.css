@@ -24141,8 +24141,7 @@ table {
 
 body {
   font-family: 'Fira Sans', 'Helvetica', sans-serif;
-  font-weight: 300;
-  overflow-y: hidden; }
+  font-weight: 300; }
 
 .page {
   width: 9100px;
@@ -24228,7 +24227,7 @@ body {
   font-size: 15px;
   line-height: 1.33333;
   position: relative;
-  z-index: 10; }
+  z-index: 40; }
   .comment_top {
     margin-top: 50px; }
   .comment_sub {
@@ -24265,20 +24264,18 @@ body {
 .africa {
   position: absolute;
   top: 27px;
-  left: 1339px;
+  left: 1300px;
   z-index: 30;
   margin-bottom: 44px; }
   .africa .container {
     position: relative;
     width: 100%; }
   .africa__continent {
-    height: calc(100vh - 71px);
-    max-width: 608px;
-    max-height: 647px; }
+    height: calc(100vh - 71px); }
   .africa__chad {
     width: 100%;
     position: absolute;
-    background: url("../../img/africa-tchad.svg") no-repeat;
+    background: url("../../img/africa-chad.svg") no-repeat;
     background-size: contain;
     top: 16%;
     left: 43.5%;
@@ -24296,7 +24293,8 @@ body {
   .africa__label {
     position: absolute;
     color: #fff;
-    font-size: 12px; }
+    font-size: 12px;
+    font-family: 'NocturneSerif-LightItalic', 'Fira Sans', sans-serif; }
     .africa__label_chad {
       top: 28%;
       left: 49%; }
@@ -24304,30 +24302,33 @@ body {
       top: 49%;
       left: 78%; }
 
-.ardi-woman {
+.ardi {
   position: absolute;
-  z-index: 30;
+  left: 3075px;
   top: 0;
-  left: 3022px;
-  max-height: calc(100vh - 29px);
-  margin-bottom: 29px; }
-
-.ardi-skeleton {
-  position: absolute;
-  z-index: 30;
-  top: 169px;
-  left: 3271px;
-  max-height: calc(100vh - 46px - 169px);
-  margin-bottom: 46px; }
+  width: 500px;
+  height: calc(100vh - 60px);
+  overflow: visible; }
+  .ardi__woman {
+    position: absolute;
+    z-index: 30;
+    top: -6%;
+    right: 60%;
+    height: 106%; }
+  .ardi__pithecus {
+    position: absolute;
+    z-index: 30;
+    bottom: 2%;
+    left: 35%;
+    height: 72%; }
 
 .australopithecus-couple {
   position: absolute;
   z-index: 30;
-  top: 162px;
-  left: 4232px;
-  max-height: calc(100vh - 30px - 162px);
-  max-width: 302px;
-  margin-bottom: 30px; }
+  top: 140px;
+  height: calc(100vh - 222px);
+  left: 4175px;
+  margin-bottom: 60px; }
 
 .hand-chopper {
   position: absolute;
@@ -24483,7 +24484,7 @@ body {
     height: 5px;
     background: #ddd;
     border-radius: 3px;
-    z-index: 6;
+    z-index: 11;
     position: absolute;
     margin-top: -2px; }
   .species-tree__cross {
@@ -24506,7 +24507,7 @@ body {
     width: 100%;
     height: 1px;
     background-color: #444;
-    z-index: 22;
+    z-index: 10;
     position: absolute; }
     .species-tree__line_accent {
       background-color: #ddd; }
@@ -24547,8 +24548,8 @@ body {
     z-index: 30; }
   .species-tree__star {
     position: absolute;
-    bottom: calc(4px - 50%);
-    right: -70px;
+    bottom: -172px;
+    left: -72px;
     z-index: 100; }
   .species-tree__homo-florensis {
     position: absolute;

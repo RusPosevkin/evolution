@@ -6,7 +6,6 @@
 body {
   font-family: 'Fira Sans', 'Helvetica', sans-serif;
   font-weight: 300;
-  overflow-y: hidden;
 }
 
 .page {
@@ -119,7 +118,7 @@ body {
   font-size: $fontsize-m;
   line-height: $lineheight-basic;
   position: relative;
-  z-index: 10;
+  z-index: $index-text;
 
   &_top {
     margin-top: $text-top-margin;
@@ -181,10 +180,14 @@ body {
   }
 }
 
+
+//Full-height images
+//TODO: move left on hd
+
 .africa {
   position: absolute;
   top: 27px;
-  left: 1339px;
+  left: 1300px;
   z-index: $index-img-top;
   margin-bottom: 44px;
 
@@ -195,14 +198,15 @@ body {
 
   &__continent {
     height: calc(100vh - 71px);
-    max-width: 608px;
-    max-height: 647px;
+    //TODO: some responsiveness
+    //max-width: 608px;
+    //max-height: 697px;
   }
 
   &__chad {
     width: 100%;
     position: absolute;
-    background: url('../../img/africa-tchad.svg') no-repeat;
+    background: url('../../img/africa-chad.svg') no-repeat;
     background-size: contain;
     top: 16%;
     left: 43.5%;
@@ -225,6 +229,7 @@ body {
     position: absolute;
     color: $color-base;
     font-size: 12px;
+    font-family: 'NocturneSerif-LightItalic', 'Fira Sans', sans-serif;
 
     &_chad {
       top: 28%;
@@ -238,32 +243,38 @@ body {
   }
 }
 
-.ardi-woman {
+.ardi {
   position: absolute;
-  z-index: $index-img-top;
+  left: $column-width * 61.5;
   top: 0;
-  left: 3022px;
-  max-height: calc(100vh - 29px);
-  margin-bottom: 29px;
-}
+  width: $column-width * 10;
+  height: calc(100vh - 60px);
+  overflow: visible;
 
-.ardi-skeleton {
-  position: absolute;
-  z-index: $index-img-top;
-  top: 169px;
-  left: 3271px;
-  max-height: calc(100vh - 46px - 169px);
-  margin-bottom: 46px;
+  &__woman {
+    position: absolute;
+    z-index: $index-img-top;
+    top: -6%;
+    right: 60%;
+    height:  106%;
+  }
+
+  &__pithecus {
+    position: absolute;
+    z-index: $index-img-top;
+    bottom: 2%;
+    left: 35%;
+    height:  72%;
+  }
 }
 
 .australopithecus-couple {
   position: absolute;
   z-index: $index-img-top;
-  top: 162px;
-  left: 4232px;
-  max-height: calc(100vh - 30px - 162px);
-  max-width: 302px;
-  margin-bottom: 30px;
+  top: 140px;
+  height: calc(100vh - 222px);
+  left: $column-width * 83.5;
+  margin-bottom: 60px;
 }
 
 .hand-chopper {
@@ -510,7 +521,7 @@ body {
     height: 5px;
     background: $color-species-tree-base;
     border-radius: 3px;
-    z-index: 6;
+    z-index: $index-scheme-ends;
     position: absolute;
     margin-top: -2px;
   }
@@ -522,7 +533,7 @@ body {
     color: $color-species-tree-base;
     right: -6px;
     bottom: -4px;
-    z-index: 11;
+    z-index: $index-scheme-ends;
 
     &:after {
       position: absolute;
@@ -541,7 +552,7 @@ body {
     width: 100%;
     height: $species-tree-line-height;
     background-color: $color-species-tree-secondary;
-    z-index: 22;
+    z-index: $index-scheme-line;
     position: absolute;
 
     &_accent {
@@ -603,8 +614,8 @@ body {
 
   &__star {
     position: absolute;
-    bottom: calc(4px - 50%);
-    right: -70px;
+    bottom: -72px - 2 * $column-width;
+    left: -72px;
     z-index: $index-sticker;
   }
 
