@@ -24304,22 +24304,23 @@ body {
       top: 49%;
       left: 78%; }
 
-.ardi-woman {
+/* .ardi-woman {
   position: absolute;
-  z-index: 30;
+  z-index: $index-img-top;
   top: 0;
   left: 3022px;
   max-height: calc(100vh - 29px);
-  margin-bottom: 29px; }
+  margin-bottom: 29px;
+}
 
 .ardi-skeleton {
   position: absolute;
-  z-index: 30;
+  z-index: $index-img-top;
   top: 169px;
   left: 3271px;
   max-height: calc(100vh - 46px - 169px);
-  margin-bottom: 46px; }
-
+  margin-bottom: 46px;
+} */
 .australopithecus-couple {
   position: absolute;
   z-index: 30;
