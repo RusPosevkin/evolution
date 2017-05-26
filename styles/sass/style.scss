@@ -45,8 +45,8 @@ body {
 }
 
 .text {
-  font-size: $fontsize-l;
-  line-height: 1.381;
+  font-size: 2.7vh;
+  line-height: 1.33333333333;
   margin-top: $text-top-margin;
   position: relative;
   z-index: $index-text;
@@ -625,5 +625,23 @@ body {
     bottom: 2px;
     left: -107px;
     z-index: $index-img-top;
+  }
+}
+
+@media screen and (min-height: 680px) {
+  .text {
+    font-size: 19px;
+    line-height: 1.333333;
+  }
+}
+
+@media screen and (min-height: 735px) {
+  .text {
+    font-size: $fontsize-l;
+    line-height: 1.381;
+
+    &_bottom {
+      margin-top: 48px;
+    }
   }
 }
