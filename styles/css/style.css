@@ -24227,7 +24227,7 @@ body {
   font-size: 15px;
   line-height: 1.33333;
   position: relative;
-  z-index: 10; }
+  z-index: 40; }
   .comment_top {
     margin-top: 50px; }
   .comment_sub {
@@ -24484,7 +24484,7 @@ body {
     height: 5px;
     background: #ddd;
     border-radius: 3px;
-    z-index: 6;
+    z-index: 11;
     position: absolute;
     margin-top: -2px; }
   .species-tree__cross {
@@ -24507,7 +24507,7 @@ body {
     width: 100%;
     height: 1px;
     background-color: #444;
-    z-index: 22;
+    z-index: 10;
     position: absolute; }
     .species-tree__line_accent {
       background-color: #ddd; }

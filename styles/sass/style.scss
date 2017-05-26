@@ -118,7 +118,7 @@ body {
   font-size: $fontsize-m;
   line-height: $lineheight-basic;
   position: relative;
-  z-index: 10;
+  z-index: $index-text;
 
   &_top {
     margin-top: $text-top-margin;
@@ -521,7 +521,7 @@ body {
     height: 5px;
     background: $color-species-tree-base;
     border-radius: 3px;
-    z-index: 6;
+    z-index: $index-scheme-ends;
     position: absolute;
     margin-top: -2px;
   }
@@ -533,7 +533,7 @@ body {
     color: $color-species-tree-base;
     right: -6px;
     bottom: -4px;
-    z-index: 11;
+    z-index: $index-scheme-ends;
 
     &:after {
       position: absolute;
@@ -552,7 +552,7 @@ body {
     width: 100%;
     height: $species-tree-line-height;
     background-color: $color-species-tree-secondary;
-    z-index: 22;
+    z-index: $index-scheme-line;
     position: absolute;
 
     &_accent {
