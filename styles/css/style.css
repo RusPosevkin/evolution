@@ -24180,7 +24180,7 @@ body {
   position: relative;
   z-index: 10; }
   .text_bottom {
-    margin-top: 100px; }
+    margin-top: 48px; }
   .text p + p {
     margin-top: 16px; }
 
@@ -24533,4 +24533,9 @@ body {
     position: absolute;
     bottom: -5px;
     left: 170px;
+    z-index: 11; }
+  .species-tree__star {
+    position: absolute;
+    bottom: calc(4px - 50%);
+    right: -70px;
     z-index: 11; }

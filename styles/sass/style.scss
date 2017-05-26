@@ -52,7 +52,7 @@ body {
   z-index: 10;
 
   &_bottom {
-    margin-top: 100px;
+    margin-top: 48px;
   }
 
   p + p {
@@ -584,4 +584,11 @@ body {
     left: 170px;
     z-index: 11;
     }
+
+  &__star {
+    position: absolute;
+    bottom: calc(4px - 50%);
+    right: -70px;
+    z-index: 11;
+  }
 }
