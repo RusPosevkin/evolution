@@ -24520,3 +24520,17 @@ body {
       margin-bottom: 10px; }
     .species-tree__name_reversed {
       margin-top: 11px; }
+  .species-tree__australopithecus-africanus {
+    position: absolute;
+    bottom: 0;
+    left: 226px; }
+  .species-tree__paranthropus-boisei {
+    position: absolute;
+    bottom: -35px;
+    left: 140px;
+    z-index: 11; }
+  .species-tree__paranthropus-robustus {
+    position: absolute;
+    bottom: -5px;
+    left: 170px;
+    z-index: 11; }

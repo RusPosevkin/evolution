@@ -564,4 +564,24 @@ body {
     }
   }
 
+  // Small images
+  &__australopithecus-africanus {
+    position: absolute;
+    bottom: 0;
+    left: 226px;
+  }
+
+  &__paranthropus-boisei {
+    position: absolute;
+    bottom: -35px;
+    left: 140px;
+    z-index: 11;
+  }
+
+  &__paranthropus-robustus {
+    position: absolute;
+    bottom: -5px;
+    left: 170px;
+    z-index: 11;
+    }
 }
