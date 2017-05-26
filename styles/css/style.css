@@ -24141,7 +24141,8 @@ table {
 
 body {
   font-family: 'Fira Sans', 'Helvetica', sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  overflow: hidden; }
 
 .page {
   width: 9100px;
