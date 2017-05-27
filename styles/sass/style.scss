@@ -354,6 +354,10 @@ body {
       width: $minimap-main-sahelantropus;
     }
 
+    &_ardipitecus {
+      width: $minimap-main-ardipitecus;
+    }
+
     &_australopitecus {
       width: $minimap-main-australopitecus;
     }
@@ -368,6 +372,10 @@ body {
 
     &_heidelbergensis {
       width: $minimap-main-heidelbergensis;
+    }
+
+    &_sapiens {
+      width: $minimap-main-sapiens;
     }
 
     &_today {
@@ -408,6 +416,10 @@ body {
       width: $minimap-main-sahelantropus;
     }
 
+    &_ardipitecus {
+      width: calc(#{$minimap-main-ardipitecus} + #{$tick-width});
+    }
+
     &_australopitecus {
       width: calc(#{$minimap-main-australopitecus} + #{$tick-width});
     }
@@ -422,6 +434,10 @@ body {
 
     &_heidelbergensis {
       width: calc(#{$minimap-main-heidelbergensis} + #{$tick-width});
+    }
+
+    &_sapiens {
+      width: calc(#{$minimap-main-sapiens} + #{$tick-width});
     }
 
     &_today {

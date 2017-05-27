@@ -24378,17 +24378,21 @@ body {
       width: 139px; }
     .minimap__tick_sahelantropus {
       margin-left: 12px;
-      width: 10%; }
+      width: 15%; }
+    .minimap__tick_ardipitecus {
+      width: 15%; }
     .minimap__tick_australopitecus {
       width: 15%; }
     .minimap__tick_homo {
-      width: 15%; }
+      width: 10%; }
     .minimap__tick_erectus {
       width: 10%; }
     .minimap__tick_heidelbergensis {
-      width: 35%; }
-    .minimap__tick_today {
+      width: 15%; }
+    .minimap__tick_sapiens {
       width: 10%; }
+    .minimap__tick_today {
+      width: 72px; }
   .minimap__label {
     margin-bottom: 2px;
     font-size: 10px;
@@ -24408,17 +24412,21 @@ body {
       width: 140px; }
     .minimap__label_sahelantropus {
       margin-left: calc(12px - 1px);
-      width: 10%; }
+      width: 15%; }
+    .minimap__label_ardipitecus {
+      width: calc(15% + 1px); }
     .minimap__label_australopitecus {
       width: calc(15% + 1px); }
     .minimap__label_homo {
-      width: calc(15% + 1px); }
+      width: calc(10% + 1px); }
     .minimap__label_erectus {
       width: calc(10% + 1px); }
     .minimap__label_heidelbergensis {
-      width: calc(35% + 1px); }
+      width: calc(15% + 1px); }
+    .minimap__label_sapiens {
+      width: calc(10% + 1px); }
     .minimap__label_today {
-      width: calc(10% + 1px);
+      width: calc(72px + 1px);
       display: flex;
       align-items: flex-end; }
   .minimap__window {
