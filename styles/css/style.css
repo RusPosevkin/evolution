@@ -24380,9 +24380,9 @@ body {
       margin-left: 12px;
       width: 15%; }
     .minimap__tick_ardipitecus {
-      width: 15%; }
+      width: 25%; }
     .minimap__tick_australopitecus {
-      width: 15%; }
+      width: 10%; }
     .minimap__tick_homo {
       width: 10%; }
     .minimap__tick_erectus {
@@ -24391,8 +24391,6 @@ body {
       width: 15%; }
     .minimap__tick_sapiens {
       width: 10%; }
-    .minimap__tick_today {
-      width: 72px; }
   .minimap__label {
     margin-bottom: 2px;
     font-size: 10px;
@@ -24414,9 +24412,9 @@ body {
       margin-left: calc(12px - 1px);
       width: 15%; }
     .minimap__label_ardipitecus {
-      width: calc(15% + 1px); }
+      width: calc(25% + 1px); }
     .minimap__label_australopitecus {
-      width: calc(15% + 1px); }
+      width: calc(10% + 1px); }
     .minimap__label_homo {
       width: calc(10% + 1px); }
     .minimap__label_erectus {
@@ -24425,10 +24423,6 @@ body {
       width: calc(15% + 1px); }
     .minimap__label_sapiens {
       width: calc(10% + 1px); }
-    .minimap__label_today {
-      width: calc(72px + 1px);
-      display: flex;
-      align-items: flex-end; }
   .minimap__window {
     position: absolute;
     top: 0;

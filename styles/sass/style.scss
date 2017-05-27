@@ -377,10 +377,6 @@ body {
     &_sapiens {
       width: $minimap-main-sapiens;
     }
-
-    &_today {
-      width: $minimap-main-today;
-    }
   }
 
   &__label {
@@ -438,12 +434,6 @@ body {
 
     &_sapiens {
       width: calc(#{$minimap-main-sapiens} + #{$tick-width});
-    }
-
-    &_today {
-      width: calc(#{$minimap-main-today} + #{$tick-width});
-      display: flex;
-      align-items: flex-end;
     }
   }
 
@@ -667,7 +657,7 @@ body {
     font-weight: 600;
     margin-bottom: 30px;
   }
-  
+
 }
 
 @media screen and (min-height: 680px) {
