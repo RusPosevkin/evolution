@@ -1,11 +1,16 @@
 $(document).ready(function() {
-  // calculate and set height of viewport
   var $window = $(window);
-  var $minimapWindow = $('.minimap__window');
   var $page = $('.page');
+  var $miniMap = $('.minimap_main');
+  var $minimapWindow = $('.minimap__window');
+  var offsetX = window.pageXOffset;
+  var viewportHeight;
+  var viewportWidth;
 
-  var setViewportHeight = function () {
-    var viewportHeight = $window.height();
+  // Calculate and set viewport dimensions
+  function setViewportHeight() {
+    viewportHeight = $window.height();
+    viewportWidth = $window.width();
 
     $page.css({
       height: viewportHeight
@@ -14,31 +19,24 @@ $(document).ready(function() {
 
   setViewportHeight();
 
-  // fading animation during initial render
-  // to hiding change of viewport's height
+  // Render is animated via CSS transition
+  // to hide viewport height change
   $page.css({
-    opacity: 0.0,
-    visibility: 'visible'
-  }).animate({
-    opacity: 1.0
+    opacity: 1.0,
   });
 
-  // recalculate and set height of viewport
+  // Recalculate and set viewport height
   // after each window resize
   $window.resize(setViewportHeight);
 
-  // toggle miniMap fixed (sticky)
-  // after 800px (16 columns) horizontal offset scrolling
-  var $miniMap = $('.minimap_main');
+  // Toggle miniMap fixed (sticky)
+  // after intro offset
   var isMinimapFixed = false;
+  var MAX_X_OFFSET = parseInt($page.css('width'));
+  var MINIMAP_MARGIN = parseInt($('.minimap_intro').css('width'));
 
-  var MAX_X_OFFSET = 8083;
-  var MINIMAP_MARGIN = 800;
-
-  var toggleMinimapFixed = function (pageXOffset) {
-    var offset = pageXOffset || window.pageXOffset;
-
-    if (window.pageXOffset <= MINIMAP_MARGIN) {
+  function toggleMinimapFixed() {
+    if (offsetX <= MINIMAP_MARGIN) {
       if (isMinimapFixed)  {
         $miniMap.removeClass('minimap_fixed');
         isMinimapFixed = false;
@@ -51,27 +49,28 @@ $(document).ready(function() {
     }
   };
 
-  var setMinimapWindowPosition = function (pageXOffset) {
-    var offset = pageXOffset || window.pageXOffset;
+  // Set window size and position
+  function controlMinimapWindow(offset) {
+    var position = (offset - MINIMAP_MARGIN) / (MAX_X_OFFSET - MINIMAP_MARGIN) * 100;
+    var width = viewportWidth / (MAX_X_OFFSET - MINIMAP_MARGIN) * 100;
 
     if (offset <= MINIMAP_MARGIN) {
-      return;
-    }
-
-    var position = (offset - MINIMAP_MARGIN) / MAX_X_OFFSET * 100;
+      position = 0;
+    };
     $minimapWindow.css('left', position + '%');
+    $minimapWindow.css('width', width + '%');
   };
 
-  // initial calculation
+  // Calculate initial size and position
   // it needs if we scroll and reload the page
+
   toggleMinimapFixed();
-  setMinimapWindowPosition();
+  controlMinimapWindow(offsetX);
 
-  // recalculate during scrolling
-  $window.scroll(function () {
-    var pageXOffset = window.pageXOffset;
-
-    toggleMinimapFixed(pageXOffset);
-    setMinimapWindowPosition(pageXOffset);
+  // Recalculate during scrolling
+  $window.scroll(function() {
+    offsetX = window.pageXOffset;
+    toggleMinimapFixed();
+    controlMinimapWindow(offsetX);
   });
 });

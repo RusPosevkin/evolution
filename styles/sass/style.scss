@@ -7,16 +7,18 @@ body {
   font-family: 'Fira Sans', 'Helvetica', sans-serif;
   font-weight: 300;
   overflow: hidden;
+  background-color: #121212;
 }
 
 .page {
   width: $full-width;
   background-color: $color-dark;
-  visibility: hidden;
   color: $color-base;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  opacity: 0;
+  transition: opacity .5s ease-in;
 }
 
 .half-top {
@@ -300,13 +302,13 @@ body {
   height: 40px;
   background-color: #444;
 //TODO: hide side shadow between the intro & main parts
-  box-shadow: inset 0 1px 2px 0 rgba(0,0,0,.4);
+  box-shadow: inset 0 1.5px 0px 0 rgba(0,0,0,.3);
   display: flex;
   flex-direction: column-reverse;
   position: relative;
 
   &_intro {
-    width: 16 * $column-width;
+    width: 17 * $column-width - 12px;
     display: flex;
   }
 
@@ -434,10 +436,8 @@ body {
     top: 0;
     border: 1px solid $color-minimap-window-border;
     background-color: $color-minimap-window;
-    width: calc(100vw / 7);
     height: 40px;
     box-sizing: border-box;
-    margin-left: 3.2%;
     z-index: 1;
   }
 }

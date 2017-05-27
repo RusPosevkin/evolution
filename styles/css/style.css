@@ -24142,16 +24142,18 @@ table {
 body {
   font-family: 'Fira Sans', 'Helvetica', sans-serif;
   font-weight: 300;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #121212; }
 
 .page {
   width: 9100px;
   background-color: #121212;
-  visibility: hidden;
   color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  opacity: 0;
+  transition: opacity .5s ease-in; }
 
 .half-top {
   width: 100%; }
@@ -24345,12 +24347,12 @@ body {
 .minimap {
   height: 40px;
   background-color: #444;
-  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 1.5px 0px 0 rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column-reverse;
   position: relative; }
   .minimap_intro {
-    width: 800px;
+    width: 838px;
     display: flex; }
   .minimap_main {
     width: 100vw; }
@@ -24375,7 +24377,7 @@ body {
     .minimap__tick_anthropoid {
       width: 139px; }
     .minimap__tick_sahelantropus {
-      margin-left: 4%;
+      margin-left: 12px;
       width: 10%; }
     .minimap__tick_australopitecus {
       width: 15%; }
@@ -24405,7 +24407,7 @@ body {
     .minimap__label_anthropoid {
       width: 140px; }
     .minimap__label_sahelantropus {
-      margin-left: calc(4% - 1px);
+      margin-left: calc(12px - 1px);
       width: 10%; }
     .minimap__label_australopitecus {
       width: calc(15% + 1px); }
@@ -24424,10 +24426,8 @@ body {
     top: 0;
     border: 1px solid #c9869d;
     background-color: #6d5b5b;
-    width: calc(100vw / 7);
     height: 40px;
     box-sizing: border-box;
-    margin-left: 3.2%;
     z-index: 1; }
 
 .homo-georgicus {
