@@ -694,13 +694,13 @@ body {
   box-sizing: border-box;
   margin-top: $outro-margin-top;
   margin-bottom: $outro-margin-bottom;
-  border-left: 1px solid $color-base;
+  border-left: 1px solid rgba($color-base, 0.1);
   padding-left: 74px;
   padding-top: 12px;
   height: calc(100% - #{$minimap-height} - #{$outro-margin-top} - #{$outro-margin-bottom});
 
   &__heading {
-    font-size: $fontsize-h3;
+    font-size: $fontsize-l;
     font-weight: 600;
     margin-bottom: 30px;
   }
