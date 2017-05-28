@@ -24502,6 +24502,11 @@ body {
     height: 300px;
     background-position: 0 0;
     z-index: 21; }
+  .species-tree__map {
+    position: absolute;
+    left: -60px; }
+    .species-tree__map_sapiens {
+      left: -50px; }
   .species-tree__level {
     margin-bottom: 0;
     height: 50px;

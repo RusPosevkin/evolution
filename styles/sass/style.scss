@@ -539,6 +539,15 @@ body {
       }
   }
 
+  &__map {
+    position: absolute;
+    left: -60px;
+
+    &_sapiens {
+      left: -50px;
+    }
+  }
+
   &__level {
     margin-bottom: 0;
     // We can probably reduce this height on small screens
