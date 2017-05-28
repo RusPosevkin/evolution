@@ -24464,18 +24464,14 @@ body {
     z-index: 1; }
 
 .homo-georgicus {
-  display: flex;
   position: absolute;
   width: 500px;
-  height: 150px;
-  top: 0;
-  left: 250px; }
-  .homo-georgicus__text {
-    width: 350px; }
-    .homo-georgicus__text p + p {
-      margin-top: 41px; }
+  height: 110px;
+  top: -30px;
+  left: 250px;
+  z-index: 30; }
   .homo-georgicus__skull {
-    width: 150px; }
+    height: 100%; }
 
 .species-tree {
   width: 9100px;

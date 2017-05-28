@@ -485,23 +485,15 @@ body {
 }
 
 .homo-georgicus {
-  display: flex;
   position: absolute;
   width: $column-width * 10;
-  height: $column-width * 3;
-  top: 0;
+  height: 110px;
+  top: -30px;
   left: $column-width * 5;
-
-  &__text {
-    width: $column-width * 7;
-
-    & p + p {
-      margin-top: 31px + $column-width / 5;
-    }
-  }
+  z-index: $index-img-top;
 
   &__skull {
-    width: $column-width * 3;
+    height: 100%;
   }
 }
 
