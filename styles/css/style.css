@@ -24142,7 +24142,7 @@ table {
 body {
   font-family: 'Fira Sans', 'Helvetica', sans-serif;
   font-weight: 300;
-  overflow-y: hidden;
+  overflow: hidden;
   background-color: #121212; }
 
 .page {
