@@ -6,7 +6,7 @@
 body {
   font-family: 'Fira Sans', 'Helvetica', sans-serif;
   font-weight: 300;
-  overflow: hidden;
+  overflow-y: hidden;
   background-color: #121212;
 }
 
@@ -136,10 +136,6 @@ body {
 
   &_sub {
     margin-top: 12px;
-  }
-
-  &_pop {
-    margin-top: 10px - $column-width;
   }
 
   &_side {

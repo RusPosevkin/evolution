@@ -24142,7 +24142,7 @@ table {
 body {
   font-family: 'Fira Sans', 'Helvetica', sans-serif;
   font-weight: 300;
-  overflow: hidden;
+  overflow-y: hidden;
   background-color: #121212; }
 
 .page {
@@ -24238,8 +24238,6 @@ body {
     margin-top: 50px; }
   .comment_sub {
     margin-top: 12px; }
-  .comment_pop {
-    margin-top: -40px; }
   .comment_side {
     padding-left: 18px; }
   .comment_row {
