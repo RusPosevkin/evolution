@@ -24142,7 +24142,7 @@ table {
 body {
   font-family: 'Fira Sans', 'Helvetica', sans-serif;
   font-weight: 300;
-  overflow: hidden;
+  overflow-y: hidden;
   background-color: #121212; }
 
 .page {
@@ -24238,13 +24238,13 @@ body {
     margin-top: 50px; }
   .comment_sub {
     margin-top: 12px; }
-  .comment_pop {
-    margin-top: -40px; }
-  .comment_middle {
-    padding-left: 25px;
-    padding-right: 25px; }
-  .comment__dot {
-    color: #fff; }
+  .comment_side {
+    padding-left: 18px; }
+  .comment_row {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 12px 12px 0 0; }
 
 /* Timeline */
 .timeline {
@@ -24464,18 +24464,14 @@ body {
     z-index: 1; }
 
 .homo-georgicus {
-  display: flex;
   position: absolute;
   width: 500px;
-  height: 150px;
-  top: 0;
-  left: 250px; }
-  .homo-georgicus__text {
-    width: 350px; }
-    .homo-georgicus__text p + p {
-      margin-top: 41px; }
+  height: 110px;
+  top: -30px;
+  left: 250px;
+  z-index: 30; }
   .homo-georgicus__skull {
-    width: 150px; }
+    height: 100%; }
 
 .species-tree {
   width: 9100px;
@@ -24508,6 +24504,11 @@ body {
     height: 300px;
     background-position: 0 0;
     z-index: 21; }
+  .species-tree__map {
+    position: absolute;
+    left: -60px; }
+    .species-tree__map_sapiens {
+      left: -50px; }
   .species-tree__level {
     margin-bottom: 0;
     height: 50px;
