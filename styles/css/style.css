@@ -24270,43 +24270,39 @@ body {
 .africa {
   position: absolute;
   top: 27px;
-  left: 1300px;
+  left: 1325px;
   z-index: 30;
   margin-bottom: 44px; }
   .africa .container {
     position: relative;
-    width: 100%; }
+    width: 100%;
+    height: 100%; }
   .africa__continent {
-    height: calc(100vh - 71px); }
+    height: calc(100vh - 118px); }
   .africa__chad {
-    width: 100%;
     position: absolute;
-    background: url("../../img/africa-chad.svg") no-repeat;
-    background-size: contain;
-    top: 16%;
+    width: 15.2%;
+    height: 22.7%;
+    top: 16.7%;
     left: 43.5%;
-    height: 30%;
-    max-width: 92px;
-    max-height: 159px; }
+    background: url("../../img/africa-chad.svg") no-repeat;
+    background-size: 100% 100%; }
   .africa__kenya {
-    width: 100%;
     position: absolute;
+    width: 11.3%;
+    height: 13.3%;
+    top: 44.3%;
+    right: 12.5%;
     background: url("../../img/africa-kenya.svg") no-repeat;
-    background-size: contain;
-    top: 42%;
-    left: 75%;
-    height: 16%; }
+    background-size: contain; }
   .africa__label {
     position: absolute;
+    width: 100%;
+    top: 40%;
     color: #fff;
     font-size: 12px;
-    font-family: 'NocturneSerif-LightItalic', 'Fira Sans', sans-serif; }
-    .africa__label_chad {
-      top: 28%;
-      left: 49%; }
-    .africa__label_kenya {
-      top: 49%;
-      left: 78%; }
+    font-family: 'NocturneSerif-LightItalic', 'Fira Sans', sans-serif;
+    text-align: center; }
 
 .ardi {
   position: absolute;
@@ -24319,13 +24315,13 @@ body {
     position: absolute;
     z-index: 30;
     top: -6%;
-    right: 60%;
+    right: 65%;
     height: 106%; }
   .ardi__pithecus {
     position: absolute;
     z-index: 30;
     bottom: 2%;
-    left: 35%;
+    left: 30%;
     height: 72%; }
 
 .australopithecus-couple {
@@ -24333,7 +24329,7 @@ body {
   z-index: 30;
   top: 140px;
   height: calc(100vh - 222px);
-  left: 4175px;
+  left: 4125px;
   margin-bottom: 60px; }
 
 .hand-chopper {
