@@ -6,7 +6,7 @@
 body {
   font-family: 'Fira Sans', 'Helvetica', sans-serif;
   font-weight: 300;
-  overflow: hidden;
+  overflow-y: hidden;
   background-color: #121212;
 }
 
@@ -135,20 +135,18 @@ body {
   }
 
   &_sub {
-    margin-top: $column-width / 5 + 2px;
+    margin-top: 12px;
   }
 
-  &_pop {
-    margin-top: 10px - $column-width;
+  &_side {
+    padding-left: 18px;
   }
 
-  &_middle {
-    padding-left: $column-width / 2;
-    padding-right: $column-width / 2;
-  }
-
-  &__dot {
-    color: #fff;
+  &_row {
+    width: 45%;
+    display: inline-block;
+    vertical-align:top;
+    margin: 12px 12px 0 0;
   }
 }
 
@@ -483,23 +481,15 @@ body {
 }
 
 .homo-georgicus {
-  display: flex;
   position: absolute;
   width: $column-width * 10;
-  height: $column-width * 3;
-  top: 0;
+  height: 110px;
+  top: -30px;
   left: $column-width * 5;
-
-  &__text {
-    width: $column-width * 7;
-
-    & p + p {
-      margin-top: 31px + $column-width / 5;
-    }
-  }
+  z-index: $index-img-top;
 
   &__skull {
-    width: $column-width * 3;
+    height: 100%;
   }
 }
 
@@ -547,6 +537,15 @@ body {
       background-position: 0 0;
       z-index: 21;
       }
+  }
+
+  &__map {
+    position: absolute;
+    left: -60px;
+
+    &_sapiens {
+      left: -50px;
+    }
   }
 
   &__level {
