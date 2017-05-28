@@ -142,13 +142,15 @@ body {
     margin-top: 10px - $column-width;
   }
 
-  &_middle {
-    padding-left: $column-width / 2;
-    padding-right: $column-width / 2;
+  &_side {
+    padding-left: 18px;
   }
 
-  &__dot {
-    color: #fff;
+  &_row {
+    width: 45%;
+    display: inline-block;
+    vertical-align:top;
+    margin: 12px 12px 0 0;
   }
 }
 

@@ -24240,11 +24240,13 @@ body {
     margin-top: 12px; }
   .comment_pop {
     margin-top: -40px; }
-  .comment_middle {
-    padding-left: 25px;
-    padding-right: 25px; }
-  .comment__dot {
-    color: #fff; }
+  .comment_side {
+    padding-left: 18px; }
+  .comment_row {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 12px 12px 0 0; }
 
 /* Timeline */
 .timeline {
