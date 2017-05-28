@@ -682,14 +682,19 @@ body {
   margin-top: $outro-margin-top;
   margin-bottom: $outro-margin-bottom;
   border-left: 1px solid rgba($color-base, 0.1);
-  padding-left: 74px;
-  padding-top: 12px;
+  padding-left: $column-width;
+  padding-top: 25px;
   height: calc(100% - #{$minimap-height} - #{$outro-margin-top} - #{$outro-margin-bottom});
+  width: $column-width * 5;
 
   &__heading {
     font-size: $fontsize-l;
     font-weight: 600;
     margin-bottom: 30px;
+  }
+
+  .comment + .comment {
+    margin-top: 12px;
   }
 
 }

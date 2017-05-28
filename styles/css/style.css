@@ -24596,16 +24596,19 @@ body {
   position: absolute;
   left: 8650px;
   box-sizing: border-box;
-  margin-top: 38px;
-  margin-bottom: 18px;
+  margin-top: 50px;
+  margin-bottom: 35px;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
-  padding-left: 74px;
-  padding-top: 12px;
-  height: calc(100% - 40px - 38px - 18px); }
+  padding-left: 50px;
+  padding-top: 25px;
+  height: calc(100% - 40px - 50px - 35px);
+  width: 250px; }
   .outro__heading {
     font-size: 21px;
     font-weight: 600;
     margin-bottom: 30px; }
+  .outro .comment + .comment {
+    margin-top: 12px; }
 
 @media screen and (min-height: 680px) {
   .text {
