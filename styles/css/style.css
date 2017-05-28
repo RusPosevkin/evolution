@@ -24248,12 +24248,30 @@ body {
 
 /* Timeline */
 .timeline {
-  width: 100%; }
+  width: 100%;
+  position: relative; }
   .timeline__tick {
     height: 6px;
     border-left: 1px solid #aaa; }
     .timeline__tick_half-million {
       width: 500px; }
+    .timeline__tick_secondary {
+      border-left: 1px solid #444; }
+    .timeline__tick_common-era {
+      position: absolute;
+      top: 0;
+      left: 7846px;
+      height: 24px; }
+    .timeline__tick_ancient-egypt {
+      position: absolute;
+      top: 0;
+      left: 7844px;
+      height: 42px; }
+    .timeline__tick_agriculture {
+      position: absolute;
+      top: 0;
+      left: 7840px;
+      height: 54px; }
   .timeline__label {
     font-size: 12px;
     color: #aaa;
@@ -24266,6 +24284,20 @@ body {
     .timeline__label_200-hundred {
       margin-left: -6px;
       width: 206px; }
+    .timeline__label_secondary {
+      color: #444; }
+    .timeline__label_common-era {
+      position: absolute;
+      top: 24px;
+      left: 7846px; }
+    .timeline__label_ancient-egypt {
+      position: absolute;
+      top: 39px;
+      left: 7844px; }
+    .timeline__label_agriculture {
+      position: absolute;
+      top: 54px;
+      left: 7840px; }
 
 .africa {
   position: absolute;

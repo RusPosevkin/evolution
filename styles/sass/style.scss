@@ -157,6 +157,7 @@ body {
 
 .timeline {
   width: 100%;
+  position: relative;
 
   &__tick {
     height: $tick-height;
@@ -164,6 +165,31 @@ body {
 
     &_half-million {
       width: $timeline-half-million;
+    }
+
+    &_secondary {
+      border-left: 1px solid $color-timeline-tick-secondary;
+    }
+
+    &_common-era {
+      position: absolute;
+      top: 0;
+      left: 157 * $column-width - 4px;
+      height: 24px;
+    }
+
+    &_ancient-egypt {
+      position: absolute;
+      top: 0;
+      left: 157 * $column-width - 6px;
+      height: 42px;
+    }
+
+    &_agriculture {
+      position: absolute;
+      top: 0;
+      left: 157 * $column-width - 10px;
+      height: 54px;
     }
   }
 
@@ -187,9 +213,30 @@ body {
       margin-left: -$timeline-hundreds-label-displacement;
       width: 4 * $column-width + $timeline-hundreds-label-displacement;
     }
+
+    &_secondary {
+      color: $color-timeline-tick-secondary;
+    }
+
+    &_common-era {
+      position: absolute;
+      top: 24px;
+      left: 157 * $column-width - 4px;
+    }
+
+    &_ancient-egypt {
+      position: absolute;
+      top: 39px;
+      left: 157 * $column-width - 6px;
+    }
+
+    &_agriculture {
+      position: absolute;
+      top: 54px;
+      left: 157 * $column-width - 10px;
+    }
   }
 }
-
 
 //Full-height images
 //TODO: move left on hd
