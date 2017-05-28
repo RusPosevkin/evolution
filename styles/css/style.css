@@ -24340,9 +24340,10 @@ body {
   position: absolute;
   top: 0; }
 
-.homo-heidelbergensis {
-  position: absolute;
-  top: 45px; }
+.portrait {
+  margin-top: 45px;
+  max-width: 250px;
+  max-height: 285px; }
 
 .minimap {
   height: 40px;
