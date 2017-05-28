@@ -6,7 +6,6 @@
 body {
   font-family: 'Fira Sans', 'Helvetica', sans-serif;
   font-weight: 300;
-  overflow: hidden;
   background-color: #121212;
 }
 
@@ -47,8 +46,8 @@ body {
 }
 
 .text {
-  font-size: 2.7vh;
-  line-height: 1.33333333333;
+  font-size: 19px;
+  line-height: 1.333333;
   margin-top: $text-top-margin;
   position: relative;
   z-index: $index-text;
@@ -213,9 +212,8 @@ body {
     }
 
     &_secondary {
-      color: $color-secondary;
+      color: #606060;
       font-size: 10px;
-      opacity: .5;
     }
 
     &_common-era {
@@ -243,7 +241,7 @@ body {
 .africa {
   position: absolute;
   top: 27px;
-  left: 1325px;
+  left: 1300px;
   z-index: $index-img-top;
   margin-bottom: 44px;
 
@@ -255,6 +253,8 @@ body {
 
   &__continent {
     height: calc(100vh - 118px);
+    max-width: 720px;
+    max-height: 850px;
   }
 
   &__chad {
@@ -294,6 +294,7 @@ body {
   top: 0;
   width: $column-width * 10;
   height: calc(100vh - 60px);
+  max-height: 850px;
   overflow: visible;
 
   &__woman {
@@ -318,6 +319,7 @@ body {
   z-index: $index-img-top;
   top: 140px;
   height: calc(100vh - 222px);
+  max-height: 650px;
   left: $column-width * 82.5;
   margin-bottom: 60px;
 }
@@ -328,7 +330,7 @@ body {
 }
 
 .portrait {
-  margin-top: 45px;
+  margin-top: 10px;
   max-width: 250px;
   max-height: 285px;
 }
@@ -716,14 +718,14 @@ body {
   }
 }
 
-@media screen and (min-height: 680px) {
-  .text {
-    font-size: 19px;
-    line-height: 1.333333;
+@media screen and (min-height: 690px) {
+  body {
+  overflow: hidden;
   }
 }
 
 @media screen and (min-height: 735px) {
+
   .text {
     font-size: $fontsize-l;
     line-height: 1.381;
@@ -731,5 +733,23 @@ body {
     &_bottom {
       margin-top: 48px;
     }
+  }
+
+  .portrait {
+    margin-top: 35px;
+    max-width: 250px;
+    max-height: 285px;
+  }
+}
+
+@media screen and (min-height: 901px) {
+  .species-tree {
+    margin-bottom: 128px;
+  }
+}
+
+@media screen and (min-height: 1200px) {
+  .species-tree {
+    margin-bottom: 256px;
   }
 }

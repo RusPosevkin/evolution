@@ -24142,7 +24142,6 @@ table {
 body {
   font-family: 'Fira Sans', 'Helvetica', sans-serif;
   font-weight: 300;
-  overflow: hidden;
   background-color: #121212; }
 
 .page {
@@ -24176,8 +24175,8 @@ body {
   line-height: 1.33333; }
 
 .text {
-  font-size: 2.7vh;
-  line-height: 1.33333333333;
+  font-size: 19px;
+  line-height: 1.333333;
   margin-top: 50px;
   position: relative;
   z-index: 40; }
@@ -24285,9 +24284,8 @@ body {
       margin-left: -6px;
       width: 206px; }
     .timeline__label_secondary {
-      color: #aaa;
-      font-size: 10px;
-      opacity: .5; }
+      color: #606060;
+      font-size: 10px; }
     .timeline__label_common-era {
       position: absolute;
       top: 24px;
@@ -24304,7 +24302,7 @@ body {
 .africa {
   position: absolute;
   top: 27px;
-  left: 1325px;
+  left: 1300px;
   z-index: 30;
   margin-bottom: 44px; }
   .africa .container {
@@ -24312,7 +24310,9 @@ body {
     width: 100%;
     height: 100%; }
   .africa__continent {
-    height: calc(100vh - 118px); }
+    height: calc(100vh - 118px);
+    max-width: 720px;
+    max-height: 850px; }
   .africa__chad {
     position: absolute;
     width: 15.2%;
@@ -24344,6 +24344,7 @@ body {
   top: 0;
   width: 500px;
   height: calc(100vh - 60px);
+  max-height: 850px;
   overflow: visible; }
   .ardi__woman {
     position: absolute;
@@ -24363,6 +24364,7 @@ body {
   z-index: 30;
   top: 140px;
   height: calc(100vh - 222px);
+  max-height: 650px;
   left: 4125px;
   margin-bottom: 60px; }
 
@@ -24371,7 +24373,7 @@ body {
   top: 0; }
 
 .portrait {
-  margin-top: 45px;
+  margin-top: 10px;
   max-width: 250px;
   max-height: 285px; }
 
@@ -24624,14 +24626,25 @@ body {
   .outro .comment + .comment {
     margin-top: 12px; }
 
-@media screen and (min-height: 680px) {
-  .text {
-    font-size: 19px;
-    line-height: 1.333333; } }
+@media screen and (min-height: 690px) {
+  body {
+    overflow: hidden; } }
 
 @media screen and (min-height: 735px) {
   .text {
     font-size: 21px;
     line-height: 1.381; }
     .text_bottom {
-      margin-top: 48px; } }
+      margin-top: 48px; }
+  .portrait {
+    margin-top: 35px;
+    max-width: 250px;
+    max-height: 285px; } }
+
+@media screen and (min-height: 901px) {
+  .species-tree {
+    margin-bottom: 128px; } }
+
+@media screen and (min-height: 1200px) {
+  .species-tree {
+    margin-bottom: 256px; } }
