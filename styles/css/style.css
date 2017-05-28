@@ -24142,7 +24142,7 @@ table {
 body {
   font-family: 'Fira Sans', 'Helvetica', sans-serif;
   font-weight: 300;
-  overflow-y: hidden;
+  overflow: hidden;
   background-color: #121212; }
 
 .page {
@@ -24260,12 +24260,12 @@ body {
     .timeline__tick_common-era {
       position: absolute;
       top: 0;
-      left: 7846px;
+      left: 7848px;
       height: 24px; }
     .timeline__tick_ancient-egypt {
       position: absolute;
       top: 0;
-      left: 7844px;
+      left: 7845px;
       height: 42px; }
     .timeline__tick_agriculture {
       position: absolute;
@@ -24285,7 +24285,9 @@ body {
       margin-left: -6px;
       width: 206px; }
     .timeline__label_secondary {
-      color: #444; }
+      color: #aaa;
+      font-size: 10px;
+      opacity: .5; }
     .timeline__label_common-era {
       position: absolute;
       top: 24px;
@@ -24606,11 +24608,12 @@ body {
   width: 250px; }
   .outro__heading {
     font-size: 21px;
-    font-weight: 600;
+    line-height: 29px;
+    font-weight: 500;
     margin-bottom: 16px; }
   .outro__author {
     position: absolute;
-    bottom: 35px;
+    bottom: 40px;
     font-size: 12px; }
     .outro__author_doubled {
       display: flex;

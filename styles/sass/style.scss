@@ -6,7 +6,7 @@
 body {
   font-family: 'Fira Sans', 'Helvetica', sans-serif;
   font-weight: 300;
-  overflow-y: hidden;
+  overflow: hidden;
   background-color: #121212;
 }
 
@@ -172,14 +172,14 @@ body {
     &_common-era {
       position: absolute;
       top: 0;
-      left: 157 * $column-width - 4px;
+      left: 157 * $column-width - 2px;
       height: 24px;
     }
 
     &_ancient-egypt {
       position: absolute;
       top: 0;
-      left: 157 * $column-width - 6px;
+      left: 157 * $column-width - 5px;
       height: 42px;
     }
 
@@ -213,7 +213,9 @@ body {
     }
 
     &_secondary {
-      color: $color-timeline-tick-secondary;
+      color: $color-secondary;
+      font-size: 10px;
+      opacity: .5;
     }
 
     &_common-era {
@@ -688,13 +690,14 @@ body {
 
   &__heading {
     font-size: $fontsize-l;
-    font-weight: 600;
+    line-height: 29px;
+    font-weight: 500;
     margin-bottom: 16px;
   }
 
   &__author {
     position: absolute;
-    bottom: 35px;
+    bottom: 40px;
     font-size: $fontsize-s;
 
     &_doubled {
