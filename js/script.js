@@ -8,7 +8,7 @@ $(document).ready(function() {
   var viewportWidth;
 
   // transform vertical scrolling to horizontal one
-  scrollConverter.activate();
+  // scrollConverter.activate();
 
   // Calculate and set viewport dimensions
   function setViewportHeight() {
