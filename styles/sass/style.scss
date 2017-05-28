@@ -690,13 +690,28 @@ body {
   &__heading {
     font-size: $fontsize-l;
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
+  }
+
+  &__author {
+    position: absolute;
+    bottom: 35px;
+    font-size: $fontsize-s;
+
+    &_doubled {
+      display: flex;
+      justify-content: space-between;
+      bottom: 0;
+
+      div + div {
+        margin-left: 10px;
+      }
+    }
   }
 
   .comment + .comment {
     margin-top: 12px;
   }
-
 }
 
 @media screen and (min-height: 680px) {

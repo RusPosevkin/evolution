@@ -24606,7 +24606,17 @@ body {
   .outro__heading {
     font-size: 21px;
     font-weight: 600;
-    margin-bottom: 30px; }
+    margin-bottom: 16px; }
+  .outro__author {
+    position: absolute;
+    bottom: 35px;
+    font-size: 12px; }
+    .outro__author_doubled {
+      display: flex;
+      justify-content: space-between;
+      bottom: 0; }
+      .outro__author_doubled div + div {
+        margin-left: 10px; }
   .outro .comment + .comment {
     margin-top: 12px; }
 
