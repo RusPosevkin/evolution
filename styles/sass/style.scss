@@ -6,7 +6,6 @@
 body {
   font-family: 'Fira Sans', 'Helvetica', sans-serif;
   font-weight: 300;
-  overflow: hidden;
   background-color: #121212;
 }
 
@@ -19,6 +18,16 @@ body {
   justify-content: space-between;
   opacity: 0;
   transition: opacity .5s ease-in;
+}
+
+.minmap-row {
+  width: $full-width;
+  background-color: $color-dark;
+  color: $color-base;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0;
 }
 
 .half-top {
@@ -47,8 +56,8 @@ body {
 }
 
 .text {
-  font-size: 2.7vh;
-  line-height: 1.33333333333;
+  font-size: 19px;
+  line-height: 1.333333;
   margin-top: $text-top-margin;
   position: relative;
   z-index: $index-text;
@@ -70,6 +79,16 @@ body {
 
 .italic {
   font-style: italic;
+}
+
+.white-circle::before {
+  content: "";
+  position: absolute;
+  right: 146px;
+  top: 45px;
+  width: 5px;
+  height: 5px;
+  background: url("../../img/white-circle.svg") no-repeat;
 }
 
 /* Links */
@@ -180,7 +199,7 @@ body {
       position: absolute;
       top: 0;
       left: 157 * $column-width - 5px;
-      height: 42px;
+      height: 39px;
     }
 
     &_agriculture {
@@ -201,6 +220,10 @@ body {
       margin-left: $first-padding - $timeline-label-displacement;
     }
 
+    &_now {
+      margin-left: 1px;
+    }
+
     // fractional numbers and hundreds need different displacement value
     &_fractional {
       margin-left: -$timeline-fractional-label-displacement;
@@ -213,27 +236,26 @@ body {
     }
 
     &_secondary {
-      color: $color-secondary;
+      color: #606060;
       font-size: 10px;
-      opacity: .5;
     }
 
     &_common-era {
       position: absolute;
       top: 24px;
-      left: 157 * $column-width - 4px;
+      left: 157 * $column-width - 3px;
     }
 
     &_ancient-egypt {
       position: absolute;
       top: 39px;
-      left: 157 * $column-width - 6px;
+      left: 157 * $column-width - 5px;
     }
 
     &_agriculture {
       position: absolute;
       top: 54px;
-      left: 157 * $column-width - 10px;
+      left: 157 * $column-width - 11px;
     }
   }
 }
@@ -243,7 +265,7 @@ body {
 .africa {
   position: absolute;
   top: 27px;
-  left: 1325px;
+  left: 1300px;
   z-index: $index-img-top;
   margin-bottom: 44px;
 
@@ -255,6 +277,8 @@ body {
 
   &__continent {
     height: calc(100vh - 118px);
+    max-width: 720px;
+    max-height: 780px;
   }
 
   &__chad {
@@ -294,6 +318,7 @@ body {
   top: 0;
   width: $column-width * 10;
   height: calc(100vh - 60px);
+  max-height: 850px;
   overflow: visible;
 
   &__woman {
@@ -318,8 +343,13 @@ body {
   z-index: $index-img-top;
   top: 140px;
   height: calc(100vh - 222px);
+  max-height: 650px;
   left: $column-width * 82.5;
   margin-bottom: 60px;
+}
+
+.full-height {
+  min-height: 600px;
 }
 
 .hand-chopper {
@@ -328,7 +358,7 @@ body {
 }
 
 .portrait {
-  margin-top: 45px;
+  margin-top: 10px;
   max-width: 250px;
   max-height: 285px;
 }
@@ -351,6 +381,7 @@ body {
   }
 
   &_fixed {
+    z-index: 999;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -485,7 +516,7 @@ body {
 .homo-georgicus {
   position: absolute;
   width: $column-width * 10;
-  height: 110px;
+  height: 120px;
   top: -30px;
   left: $column-width * 5;
   z-index: $index-img-top;
@@ -537,16 +568,26 @@ body {
       left: -$column-width * 20;
       height: $column-width * 6;
       background-position: 0 0;
-      z-index: 21;
       }
+
+    &_homo::before {
+      background: url('../../img/species-tree__branch_homo.svg') no-repeat;
+      width: $column-width * 11;
+      left: -$column-width * 11;
+    }
   }
 
   &__map {
+    z-index: 1;
     position: absolute;
-    left: -60px;
+    left: -87px;
+    top: -8px;
+    width: 80px;
 
     &_sapiens {
-      left: -50px;
+      width: 50px;
+      left: -55px;
+      top: 7px;
     }
   }
 
@@ -636,7 +677,7 @@ body {
   &__sahelanthropus {
     position: absolute;
     bottom: 2px;
-    left: 180px;
+    left: 165px;
     z-index: $index-img-top;
   }
 
@@ -676,17 +717,28 @@ body {
   }
 }
 
-.outro {
+.australopithecus-map {
+  margin-left: 20px;
+}
+
+.species-tree__line-mockup {
   position: absolute;
-  left: $column-width * 173;
-  box-sizing: border-box;
-  margin-top: $outro-margin-top;
-  margin-bottom: $outro-margin-bottom;
-  border-left: 1px solid rgba($color-base, 0.1);
-  padding-left: $column-width;
-  padding-top: 25px;
-  height: calc(100% - #{$minimap-height} - #{$outro-margin-top} - #{$outro-margin-bottom});
-  width: $column-width * 5;
+  bottom: -28px;
+  left: 265px;
+  width: 230px;
+
+  & div {
+    z-index: 100;
+  }
+
+  & .species-tree__cross {
+    bottom: -6px;
+  }
+}
+
+.outro {
+  margin-top: $text-top-margin;
+  width: $column-width * 4;
 
   &__heading {
     font-size: $fontsize-l;
@@ -696,14 +748,14 @@ body {
   }
 
   &__author {
-    position: absolute;
-    bottom: 40px;
+    padding-top: 36px;
     font-size: $fontsize-s;
 
     &_doubled {
+      padding-top: 0;
+      margin-top: 0;
       display: flex;
-      justify-content: space-between;
-      bottom: 0;
+      justify-content: flex-start;
 
       div + div {
         margin-left: 10px;
@@ -716,14 +768,8 @@ body {
   }
 }
 
-@media screen and (min-height: 680px) {
-  .text {
-    font-size: 19px;
-    line-height: 1.333333;
-  }
-}
-
 @media screen and (min-height: 735px) {
+
   .text {
     font-size: $fontsize-l;
     line-height: 1.381;
@@ -731,5 +777,17 @@ body {
     &_bottom {
       margin-top: 48px;
     }
+  }
+
+  .portrait {
+    margin-top: 35px;
+    max-width: 250px;
+    max-height: 285px;
+  }
+}
+
+@media screen and (min-height: 901px) {
+  .species-tree {
+    margin-bottom: 128px;
   }
 }

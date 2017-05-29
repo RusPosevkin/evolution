@@ -8,16 +8,22 @@ $(document).ready(function() {
   var viewportWidth;
 
   // transform vertical scrolling to horizontal one
-  scrollConverter.activate();
+  // scrollConverter.activate();
 
   // Calculate and set viewport dimensions
   function setViewportHeight() {
     viewportHeight = $window.height();
     viewportWidth = $window.width();
 
-    $page.css({
-      height: viewportHeight
-    });
+  if (viewportHeight <= 690) {
+      $page.css({
+        height: 690
+      });
+   } else {
+       $page.css({
+         height: viewportHeight
+       });
+   }
   };
 
   setViewportHeight();
