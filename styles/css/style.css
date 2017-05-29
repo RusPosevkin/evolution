@@ -24321,7 +24321,7 @@ body {
   .africa__continent {
     height: calc(100vh - 118px);
     max-width: 720px;
-    max-height: 850px; }
+    max-height: 780px; }
   .africa__chad {
     position: absolute;
     width: 15.2%;
@@ -24639,28 +24639,17 @@ body {
   .outro .comment + .comment {
     margin-top: 12px; }
 
-/*
 @media screen and (min-height: 735px) {
-
   .text {
-    font-size: $fontsize-l;
-    line-height: 1.381;
-
-    &_bottom {
-      margin-top: 48px;
-    }
-  }
-
+    font-size: 21px;
+    line-height: 1.381; }
+    .text_bottom {
+      margin-top: 48px; }
   .portrait {
     margin-top: 35px;
     max-width: 250px;
-    max-height: 285px;
-  }
-}
+    max-height: 285px; } }
 
 @media screen and (min-height: 901px) {
   .species-tree {
-    margin-bottom: 128px;
-  }
-}
-*/
+    margin-bottom: 128px; } }
