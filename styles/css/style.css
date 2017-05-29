@@ -23754,7 +23754,7 @@ body {
       position: absolute;
       top: 0;
       left: 7845px;
-      height: 42px; }
+      height: 39px; }
     .timeline__tick_agriculture {
       position: absolute;
       top: 0;
@@ -23766,6 +23766,8 @@ body {
     padding-top: 3px; }
     .timeline__label:first-child {
       margin-left: 98px; }
+    .timeline__label_now {
+      margin-left: 1px; }
     .timeline__label_fractional {
       margin-left: -5px;
       width: 505px; }
@@ -23778,15 +23780,15 @@ body {
     .timeline__label_common-era {
       position: absolute;
       top: 24px;
-      left: 7846px; }
+      left: 7847px; }
     .timeline__label_ancient-egypt {
       position: absolute;
       top: 39px;
-      left: 7844px; }
+      left: 7845px; }
     .timeline__label_agriculture {
       position: absolute;
       top: 54px;
-      left: 7840px; }
+      left: 7839px; }
 
 .africa {
   position: absolute;
@@ -23961,7 +23963,7 @@ body {
 .homo-georgicus {
   position: absolute;
   width: 500px;
-  height: 110px;
+  height: 120px;
   top: -30px;
   left: 250px;
   z-index: 30; }

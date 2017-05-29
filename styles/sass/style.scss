@@ -189,7 +189,7 @@ body {
       position: absolute;
       top: 0;
       left: 157 * $column-width - 5px;
-      height: 42px;
+      height: 39px;
     }
 
     &_agriculture {
@@ -208,6 +208,10 @@ body {
     // negative margin for tick and label alignment
     &:first-child {
       margin-left: $first-padding - $timeline-label-displacement;
+    }
+
+    &_now {
+      margin-left: 1px;
     }
 
     // fractional numbers and hundreds need different displacement value
@@ -229,19 +233,19 @@ body {
     &_common-era {
       position: absolute;
       top: 24px;
-      left: 157 * $column-width - 4px;
+      left: 157 * $column-width - 3px;
     }
 
     &_ancient-egypt {
       position: absolute;
       top: 39px;
-      left: 157 * $column-width - 6px;
+      left: 157 * $column-width - 5px;
     }
 
     &_agriculture {
       position: absolute;
       top: 54px;
-      left: 157 * $column-width - 10px;
+      left: 157 * $column-width - 11px;
     }
   }
 }
@@ -502,7 +506,7 @@ body {
 .homo-georgicus {
   position: absolute;
   width: $column-width * 10;
-  height: 110px;
+  height: 120px;
   top: -30px;
   left: $column-width * 5;
   z-index: $index-img-top;
