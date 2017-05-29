@@ -23999,8 +23999,11 @@ body {
     width: 1000px;
     left: -1000px;
     height: 300px;
-    background-position: 0 0;
-    z-index: 21; }
+    background-position: 0 0; }
+  .species-tree__branch_homo::before {
+    background: url("../../img/species-tree__branch_homo.svg") no-repeat;
+    width: 550px;
+    left: -550px; }
   .species-tree__map {
     position: absolute;
     left: -60px; }

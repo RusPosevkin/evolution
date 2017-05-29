@@ -558,8 +558,13 @@ body {
       left: -$column-width * 20;
       height: $column-width * 6;
       background-position: 0 0;
-      z-index: 21;
       }
+
+    &_homo::before {
+      background: url('../../img/species-tree__branch_homo.svg') no-repeat;
+      width: $column-width * 11;
+      left: -$column-width * 11;
+    }
   }
 
   &__map {
