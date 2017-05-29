@@ -47,12 +47,15 @@ $(document).ready(function() {
   function toggleMinimapFixed() {
     if (offsetX <= MINIMAP_MARGIN) {
       if (isMinimapFixed)  {
-        $miniMap.removeClass('minimap_fixed');
+        // $miniMap.removeClass('minimap_fixed');
+        $('.minimap_intro').css('display', 'flex');
         isMinimapFixed = false;
       }
     } else {
       if (!isMinimapFixed) {
-        $miniMap.addClass('minimap_fixed');
+        // $miniMap.addClass('minimap_fixed');
+        $miniMap.css('left', 0);
+        $('.minimap_intro').css('display', 'none');
         isMinimapFixed = true;
       }
     }
@@ -76,9 +79,29 @@ $(document).ready(function() {
   toggleMinimapFixed();
   controlMinimapWindow(offsetX);
 
+  var baseOffsetX = window.pageXOffset;
+
   // Recalculate during scrolling
   $window.scroll(function() {
     offsetX = window.pageXOffset;
+
+    if ((offsetX !== baseOffsetX) && (offsetX <= MINIMAP_MARGIN)) {
+      // $('.minimap_intro').css('position', 'absolute');
+      // var mainOffset = parseInt($('.minimap_main').css('left'));
+      var mainOffset = MINIMAP_MARGIN;
+      // var introOffset = parseInt($('.minimap_intro').css('left'));
+      var introOffset = 0;
+      mainOffset = mainOffset - offsetX;
+      introOffset = introOffset - offsetX;
+      $('.minimap_main').css('left', mainOffset + 'px');
+      $('.minimap_intro').css('left', introOffset +'px');
+    } else {
+      // $('.minimap_intro').css('position', 'fixed');
+      var value = isMinimapFixed ? 0: '838px';
+      $('.minimap_main').css('left', value);
+      $('.minimap_intro').css('left', 0);
+    }
+    baseOffsetX = offsetX;
     toggleMinimapFixed();
     controlMinimapWindow(offsetX);
   });
