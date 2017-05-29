@@ -23708,6 +23708,19 @@ body {
     border-bottom: 1px solid rgba(236, 163, 161, 0.3);
     transition-duration: 0s; }
 
+.link_author {
+  color: #aaa;
+  border-bottom: 1px solid rgba(170, 170, 170, 0.3);
+  transition: color .2s ease-in, border-color .15s ease-in;
+  text-decoration: none; }
+  .link_author:visited {
+    color: #aaa;
+    border-bottom: 1px solid rgba(170, 170, 170, 0.3); }
+  .link_author:hover {
+    color: #eca3a1;
+    border-bottom: 1px solid rgba(236, 163, 161, 0.3);
+    transition-duration: 0s; }
+
 .source {
   font-size: 12px;
   line-height: 1.33333;
