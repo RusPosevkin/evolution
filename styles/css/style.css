@@ -23902,23 +23902,18 @@ body {
   box-shadow: inset 0 1.5px 0px 0 rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column-reverse;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 838px;
   z-index: 999; }
   .minimap_intro {
     width: 838px;
     display: flex;
-    position: absolute;
+    position: fixed;
     left: 0;
     bottom: 0; }
   .minimap_main {
     width: 100vw; }
-  .minimap_fixed {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    overflow: hidden; }
   .minimap__tick {
     height: 6px;
     border-left: 1px solid #aaa;
@@ -24182,3 +24177,13 @@ body {
 @media screen and (min-height: 901px) {
   .species-tree {
     margin-bottom: 128px; } }
+
+.test {
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+.test2 {
+  position: fixed;
+  bottom: 0;
+  left: 0; }

@@ -2,6 +2,7 @@ $(document).ready(function() {
   var $window = $(window);
   var $page = $('.page');
   var $miniMap = $('.minimap_main');
+  var $miniMapIntro = $('.minimap_intro');
   var $minimapWindow = $('.minimap__window');
   var offsetX = window.pageXOffset;
   var viewportHeight;
@@ -47,12 +48,13 @@ $(document).ready(function() {
   function toggleMinimapFixed() {
     if (offsetX <= MINIMAP_MARGIN) {
       if (isMinimapFixed)  {
-        $miniMap.removeClass('minimap_fixed');
+        $miniMapIntro.css('display', 'flex');
         isMinimapFixed = false;
       }
     } else {
       if (!isMinimapFixed) {
-        $miniMap.addClass('minimap_fixed');
+        $miniMap.css('left', 0);
+        $miniMapIntro.css('display', 'none');
         isMinimapFixed = true;
       }
     }
@@ -72,13 +74,32 @@ $(document).ready(function() {
 
   // Calculate initial size and position
   // it needs if we scroll and reload the page
-
   toggleMinimapFixed();
   controlMinimapWindow(offsetX);
+
+  var baseOffsetX = window.pageXOffset;
 
   // Recalculate during scrolling
   $window.scroll(function() {
     offsetX = window.pageXOffset;
+
+    if ((offsetX !== baseOffsetX) && (offsetX <= MINIMAP_MARGIN)) {
+      var mainOffset = MINIMAP_MARGIN;
+      var introOffset = 0;
+
+      mainOffset = mainOffset - offsetX;
+      introOffset = introOffset - offsetX;
+
+      $miniMap.css('left', mainOffset + 'px');
+      $miniMapIntro.css('left', introOffset +'px');
+    } else {
+      var value = isMinimapFixed ? 0 : '838px';
+
+      $miniMap.css('left', value);
+      $miniMapIntro.css('left', 0);
+    }
+    baseOffsetX = offsetX;
+
     toggleMinimapFixed();
     controlMinimapWindow(offsetX);
   });
