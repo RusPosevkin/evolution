@@ -81,6 +81,16 @@ body {
   font-style: italic;
 }
 
+.white-circle::before {
+  content: "";
+  position: absolute;
+  right: 146px;
+  top: 45px;
+  width: 5px;
+  height: 5px;
+  background: url("../../img/white-circle.svg") no-repeat;
+}
+
 /* Links */
 
 @mixin link-style($color) {
@@ -699,6 +709,21 @@ body {
     bottom: 2px;
     left: -107px;
     z-index: $index-img-top;
+  }
+}
+
+.species-tree__line-mockup {
+  position: absolute;
+  bottom: -28px;
+  left: 265px;
+  width: 230px;
+
+  & div {
+    z-index: 100;
+  }
+
+  & .species-tree__cross {
+    bottom: -6px;
   }
 }
 

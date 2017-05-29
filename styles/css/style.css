@@ -23682,6 +23682,15 @@ body {
 .italic {
   font-style: italic; }
 
+.white-circle::before {
+  content: "";
+  position: absolute;
+  right: 146px;
+  top: 45px;
+  width: 5px;
+  height: 5px;
+  background: url("../../img/white-circle.svg") no-repeat; }
+
 /* Links */
 .link {
   color: #799ec9;
@@ -24094,6 +24103,16 @@ body {
     bottom: 2px;
     left: -107px;
     z-index: 30; }
+
+.species-tree__line-mockup {
+  position: absolute;
+  bottom: -28px;
+  left: 265px;
+  width: 230px; }
+  .species-tree__line-mockup div {
+    z-index: 100; }
+  .species-tree__line-mockup .species-tree__cross {
+    bottom: -6px; }
 
 .outro {
   margin-top: 50px;
