@@ -23801,7 +23801,7 @@ body {
 
 .africa {
   position: absolute;
-  top: 27px;
+  top: 45px;
   left: 1300px;
   z-index: 30;
   margin-bottom: 44px; }
@@ -23811,8 +23811,8 @@ body {
     height: 100%; }
   .africa__continent {
     height: calc(100vh - 118px);
-    max-width: 720px;
-    max-height: 780px; }
+    max-width: 550px;
+    max-height: 645px; }
   .africa__chad {
     position: absolute;
     width: 15.2%;
