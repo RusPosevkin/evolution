@@ -23901,8 +23901,6 @@ body {
     bottom: 0; }
   .minimap_main {
     width: 100vw; }
-  .minimap_fixed {
-    left: 0; }
   .minimap__tick {
     height: 6px;
     border-left: 1px solid #aaa;

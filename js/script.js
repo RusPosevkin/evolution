@@ -2,6 +2,7 @@ $(document).ready(function() {
   var $window = $(window);
   var $page = $('.page');
   var $miniMap = $('.minimap_main');
+  var $miniMapIntro = $('.minimap_intro');
   var $minimapWindow = $('.minimap__window');
   var offsetX = window.pageXOffset;
   var viewportHeight;
@@ -47,15 +48,13 @@ $(document).ready(function() {
   function toggleMinimapFixed() {
     if (offsetX <= MINIMAP_MARGIN) {
       if (isMinimapFixed)  {
-        // $miniMap.removeClass('minimap_fixed');
-        $('.minimap_intro').css('display', 'flex');
+        $miniMapIntro.css('display', 'flex');
         isMinimapFixed = false;
       }
     } else {
       if (!isMinimapFixed) {
-        // $miniMap.addClass('minimap_fixed');
         $miniMap.css('left', 0);
-        $('.minimap_intro').css('display', 'none');
+        $miniMapIntro.css('display', 'none');
         isMinimapFixed = true;
       }
     }
@@ -75,7 +74,6 @@ $(document).ready(function() {
 
   // Calculate initial size and position
   // it needs if we scroll and reload the page
-
   toggleMinimapFixed();
   controlMinimapWindow(offsetX);
 
@@ -86,22 +84,22 @@ $(document).ready(function() {
     offsetX = window.pageXOffset;
 
     if ((offsetX !== baseOffsetX) && (offsetX <= MINIMAP_MARGIN)) {
-      // $('.minimap_intro').css('position', 'absolute');
-      // var mainOffset = parseInt($('.minimap_main').css('left'));
       var mainOffset = MINIMAP_MARGIN;
-      // var introOffset = parseInt($('.minimap_intro').css('left'));
       var introOffset = 0;
+
       mainOffset = mainOffset - offsetX;
       introOffset = introOffset - offsetX;
-      $('.minimap_main').css('left', mainOffset + 'px');
-      $('.minimap_intro').css('left', introOffset +'px');
+
+      $miniMap.css('left', mainOffset + 'px');
+      $miniMapIntro.css('left', introOffset +'px');
     } else {
-      // $('.minimap_intro').css('position', 'fixed');
-      var value = isMinimapFixed ? 0: '838px';
-      $('.minimap_main').css('left', value);
-      $('.minimap_intro').css('left', 0);
+      var value = isMinimapFixed ? 0 : '838px';
+
+      $miniMap.css('left', value);
+      $miniMapIntro.css('left', 0);
     }
     baseOffsetX = offsetX;
+
     toggleMinimapFixed();
     controlMinimapWindow(offsetX);
   });
