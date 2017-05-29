@@ -578,11 +578,16 @@ body {
   }
 
   &__map {
+    z-index: 1;
     position: absolute;
-    left: -60px;
+    left: -87px;
+    top: -8px;
+    width: 80px;
 
     &_sapiens {
-      left: -50px;
+      width: 50px;
+      left: -55px;
+      top: 7px;
     }
   }
 
@@ -710,6 +715,10 @@ body {
     left: -107px;
     z-index: $index-img-top;
   }
+}
+
+.australopithecus-map {
+  margin-left: 20px;
 }
 
 .species-tree__line-mockup {
