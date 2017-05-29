@@ -24114,9 +24114,9 @@ body {
 
 .species-tree__line-mockup {
   position: absolute;
-  bottom: -28px;
-  left: 265px;
-  width: 230px; }
+  width: 100px;
+  top: 59px;
+  left: 405px; }
   .species-tree__line-mockup div {
     z-index: 100; }
   .species-tree__line-mockup .species-tree__cross {
