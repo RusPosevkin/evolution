@@ -23624,6 +23624,9 @@ body {
   font-weight: 300;
   background-color: #121212; }
 
+::-webkit-scrollbar {
+  display: none; }
+
 .page {
   width: 8900px;
   background-color: #121212;

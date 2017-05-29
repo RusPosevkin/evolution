@@ -9,6 +9,10 @@ body {
   background-color: #121212;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 .page {
   width: $full-width;
   background-color: $color-dark;
