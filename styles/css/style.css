@@ -24154,6 +24154,15 @@ body {
   opacity: 0;
   transition: opacity .5s ease-in; }
 
+.minmap-row {
+  width: 9100px;
+  background-color: #121212;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0; }
+
 .half-top {
   width: 100%; }
 
@@ -24368,6 +24377,9 @@ body {
   left: 4125px;
   margin-bottom: 60px; }
 
+.full-height {
+  min-height: 600px; }
+
 .hand-chopper {
   position: absolute;
   top: 0; }
@@ -24390,6 +24402,7 @@ body {
   .minimap_main {
     width: 100vw; }
   .minimap_fixed {
+    z-index: 999;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -24626,21 +24639,28 @@ body {
   .outro .comment + .comment {
     margin-top: 12px; }
 
+/*
 @media screen and (min-height: 735px) {
+
   .text {
-    font-size: 21px;
-    line-height: 1.381; }
-    .text_bottom {
-      margin-top: 48px; }
+    font-size: $fontsize-l;
+    line-height: 1.381;
+
+    &_bottom {
+      margin-top: 48px;
+    }
+  }
+
   .portrait {
     margin-top: 35px;
     max-width: 250px;
-    max-height: 285px; } }
+    max-height: 285px;
+  }
+}
 
 @media screen and (min-height: 901px) {
   .species-tree {
-    margin-bottom: 128px; } }
-
-@media screen and (min-height: 1200px) {
-  .species-tree {
-    margin-bottom: 256px; } }
+    margin-bottom: 128px;
+  }
+}
+*/

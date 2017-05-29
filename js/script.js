@@ -15,9 +15,15 @@ $(document).ready(function() {
     viewportHeight = $window.height();
     viewportWidth = $window.width();
 
-    $page.css({
-      height: viewportHeight
-    });
+  if (viewportHeight <= 690) {
+      $page.css({
+        height: 690
+      });
+   } else {
+       $page.css({
+         height: viewportHeight
+       });
+   }
   };
 
   setViewportHeight();
