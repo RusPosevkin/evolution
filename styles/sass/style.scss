@@ -694,16 +694,8 @@ body {
 }
 
 .outro {
-  position: absolute;
-  left: $column-width * 173;
-  box-sizing: border-box;
-  margin-top: $outro-margin-top;
-  margin-bottom: $outro-margin-bottom;
-  border-left: 1px solid rgba($color-base, 0.1);
-  padding-left: $column-width;
-  padding-top: 25px;
-  height: calc(100% - #{$minimap-height} - #{$outro-margin-top} - #{$outro-margin-bottom});
-  width: $column-width * 5;
+  margin-top: $text-top-margin;
+  width: $column-width * 4;
 
   &__heading {
     font-size: $fontsize-l;
@@ -713,14 +705,14 @@ body {
   }
 
   &__author {
-    position: absolute;
-    bottom: 40px;
+    padding-top: 36px;
     font-size: $fontsize-s;
 
     &_doubled {
+      padding-top: 0;
+      margin-top: 0;
       display: flex;
-      justify-content: space-between;
-      bottom: 0;
+      justify-content: flex-start;
 
       div + div {
         margin-left: 10px;
