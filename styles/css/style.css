@@ -24143,6 +24143,10 @@ body {
   .outro .comment + .comment {
     margin-top: 12px; }
 
+@media screen and (min-height: 690px) {
+  body {
+    overflow-y: hidden; } }
+
 @media screen and (min-height: 735px) {
   .text {
     font-size: 21px;

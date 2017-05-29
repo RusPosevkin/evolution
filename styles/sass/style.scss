@@ -768,8 +768,13 @@ body {
   }
 }
 
-@media screen and (min-height: 735px) {
+@media screen and (min-height: 690px) {
+  body {
+    overflow-y: hidden;
+  }
+}
 
+@media screen and (min-height: 735px) {
   .text {
     font-size: $fontsize-l;
     line-height: 1.381;
