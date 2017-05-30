@@ -545,7 +545,7 @@ body {
 
 .species-tree {
   width: $full-width;
-  margin-bottom: 28px;
+  margin-bottom: 28px + $minimap-height;
 
   & > .row > div {
     position: relative;
