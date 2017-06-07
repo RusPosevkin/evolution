@@ -784,6 +784,13 @@ body {
     margin-top: 12px;
   }
 }
+@media screen and (max-width: 420px) {
+  .minimap__label_ardipitecus > p:first-child,
+  .minimap__label_erectus > p:first-child,
+  .minimap__label_heidelbergensis > p:first-child {
+      display: none;
+  }
+}
 
 @media screen and (min-height: 690px) {
   body {
