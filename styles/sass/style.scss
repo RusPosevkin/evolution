@@ -784,15 +784,17 @@ body {
     margin-top: 12px;
   }
 }
-@media screen and (max-width: 500px) {
-  .minimap__label_sahelantropus > p:first-child,
-  .minimap__label_ardipitecus > p:first-child,
-  .minimap__label_australopitecus > p:first-child,
-  .minimap__label_homo > p:first-child,
-  .minimap__label_erectus > p:first-child,
-  .minimap__label_heidelbergensis > p:first-child,
-  .minimap__label_sapiens > p:first-child {
-      visibility: hidden;
+@media screen and (max-width: 850px) {
+  .minimap_main .minimap__label > p:first-child {
+      display: none;
+  }
+
+  .minimap_main .minimap__label {
+    margin-bottom: 5px;
+  }
+
+  .minimap_main .minimap__tick {
+    height: 10px;
   }
 }
 
