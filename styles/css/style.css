@@ -23931,15 +23931,15 @@ body {
       width: 139px; }
     .minimap__tick_sahelantropus {
       margin-left: 12px;
-      width: 15%; }
+      width: 18%; }
     .minimap__tick_ardipitecus {
-      width: 15%; }
+      width: 12%; }
     .minimap__tick_australopitecus {
-      width: 25%; }
+      width: 27%; }
     .minimap__tick_homo {
-      width: 10%; }
+      width: 6%; }
     .minimap__tick_erectus {
-      width: 13%; }
+      width: 12%; }
     .minimap__tick_heidelbergensis {
       width: 8%; }
     .minimap__tick_sapiens {
@@ -23963,15 +23963,15 @@ body {
       width: 140px; }
     .minimap__label_sahelantropus {
       margin-left: calc(12px - 1px);
-      width: 15%; }
+      width: 18%; }
     .minimap__label_ardipitecus {
-      width: calc(15% + 1px); }
+      width: calc(12% + 1px); }
     .minimap__label_australopitecus {
-      width: calc(25% + 1px); }
+      width: calc(27% + 1px); }
     .minimap__label_homo {
-      width: calc(10% + 1px); }
+      width: calc(6% + 1px); }
     .minimap__label_erectus {
-      width: calc(13% + 1px); }
+      width: calc(12% + 1px); }
     .minimap__label_heidelbergensis {
       width: calc(8% + 1px); }
     .minimap__label_sapiens {
