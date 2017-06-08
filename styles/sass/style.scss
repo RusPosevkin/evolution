@@ -784,6 +784,19 @@ body {
     margin-top: 12px;
   }
 }
+@media screen and (max-width: 850px) {
+  .minimap_main .minimap__label > p:first-child {
+      display: none;
+  }
+
+  .minimap_main .minimap__label {
+    margin-bottom: 5px;
+  }
+
+  .minimap_main .minimap__tick {
+    height: 10px;
+  }
+}
 
 @media screen and (min-height: 690px) {
   body {
@@ -812,16 +825,4 @@ body {
   .species-tree {
     margin-bottom: 128px;
   }
-}
-
-.test {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.test2 {
-  position: fixed;
-  bottom: 0;
-  left: 0;
 }
