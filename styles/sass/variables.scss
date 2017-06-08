@@ -10,7 +10,7 @@ $outer-margin: 0;
 
 $text-top-margin: 50px;
 
-$color-accent: #eca3a1;
+$color-accent: #e5601f;
 $color-base: #fff;
 $color-secondary: #aaa;
 $color-link: #799ec9;
@@ -18,8 +18,8 @@ $color-link-visited: $color-link;
 $color-link-hover: $color-accent;
 $color-dark: #121212;
 $color-minimap: #ddd;
-$color-minimap-window: #6d5b5b;
-$color-minimap-window-border: #c9869d;
+$color-minimap-window: opacify($color-accent, .2);
+$color-minimap-window-border: $color-accent;
 $color-species-tree-base: #ddd;
 $color-species-tree-secondary: #444;
 $color-timeline-tick-secondary: #444;

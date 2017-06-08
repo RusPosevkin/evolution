@@ -4,8 +4,7 @@
 @import "../../node_modules/flexboxgrid-sass/flexboxgrid";
 
 body {
-  font-family: 'Fira Sans', 'Helvetica', sans-serif;
-  font-weight: 300;
+  font-family: 'AlergiaNormal-Light', 'Helvetica', sans-serif;
   background-color: #121212;
 }
 
@@ -48,7 +47,7 @@ body {
 
 .title {
   margin-top: $text-top-margin - 20px;
-  font-weight: 800;
+  font-family: 'AlergiaNormal-Bold';
   line-height: 87px;
   font-size: $fontsize-h1;
 }
@@ -77,12 +76,13 @@ body {
 
 .accent {
   color: $color-accent;
-  font-weight: 500;
+  font-family: 'AlergiaNormal-Bold';
   white-space: nowrap;
 }
 
 .italic {
   font-style: italic;
+  font-family: 'AlergiaNormal-Lightitalic';
 }
 
 .white-circle::before {
@@ -326,7 +326,7 @@ body {
     top: 40%;
     color: $color-base;
     font-size: 12px;
-    font-family: 'NocturneSerif-LightItalic', 'Fira Sans', sans-serif;
+    font-family: 'AlergiaNormal-Light', sans-serif;
     text-align: center;
   }
 }
@@ -760,7 +760,7 @@ body {
   &__heading {
     font-size: $fontsize-l;
     line-height: 29px;
-    font-weight: 500;
+    font-family: 'AlergiaNormal-Bold';
     margin-bottom: 16px;
   }
 
