@@ -23742,7 +23742,7 @@ body {
   line-height: 1.33333;
   display: inline-block;
   padding-top: 5px;
-  max-width: 274px; }
+  max-width: 300px; }
   .source::before {
     content: "";
     display: block;
@@ -23750,7 +23750,7 @@ body {
     width: 18px;
     height: 18px;
     float: left;
-    margin: -2px 6px 0 0;
+    margin: 2px 6px 0 0;
     transition: background-image .2s ease-in; }
   .source:hover::before {
     background: url("../../img/source-link-hover-icon.svg") no-repeat;
