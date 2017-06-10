@@ -23904,7 +23904,8 @@ body {
 
 .hand-chopper {
   position: absolute;
-  top: 0; }
+  top: 0;
+  margin-left: 12px; }
 
 .portrait {
   margin-top: 10px;
