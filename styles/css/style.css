@@ -23704,8 +23704,8 @@ body {
 .white-circle::before {
   content: "";
   position: absolute;
-  right: 146px;
-  top: 45px;
+  right: 142px;
+  top: 47px;
   width: 5px;
   height: 5px;
   background: url("../../img/white-circle.svg") no-repeat; }
@@ -24150,8 +24150,8 @@ body {
 .species-tree__line-mockup {
   position: absolute;
   width: 100px;
-  top: 59px;
-  left: 405px; }
+  top: 80px;
+  left: 264px; }
   .species-tree__line-mockup div {
     z-index: 100; }
   .species-tree__line-mockup .species-tree__cross {
