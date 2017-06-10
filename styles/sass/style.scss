@@ -46,21 +46,21 @@ body {
 /* Text styles */
 
 .title {
-  margin-top: $text-top-margin - 20px;
+  margin-top: 35px;
   font-family: 'AlergiaNormal-Bold';
-  line-height: 87px;
+  line-height: 70px;
   font-size: $fontsize-h1;
 }
 
 .text-intro {
-  margin-top: 30px;
+  margin-top: 40px;
   font-size: $fontsize-xl;
   line-height: $lineheight-basic;
 }
 
 .text {
   font-size: 19px;
-  line-height: 1.333333;
+  line-height: $lineheight-basic;
   margin-top: $text-top-margin;
   position: relative;
   z-index: $index-text;
@@ -70,7 +70,7 @@ body {
   }
 
   p + p {
-    margin-top: 16px;
+    margin-top: 13px;
   }
 }
 
@@ -88,8 +88,8 @@ body {
 .white-circle::before {
   content: "";
   position: absolute;
-  right: 146px;
-  top: 45px;
+  right: 142px;
+  top: 47px;
   width: 5px;
   height: 5px;
   background: url("../../img/white-circle.svg") no-repeat;
@@ -136,26 +136,21 @@ body {
   font-size: $fontsize-s;
   line-height: $lineheight-basic;
   display: inline-block;
-  margin-top: 20px;
-
-  &_short {
-    max-width: 5 * $column-width + 18px;
-  }
+  padding-top: 5px;
+  max-width: 6 * $column-width;
 
   &::before {
     content: "";
     display: block;
     background: url("../../img/source-link-icon.svg") no-repeat;
-//    background-size: 18px 18px;
     width: 18px;
     height: 18px;
     float: left;
-    margin: -2px 6px 0 0;
+    margin: 2px 6px 0 0;
     transition: background-image .2s ease-in;
   }
 
   &:hover::before {
-//  background-size: 18px 18px;
     background: url("../../img/source-link-hover-icon.svg") no-repeat;
     transition: none;
   }
@@ -255,8 +250,8 @@ body {
     }
 
     &_secondary {
-      color: #606060;
-      font-size: 10px;
+      color: #666;
+      font-size: $fontsize-xs;
     }
 
     &_common-era {
@@ -374,6 +369,7 @@ body {
 .hand-chopper {
   position: absolute;
   top: 0;
+  margin-left: 12px;
 }
 
 .portrait {
@@ -462,10 +458,10 @@ body {
   }
 
   &__label {
-    margin-bottom: 2px;
+    margin-bottom: 3px;
     font-size: $fontsize-xs;
     color: $color-minimap;
-    line-height: 12px;
+    line-height: 13px;
     z-index: 2;
 
     &_multicellular {
@@ -746,8 +742,8 @@ body {
 .species-tree__line-mockup {
   position: absolute;
   width: 100px;
-  top: 59px;
-  left: 405px;
+  top: 80px;
+  left: 264px;
 
   & div {
     z-index: 100;
@@ -764,7 +760,7 @@ body {
 
   &__heading {
     font-size: $fontsize-l;
-    line-height: 29px;
+    line-height: $lineheight-basic;
     font-family: 'AlergiaNormal-Bold';
     margin-bottom: 16px;
   }
@@ -812,7 +808,11 @@ body {
 @media screen and (min-height: 735px) {
   .text {
     font-size: $fontsize-l;
-    line-height: 1.381;
+    line-height: $lineheight-basic;
+
+    p + p {
+      margin-top: 15px;
+    }
 
     &_bottom {
       margin-top: 48px;
