@@ -1,45 +1,25 @@
 @charset "UTF-8";
-/**
- * @license
- * MyFonts Webfont Build ID 3388899, 2017-05-13T20:05:08-0400
- *
- * The fonts listed in this notice are subject to the End User License
- * Agreement(s) entered into by the website owner. All other parties are
- * explicitly restricted from using the Licensed Webfonts(s).
- *
- * You may obtain a valid license at the URLs below.
-
- * Webfont: NocturneSerif-LightItalic by BORUTTA GROUP
- * URL: https://www.myfonts.com/fonts/borutta/nocturne-serif/light-italic/
- *
- * License: https://www.myfonts.com/viewlicense?type=web&buildid=3388899
- * Licensed pageviews: 10,000
- * Webfonts copyright: Copyright &#x00A9; 2016 by Mateusz Machalski. All rights reserved.
- *
- * © 2017 MyFonts Inc
-*/
-/* @import must be at top of file, otherwise CSS will not work */
-@import url("//hello.myfonts.net/count/33b5e3");
-@import url("//hello.myfonts.net/count/33f18b");
+@import url("http://hello.myfonts.net/count/33b5e3");
+@import url("http://hello.myfonts.net/count/33f18b");
 @font-face {
   font-family: 'NocturneSerif-LightItalic';
-  src: url("webfonts/33B5E3_2_0.eot");
-  src: url("webfonts/33B5E3_2_0.eot?#iefix") format("embedded-opentype"), url("webfonts/33B5E3_2_0.woff2") format("woff2"), url("webfonts/33B5E3_2_0.woff") format("woff"); }
+  src: url("../webfonts/33B5E3_2_0.eot");
+  src: url("../webfonts/33B5E3_2_0.eot?#iefix") format("embedded-opentype"), url("../webfonts/33B5E3_2_0.woff2") format("woff2"), url("../webfonts/33B5E3_2_0.woff") format("woff"); }
 
 @font-face {
   font-family: 'AlergiaNormal-Lightitalic';
-  src: url("webfonts/33F18B_0_0.eot");
-  src: url("webfonts/33F18B_0_0.eot?#iefix") format("embedded-opentype"), url("webfonts/33F18B_0_0.woff2") format("woff2"), url("webfonts/33F18B_0_0.woff") format("woff"); }
+  src: url("../webfonts/33F18B_0_0.eot");
+  src: url("../webfonts/33F18B_0_0.eot?#iefix") format("embedded-opentype"), url("../webfonts/33F18B_0_0.woff2") format("woff2"), url("../webfonts/33F18B_0_0.woff") format("woff"); }
 
 @font-face {
   font-family: 'AlergiaNormal-Bold';
-  src: url("webfonts/33F18B_1_0.eot");
-  src: url("webfonts/33F18B_1_0.eot?#iefix") format("embedded-opentype"), url("webfonts/33F18B_1_0.woff2") format("woff2"), url("webfonts/33F18B_1_0.woff") format("woff"); }
+  src: url("../webfonts/33F18B_1_0.eot");
+  src: url("../webfonts/33F18B_1_0.eot?#iefix") format("embedded-opentype"), url("../webfonts/33F18B_1_0.woff2") format("woff2"), url("../webfonts/33F18B_1_0.woff") format("woff"); }
 
 @font-face {
   font-family: 'AlergiaNormal-Light';
-  src: url("webfonts/33F18B_2_0.eot");
-  src: url("webfonts/33F18B_2_0.eot?#iefix") format("embedded-opentype"), url("webfonts/33F18B_2_0.woff2") format("woff2"), url("webfonts/33F18B_2_0.woff") format("woff"); }
+  src: url("../webfonts/33F18B_2_0.eot");
+  src: url("../webfonts/33F18B_2_0.eot?#iefix") format("embedded-opentype"), url("../webfonts/33F18B_2_0.woff2") format("woff2"), url("../webfonts/33F18B_2_0.woff") format("woff"); }
 
 /* Eric Meyer's CSS Reset
    http://meyerweb.com/eric/tools/css/reset/ 
@@ -23650,7 +23630,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   opacity: 0;
-  transition: opacity .5s ease-in; }
+  transition: opacity 1s ease-in; }
 
 .minmap-row {
   width: 8900px;
@@ -23672,7 +23652,7 @@ body {
 /* Text styles */
 .title {
   margin-top: 35px;
-  font-family: 'AlergiaNormal-Bold';
+  font-family: 'AlergiaNormal-Bold', 'Helvetica', sans-serif;
   line-height: 70px;
   font-size: 82px; }
 
@@ -23694,12 +23674,12 @@ body {
 
 .accent {
   color: #e5601f;
-  font-family: 'AlergiaNormal-Bold';
+  font-family: 'AlergiaNormal-Bold', 'Helvetica', sans-serif;
   white-space: nowrap; }
 
 .italic {
   font-style: italic;
-  font-family: 'AlergiaNormal-Lightitalic'; }
+  font-family: 'AlergiaNormal-Lightitalic', 'Helvetica', sans-serif; }
 
 .white-circle::before {
   content: "";
@@ -23866,7 +23846,7 @@ body {
     top: 40%;
     color: #fff;
     font-size: 12px;
-    font-family: 'AlergiaNormal-Light', sans-serif;
+    font-family: 'AlergiaNormal-Light', 'Helvetica', sans-serif;
     text-align: center; }
 
 .ardi {
@@ -23875,7 +23855,7 @@ body {
   top: 0;
   width: 500px;
   height: calc(100vh - 60px);
-  max-height: 850px;
+  max-height: 800px;
   overflow: visible; }
   .ardi__woman {
     position: absolute;
@@ -24165,7 +24145,7 @@ body {
   .outro__heading {
     font-size: 21px;
     line-height: 1.33333;
-    font-family: 'AlergiaNormal-Bold';
+    font-family: 'AlergiaNormal-Bold', 'Helvetica', sans-serif;
     margin-bottom: 16px; }
   .outro__author {
     padding-top: 36px;

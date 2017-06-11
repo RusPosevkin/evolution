@@ -20,7 +20,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   opacity: 0;
-  transition: opacity .5s ease-in;
+  transition: opacity 1s ease-in;
 }
 
 .minmap-row {
@@ -47,7 +47,7 @@ body {
 
 .title {
   margin-top: 35px;
-  font-family: 'AlergiaNormal-Bold';
+  font-family: 'AlergiaNormal-Bold', 'Helvetica', sans-serif;
   line-height: 70px;
   font-size: $fontsize-h1;
 }
@@ -76,13 +76,13 @@ body {
 
 .accent {
   color: $color-accent;
-  font-family: 'AlergiaNormal-Bold';
+  font-family: 'AlergiaNormal-Bold', 'Helvetica', sans-serif;
   white-space: nowrap;
 }
 
 .italic {
   font-style: italic;
-  font-family: 'AlergiaNormal-Lightitalic';
+  font-family: 'AlergiaNormal-Lightitalic', 'Helvetica', sans-serif;
 }
 
 .white-circle::before {
@@ -321,7 +321,7 @@ body {
     top: 40%;
     color: $color-base;
     font-size: 12px;
-    font-family: 'AlergiaNormal-Light', sans-serif;
+    font-family: 'AlergiaNormal-Light', 'Helvetica', sans-serif;
     text-align: center;
   }
 }
@@ -332,7 +332,7 @@ body {
   top: 0;
   width: $column-width * 10;
   height: calc(100vh - 60px);
-  max-height: 850px;
+  max-height: 800px;
   overflow: visible;
 
   &__woman {
@@ -763,7 +763,7 @@ body {
   &__heading {
     font-size: $fontsize-l;
     line-height: $lineheight-basic;
-    font-family: 'AlergiaNormal-Bold';
+    font-family: 'AlergiaNormal-Bold', 'Helvetica', sans-serif;
     margin-bottom: 16px;
   }
 
