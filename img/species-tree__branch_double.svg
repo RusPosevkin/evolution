@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="300px" height="200px" viewBox="0 0 300 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
     <title>species-tree__branch_double</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="branch" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="species-tree__branch_double" stroke="#444444">
-            <path d="M0,200.5 L19.994863,200.5 C36.5662426,200.5 56.0023512,188.495298 63.4150745,173.669851 L136.584926,27.330149 C143.993867,12.5122669 163.431958,0.5 180.005137,0.5 L200,0.5" id="Path-2"></path>
-            <path d="M0,200 L19.994863,200 C36.5662426,200 56.1309814,188.044586 63.6875096,173.309356 L86.3124904,129.190644 C93.8718932,114.449808 113.434525,102.5 130.003297,102.5 L200,102.5" id="Path-2"></path>
+            <path d="M0,200 L19.994863,200 C36.5662426,200 59.5191774,190.52939 71.2645404,178.843952 L126.73546,123.656048 C138.479541,111.971885 161.422308,102.5 178.007618,102.5 L300,102.5" id="Path-2"></path>
+            <path d="M0,200 L19.994863,200 C36.5662426,200 59.5118675,190.511912 71.2377887,178.815306 L228.762211,21.6846942 C240.491518,9.98471067 263.431958,0.5 280.005137,0.5 L300,0.5" id="Path-2"></path>
         </g>
     </g>
 </svg>

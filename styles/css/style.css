@@ -24035,6 +24035,8 @@ body {
     bottom: -201px; }
   .species-tree__branch_double::before {
     bottom: -199px;
+    width: 300px;
+    left: -300px;
     height: 201px;
     background: url("../../img/species-tree__branch_double.svg") no-repeat; }
   .species-tree__branch_florensis::before {
@@ -24135,7 +24137,7 @@ body {
     z-index: 30; }
   .species-tree__star {
     position: absolute;
-    bottom: -172px;
+    bottom: -171px;
     left: -72px;
     z-index: 100; }
   .species-tree__homo-florensis {
@@ -24159,7 +24161,7 @@ body {
 
 .outro {
   margin-top: 50px;
-  width: 200px; }
+  width: 210px; }
   .outro__heading {
     font-size: 21px;
     line-height: 1.33333;
@@ -24177,6 +24179,8 @@ body {
         margin-left: 10px; }
   .outro .comment + .comment {
     margin-top: 12px; }
+  .outro__likely {
+    padding-top: 36px; }
 
 @media screen and (max-width: 1010px) {
   .minimap_main .minimap__label > p:first-child {

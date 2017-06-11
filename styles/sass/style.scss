@@ -575,6 +575,8 @@ body {
 
     &_double::before {
       bottom: -$column-width * 4 + 1px;
+      width: $column-width * 6;
+      left: -$column-width * 6;
       height: $column-width * 4 + 1px;
       background: url('../../img/species-tree__branch_double.svg') no-repeat;
     }
@@ -722,7 +724,7 @@ body {
 
   &__star {
     position: absolute;
-    bottom: -72px - 2 * $column-width;
+    bottom: -71px - 2 * $column-width;
     left: -72px;
     z-index: $index-sticker;
   }
@@ -756,7 +758,7 @@ body {
 
 .outro {
   margin-top: $text-top-margin;
-  width: $column-width * 4;
+  width: $column-width * 4 + 10px;
 
   &__heading {
     font-size: $fontsize-l;
@@ -783,6 +785,10 @@ body {
 
   .comment + .comment {
     margin-top: 12px;
+  }
+
+  &__likely {
+    padding-top: 36px;
   }
 }
 @media screen and (max-width: 1010px) {
