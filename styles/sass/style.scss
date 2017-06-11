@@ -575,6 +575,8 @@ body {
 
     &_double::before {
       bottom: -$column-width * 4 + 1px;
+      width: $column-width * 6;
+      left: -$column-width * 6;
       height: $column-width * 4 + 1px;
       background: url('../../img/species-tree__branch_double.svg') no-repeat;
     }

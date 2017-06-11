@@ -24035,6 +24035,8 @@ body {
     bottom: -201px; }
   .species-tree__branch_double::before {
     bottom: -199px;
+    width: 300px;
+    left: -300px;
     height: 201px;
     background: url("../../img/species-tree__branch_double.svg") no-repeat; }
   .species-tree__branch_florensis::before {
