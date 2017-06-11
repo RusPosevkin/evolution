@@ -24159,7 +24159,7 @@ body {
 
 .outro {
   margin-top: 50px;
-  width: 200px; }
+  width: 210px; }
   .outro__heading {
     font-size: 21px;
     line-height: 1.33333;
@@ -24177,6 +24177,8 @@ body {
         margin-left: 10px; }
   .outro .comment + .comment {
     margin-top: 12px; }
+  .outro__likely {
+    padding-top: 36px; }
 
 @media screen and (max-width: 1010px) {
   .minimap_main .minimap__label > p:first-child {

@@ -756,7 +756,7 @@ body {
 
 .outro {
   margin-top: $text-top-margin;
-  width: $column-width * 4;
+  width: $column-width * 4 + 10px;
 
   &__heading {
     font-size: $fontsize-l;
@@ -783,6 +783,10 @@ body {
 
   .comment + .comment {
     margin-top: 12px;
+  }
+
+  &__likely {
+    padding-top: 36px;
   }
 }
 @media screen and (max-width: 1010px) {
