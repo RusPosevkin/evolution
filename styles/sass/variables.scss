@@ -10,26 +10,26 @@ $outer-margin: 0;
 
 $text-top-margin: 50px;
 
-$color-accent: #eca3a1;
+$color-accent: #e5601f;
 $color-base: #fff;
 $color-secondary: #aaa;
-$color-link: #799ec9;
+$color-link: #757eda;
 $color-link-visited: $color-link;
 $color-link-hover: $color-accent;
 $color-dark: #121212;
 $color-minimap: #ddd;
-$color-minimap-window: #6d5b5b;
-$color-minimap-window-border: #c9869d;
+$color-minimap-window: $color-accent;
+$color-minimap-window-border: $color-accent;
 $color-species-tree-base: #ddd;
 $color-species-tree-secondary: #444;
 $color-timeline-tick-secondary: #444;
 
-$fontsize-h1: 102px;
-$fontsize-xl: 24px;
+$fontsize-h1: 82px;
+$fontsize-xl: 25px;
 $fontsize-l: 21px;
 $fontsize-m: 15px;
-$fontsize-s: 12px;
-$fontsize-xs: 10px;
+$fontsize-s: 13px;
+$fontsize-xs: 11px;
 $lineheight-basic: 1.333333333;
 
 $index-scheme-line: 10;
@@ -57,12 +57,12 @@ $minimap-intro-anthropoid: 139px;
 $minimap-height: 40px;
 // minimap main scale positioning
 $minimap-main-sahelantropus-margin: 12px;
-$minimap-main-sahelantropus: 15%;
-$minimap-main-ardipitecus: 25%;
-$minimap-main-australopitecus: 10%;
-$minimap-main-homo: 10%;
-$minimap-main-erectus: 10%;
-$minimap-main-heidelbergensis: 15%;
+$minimap-main-sahelantropus: 18%;
+$minimap-main-ardipitecus: 12%;
+$minimap-main-australopitecus: 27%;
+$minimap-main-homo: 8%;
+$minimap-main-erectus: 12%;
+$minimap-main-heidelbergensis: 10%;
 $minimap-main-sapiens: 10%;
 
 $species-tree-line-height: 1px;

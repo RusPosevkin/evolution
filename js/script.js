@@ -9,7 +9,7 @@ $(document).ready(function() {
   var viewportWidth;
 
   //transform vertical scrolling to horizontal one
-  scrollConverter.activate();
+  // scrollConverter.activate();
 
   // Calculate and set viewport dimensions
   function setViewportHeight() {
@@ -50,12 +50,21 @@ $(document).ready(function() {
       if (isMinimapFixed)  {
         $miniMapIntro.css('display', 'flex');
         isMinimapFixed = false;
+
+        $minimapWindow.draggable({ disabled: true });
+        $minimapWindow.removeClass('minimap__window_draggable');
       }
     } else {
       if (!isMinimapFixed) {
         $miniMap.css('left', 0);
         $miniMapIntro.css('display', 'none');
         isMinimapFixed = true;
+
+        $minimapWindow.draggable({
+          disabled: false,
+          axis: 'x'
+        });
+        $minimapWindow.addClass('minimap__window_draggable');
       }
     }
   };
@@ -103,4 +112,5 @@ $(document).ready(function() {
     toggleMinimapFixed();
     controlMinimapWindow(offsetX);
   });
+
 });
