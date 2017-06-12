@@ -23981,7 +23981,7 @@ body {
     height: 40px;
     box-sizing: border-box;
     z-index: 100;
-    cursor: default; }
+    cursor: pointer; }
     .minimap__window_draggable {
       cursor: move;
       cursor: -webkit-grab;

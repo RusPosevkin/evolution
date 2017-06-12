@@ -1,5 +1,6 @@
 $(document).ready(function() {
   var $window = $(window);
+  var $body = $('body');
   var $page = $('.page');
   var $miniMap = $('.minimap_main');
   var $miniMapIntro = $('.minimap_intro');
@@ -129,6 +130,18 @@ $(document).ready(function() {
 
     toggleMinimapFixed();
     controlMinimapWindow(offsetX);
+  });
+
+  $minimapWindow.click(function() {
+    if (isMinimapFixed) {
+      return;
+    }
+
+    $body.animate({
+      scrollTop: window.pageYOffset,
+      scrollLeft: MINIMAP_MARGIN + 1
+    }, 1000);
+    return false;
   });
 
 });

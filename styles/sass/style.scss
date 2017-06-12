@@ -526,7 +526,7 @@ body {
     height: 40px;
     box-sizing: border-box;
     z-index: 100;
-    cursor: default;
+    cursor: pointer;
 
     &_draggable {
       cursor: move;
