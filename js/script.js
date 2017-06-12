@@ -10,7 +10,7 @@ $(document).ready(function() {
   var scrollPosition;
 
   var dragScroll = function(event, ui) {
-    var miniMapScale = event.target.offsetLeft / (parseInt($miniMap.css('width')));
+    var miniMapScale = event.target.offsetLeft / $miniMap.width();
     var pageScale = MAX_X_OFFSET - MINIMAP_MARGIN;
 
     scrollPosition = MINIMAP_MARGIN + miniMapScale * pageScale;
@@ -57,8 +57,8 @@ $(document).ready(function() {
   // Toggle miniMap fixed (sticky)
   // after intro offset
   var isMinimapFixed = false;
-  var MAX_X_OFFSET = parseInt($page.css('width'));
-  var MINIMAP_MARGIN = parseInt($('.minimap_intro').css('width'));
+  var MAX_X_OFFSET = $page.width();
+  var MINIMAP_MARGIN = $miniMapIntro.width();
 
   function toggleMinimapFixed() {
     if (offsetX <= MINIMAP_MARGIN) {
