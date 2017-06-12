@@ -23642,7 +23642,8 @@ body {
   opacity: 0; }
 
 .half-top {
-  width: 100%; }
+  width: 100%;
+  height: 0; }
 
 .half-bottom {
   width: 100%;
@@ -23980,9 +23981,15 @@ body {
     height: 40px;
     box-sizing: border-box;
     z-index: 100;
-    cursor: default; }
+    cursor: pointer; }
     .minimap__window_draggable {
-      cursor: pointer; }
+      cursor: move;
+      cursor: -webkit-grab;
+      cursor: -moz-grab; }
+    .minimap__window.ui-draggable-dragging {
+      cursor: move;
+      cursor: -webkit-grabbing;
+      cursor: -moz-grabbing; }
 
 .homo-georgicus {
   position: absolute;

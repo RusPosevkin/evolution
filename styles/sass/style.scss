@@ -35,6 +35,9 @@ body {
 
 .half-top {
   width: 100%;
+  // fix for firefox (https://github.com/RusPosevkin/evolution/issues/39)
+  // inner elements positioned absolutely
+  height: 0;
 }
 
 .half-bottom {
@@ -523,10 +526,18 @@ body {
     height: 40px;
     box-sizing: border-box;
     z-index: 100;
-    cursor: default;
+    cursor: pointer;
 
     &_draggable {
-      cursor: pointer;
+      cursor: move;
+      cursor: -webkit-grab;
+      cursor: -moz-grab;
+    }
+
+    &.ui-draggable-dragging {
+      cursor: move;
+      cursor: -webkit-grabbing;
+      cursor: -moz-grabbing;
     }
   }
 }

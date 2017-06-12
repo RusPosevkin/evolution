@@ -1,5 +1,6 @@
 $(document).ready(function() {
   var $window = $(window);
+  var $body = $('body');
   var $page = $('.page');
   var $miniMap = $('.minimap_main');
   var $miniMapIntro = $('.minimap_intro');
@@ -7,9 +8,21 @@ $(document).ready(function() {
   var offsetX = window.pageXOffset;
   var viewportHeight;
   var viewportWidth;
+  var scrollPosition;
 
-  //transform vertical scrolling to horizontal one
-  // scrollConverter.activate();
+  var dragScroll = function(event, ui) {
+    var miniMapScale = event.target.offsetLeft / $miniMap.width();
+    var pageScale = MAX_X_OFFSET - MINIMAP_MARGIN;
+
+    scrollPosition = MINIMAP_MARGIN + miniMapScale * pageScale;
+
+    // prevent dragging disabling
+    if (scrollPosition === MINIMAP_MARGIN) {
+      scrollPosition = MINIMAP_MARGIN + 1;
+    }
+
+    window.scrollTo(scrollPosition, window.pageYOffset);
+  }
 
   // Calculate and set viewport dimensions
   function setViewportHeight() {
@@ -42,8 +55,8 @@ $(document).ready(function() {
   // Toggle miniMap fixed (sticky)
   // after intro offset
   var isMinimapFixed = false;
-  var MAX_X_OFFSET = parseInt($page.css('width'));
-  var MINIMAP_MARGIN = parseInt($('.minimap_intro').css('width'));
+  var MAX_X_OFFSET = $page.width();
+  var MINIMAP_MARGIN = $miniMapIntro.width();
 
   function toggleMinimapFixed() {
     if (offsetX <= MINIMAP_MARGIN) {
@@ -62,7 +75,10 @@ $(document).ready(function() {
 
         $minimapWindow.draggable({
           disabled: false,
-          axis: 'x'
+          axis: 'x',
+          containment: 'parent',
+          drag: dragScroll,
+          scroll: false
         });
         $minimapWindow.addClass('minimap__window_draggable');
       }
@@ -111,6 +127,18 @@ $(document).ready(function() {
 
     toggleMinimapFixed();
     controlMinimapWindow(offsetX);
+  });
+
+  $minimapWindow.click(function() {
+    if (isMinimapFixed) {
+      return;
+    }
+
+    $body.animate({
+      scrollTop: window.pageYOffset,
+      scrollLeft: MINIMAP_MARGIN + 1
+    }, 1000);
+    return false;
   });
 
 });
