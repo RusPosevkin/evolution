@@ -12,17 +12,18 @@ $(document).ready(function() {
   // var notscrollflag = false;
 
   var test = function(event, ui) {
-    console.log('drag');
-    // console.log(event, ui);
-    // debugger;
-    // console.log(ui.offset.left);
-    var miniMapScale = event.target.offsetLeft / (parseInt($miniMap.css('width')) - $minimapWindow.width());
+    var miniMapScale = event.target.offsetLeft / (parseInt($miniMap.css('width')));
     var pageScale = MAX_X_OFFSET - MINIMAP_MARGIN;
 
     // var scrollPosition = MINIMAP_MARGIN + miniMapScale * pageScale;
+    // scrollPosition = MINIMAP_MARGIN + miniMapScale * pageScale + $minimapWindow.width() * pageScale;
     scrollPosition = MINIMAP_MARGIN + miniMapScale * pageScale;
-    console.log(scrollPosition);
-    // window.scrollTo(scrollPosition, window.pageYOffset);
+
+    // prevent dragging disabling
+    if (scrollPosition === MINIMAP_MARGIN) {
+      scrollPosition = MINIMAP_MARGIN + 1;
+    }
+    window.scrollTo(scrollPosition, window.pageYOffset);
   }
 
   var scrollWindow = function () {
@@ -87,7 +88,7 @@ $(document).ready(function() {
           axis: 'x',
           containment: 'parent',
           drag: test,
-          stop: scrollWindow,
+          // stop: scrollWindow,
           scroll: false
         });
         $minimapWindow.addClass('minimap__window_draggable');
