@@ -23642,7 +23642,8 @@ body {
   opacity: 0; }
 
 .half-top {
-  width: 100%; }
+  width: 100%;
+  height: 0; }
 
 .half-bottom {
   width: 100%;

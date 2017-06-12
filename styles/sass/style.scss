@@ -35,6 +35,9 @@ body {
 
 .half-top {
   width: 100%;
+  // fix for firefox (https://github.com/RusPosevkin/evolution/issues/39)
+  // inner elements positioned absolutely
+  height: 0;
 }
 
 .half-bottom {
