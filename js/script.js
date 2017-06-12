@@ -7,29 +7,21 @@ $(document).ready(function() {
   var offsetX = window.pageXOffset;
   var viewportHeight;
   var viewportWidth;
-
   var scrollPosition;
-  // var notscrollflag = false;
 
-  var test = function(event, ui) {
+  var dragScroll = function(event, ui) {
     var miniMapScale = event.target.offsetLeft / (parseInt($miniMap.css('width')));
     var pageScale = MAX_X_OFFSET - MINIMAP_MARGIN;
 
-    // var scrollPosition = MINIMAP_MARGIN + miniMapScale * pageScale;
-    // scrollPosition = MINIMAP_MARGIN + miniMapScale * pageScale + $minimapWindow.width() * pageScale;
     scrollPosition = MINIMAP_MARGIN + miniMapScale * pageScale;
 
     // prevent dragging disabling
     if (scrollPosition === MINIMAP_MARGIN) {
       scrollPosition = MINIMAP_MARGIN + 1;
     }
+
     window.scrollTo(scrollPosition, window.pageYOffset);
   }
-
-  var scrollWindow = function () {
-    // notscrollflag = true;
-    window.scrollTo(scrollPosition, window.pageYOffset);
-  };
 
   //transform vertical scrolling to horizontal one
   // scrollConverter.activate();
@@ -87,8 +79,7 @@ $(document).ready(function() {
           disabled: false,
           axis: 'x',
           containment: 'parent',
-          drag: test,
-          // stop: scrollWindow,
+          drag: dragScroll,
           scroll: false
         });
         $minimapWindow.addClass('minimap__window_draggable');
@@ -117,11 +108,6 @@ $(document).ready(function() {
 
   // Recalculate during scrolling
   $window.scroll(function() {
-    // if (notscrollflag) {
-    //   notscrollflag = false;
-    //   return;
-    // }
-    console.log('scroll');
     offsetX = window.pageXOffset;
 
     if ((offsetX !== baseOffsetX) && (offsetX <= MINIMAP_MARGIN)) {
