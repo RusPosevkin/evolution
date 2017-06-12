@@ -23983,7 +23983,13 @@ body {
     z-index: 100;
     cursor: default; }
     .minimap__window_draggable {
-      cursor: move; }
+      cursor: move;
+      cursor: -webkit-grab;
+      cursor: -moz-grab; }
+    .minimap__window.ui-draggable-dragging {
+      cursor: move;
+      cursor: -webkit-grabbing;
+      cursor: -moz-grabbing; }
 
 .homo-georgicus {
   position: absolute;

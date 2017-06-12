@@ -530,6 +530,14 @@ body {
 
     &_draggable {
       cursor: move;
+      cursor: -webkit-grab;
+      cursor: -moz-grab;
+    }
+
+    &.ui-draggable-dragging {
+      cursor: move;
+      cursor: -webkit-grabbing;
+      cursor: -moz-grabbing;
     }
   }
 }
