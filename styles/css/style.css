@@ -23982,7 +23982,7 @@ body {
     z-index: 100;
     cursor: default; }
     .minimap__window_draggable {
-      cursor: pointer; }
+      cursor: move; }
 
 .homo-georgicus {
   position: absolute;
