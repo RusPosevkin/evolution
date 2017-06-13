@@ -4,8 +4,10 @@
 @import "../../node_modules/flexboxgrid-sass/flexboxgrid";
 
 body {
-  font-family: 'AlergiaNormal-Light', 'Helvetica', sans-serif;
+  font-family: 'AlergiaGrotesk', 'Helvetica', sans-serif;
   background-color: #121212;
+  font-weight: normal;
+  font-style: normal;
 }
 
 ::-webkit-scrollbar {
@@ -50,9 +52,11 @@ body {
 
 .title {
   margin-top: 35px;
-  font-family: 'AlergiaNormal-Bold', 'Helvetica', sans-serif;
+  font-family: 'AlergiaGrotesk', 'Helvetica', sans-serif;
   line-height: 70px;
   font-size: $fontsize-h1;
+  font-weight: bold;
+  font-style: normal;
 }
 
 .text-intro {
@@ -79,12 +83,16 @@ body {
 
 .accent {
   color: $color-accent;
-  font-family: 'AlergiaNormal-Bold', 'Helvetica', sans-serif;
+  font-family: 'AlergiaGrotesk', 'Helvetica', sans-serif;
   white-space: nowrap;
+  font-weight: bold;
+  font-style: normal;
 }
 
 .italic {
-  font-family: 'AlergiaNormal-Lightitalic', 'Helvetica', sans-serif;
+  font-family: 'AlergiaGrotesk', 'Helvetica', sans-serif;
+  font-weight: normal;
+  font-style: italic;
 }
 
 .white-circle::before {
@@ -323,8 +331,10 @@ body {
     top: 40%;
     color: $color-base;
     font-size: 12px;
-    font-family: 'AlergiaNormal-Light', 'Helvetica', sans-serif;
+    font-family: 'AlergiaGrotesk', 'Helvetica', sans-serif;
     text-align: center;
+    font-weight: normal;
+    font-style: normal;
   }
 }
 
@@ -692,10 +702,12 @@ body {
   margin-bottom: 2px;
 
     &_latin {
-      font-family: 'NocturneSerif-LightItalic', 'Times New Roman', serif;
+      font-family: 'NocturneSerif', 'Times New Roman', serif;
       color: $color-secondary;
       font-size: $fontsize-m;
       margin-bottom: 8px;
+      font-weight: normal;
+      font-style: italic;
     }
 
     &_reversed {
@@ -773,8 +785,10 @@ body {
   &__heading {
     font-size: $fontsize-l;
     line-height: $lineheight-basic;
-    font-family: 'AlergiaNormal-Bold', 'Helvetica', sans-serif;
+    font-family: 'AlergiaGrotesk', 'Helvetica', sans-serif;
     margin-bottom: 16px;
+    font-weight: bold;
+    font-style: normal;
   }
 
   &__author {

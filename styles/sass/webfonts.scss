@@ -1,6 +1,58 @@
-@import url("http://hello.myfonts.net/count/33b5e3");
-@import url("http://hello.myfonts.net/count/33f18b");
-@font-face {font-family: 'NocturneSerif-LightItalic';src: url('../webfonts/33B5E3_2_0.eot');src: url('../webfonts/33B5E3_2_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/33B5E3_2_0.woff2') format('woff2'),url('../webfonts/33B5E3_2_0.woff') format('woff');}
-@font-face {font-family: 'AlergiaNormal-Lightitalic';src: url('../webfonts/33F18B_0_0.eot');src: url('../webfonts/33F18B_0_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/33F18B_0_0.woff2') format('woff2'),url('../webfonts/33F18B_0_0.woff') format('woff');}
-@font-face {font-family: 'AlergiaNormal-Bold';src: url('../webfonts/33F18B_1_0.eot');src: url('../webfonts/33F18B_1_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/33F18B_1_0.woff2') format('woff2'),url('../webfonts/33F18B_1_0.woff') format('woff');}
-@font-face {font-family: 'AlergiaNormal-Light';src: url('../webfonts/33F18B_2_0.eot');src: url('../webfonts/33F18B_2_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/33F18B_2_0.woff2') format('woff2'),url('../webfonts/33F18B_2_0.woff') format('woff');}
+/**
+ * @license
+ * MyFonts Webfont Build ID 3405947, 2017-06-13T10:10:22-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: AlergiaNormal-Lightitalic by BORUTTA GROUP
+ * URL: https://www.myfonts.com/fonts/borutta/alergia-grotesk/normal-light-italic/
+ *
+ * Webfont: AlergiaNormal-Bold by BORUTTA GROUP
+ * URL: https://www.myfonts.com/fonts/borutta/alergia-grotesk/normal-bold/
+ *
+ * Webfont: AlergiaNormal-Light by BORUTTA GROUP
+ * URL: https://www.myfonts.com/fonts/borutta/alergia-grotesk/normal-light/
+ *
+ * Webfont: NocturneSerif-LightItalic by BORUTTA GROUP
+ * URL: https://www.myfonts.com/fonts/borutta/nocturne-serif/light-italic/
+ *
+ *
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3405947
+ * Licensed pageviews: 10,000
+ * Webfonts copyright: Copyright 2016 by Mateusz Machalski. All rights reserved.
+ *
+ * © 2017 MyFonts Inc
+*/
+@import url("//hello.myfonts.net/count/33f87b");
+@font-face {
+  font-family: 'AlergiaGrotesk';
+  font-weight: normal;
+  font-style: italic;
+  src: url('../webfonts/33F87B_0_0.woff2') format('woff2'),
+       url('../webfonts/33F87B_0_0.woff') format('woff');
+}
+@font-face {
+  font-family: 'AlergiaGrotesk';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../webfonts/33F87B_1_0.woff2') format('woff2'),
+       url('../webfonts/33F87B_1_0.woff') format('woff');
+}
+@font-face {
+  font-family: 'AlergiaGrotesk';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../webfonts/33F87B_2_0.woff2') format('woff2'),
+       url('../webfonts/33F87B_2_0.woff') format('woff');
+}
+@font-face {
+  font-family: 'NocturneSerif';
+  font-weight: normal;
+  font-style: italic;
+  src: url('../webfonts/33F87B_3_0.woff2') format('woff2'),
+       url('../webfonts/33F87B_3_0.woff') format('woff');
+}
