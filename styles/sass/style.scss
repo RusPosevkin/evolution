@@ -84,7 +84,6 @@ body {
 }
 
 .italic {
-  font-style: italic;
   font-family: 'AlergiaNormal-Lightitalic', 'Helvetica', sans-serif;
 }
 
@@ -690,17 +689,17 @@ body {
   font-size: $fontsize-m;
   line-height: $lineheight-basic;
   text-shadow: 0.5px 0.5px 1px $color-dark;
+  margin-bottom: 2px;
 
     &_latin {
       font-family: 'NocturneSerif-LightItalic', 'Times New Roman', serif;
       color: $color-secondary;
-      font-style: italic;
       font-size: $fontsize-m;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     &_reversed {
-      margin-top: 11px;
+      margin-top: 8px;
     }
   }
 

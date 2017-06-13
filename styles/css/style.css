@@ -23679,7 +23679,6 @@ body {
   white-space: nowrap; }
 
 .italic {
-  font-style: italic;
   font-family: 'AlergiaNormal-Lightitalic', 'Helvetica', sans-serif; }
 
 .white-circle::before {
@@ -24093,15 +24092,15 @@ body {
   .species-tree__name {
     font-size: 15px;
     line-height: 1.33333;
-    text-shadow: 0.5px 0.5px 1px #121212; }
+    text-shadow: 0.5px 0.5px 1px #121212;
+    margin-bottom: 2px; }
     .species-tree__name_latin {
       font-family: 'NocturneSerif-LightItalic', 'Times New Roman', serif;
       color: #aaa;
-      font-style: italic;
       font-size: 15px;
-      margin-bottom: 10px; }
+      margin-bottom: 8px; }
     .species-tree__name_reversed {
-      margin-top: 11px; }
+      margin-top: 8px; }
   .species-tree__sahelanthropus {
     position: absolute;
     bottom: 2px;
