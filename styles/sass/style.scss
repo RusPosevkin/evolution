@@ -535,7 +535,9 @@ body {
     height: 40px;
     box-sizing: border-box;
     z-index: 100;
-    cursor: pointer;
+    cursor: move;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
 
     &_draggable {
       cursor: move;
