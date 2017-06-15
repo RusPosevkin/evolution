@@ -223,14 +223,14 @@ body {
       position: absolute;
       top: 0;
       left: 157 * $column-width - 5px;
-      height: 39px;
+      height: 24px;
     }
 
     &_agriculture {
       position: absolute;
       top: 0;
       left: 157 * $column-width - 10px;
-      height: 54px;
+      height: 39px;
     }
   }
 
@@ -272,13 +272,13 @@ body {
 
     &_ancient-egypt {
       position: absolute;
-      top: 39px;
+      top: 24px;
       left: 157 * $column-width - 5px;
     }
 
     &_agriculture {
       position: absolute;
-      top: 54px;
+      top: 39px;
       left: 157 * $column-width - 11px;
     }
   }
