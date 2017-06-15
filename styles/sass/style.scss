@@ -865,7 +865,7 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-  .minimap__label {
-    font-size: $fontsize-xs - 2px;
+  .minimap {
+    visibility: hidden;
   }
 }
