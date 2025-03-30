@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Allow: /ru/
+
+Sitemap: https://human-evolution.net/sitemap.xml 

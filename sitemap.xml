@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://human-evolution.net/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link 
+            rel="alternate"
+            hreflang="en"
+            href="https://human-evolution.net/"/>
+        <xhtml:link 
+            rel="alternate"
+            hreflang="ru"
+            href="https://human-evolution.net/ru/"/>
+    </url>
+    <url>
+        <loc>https://human-evolution.net/ru/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link 
+            rel="alternate"
+            hreflang="en"
+            href="https://human-evolution.net/"/>
+        <xhtml:link 
+            rel="alternate"
+            hreflang="ru"
+            href="https://human-evolution.net/ru/"/>
+    </url>
+</urlset> 
