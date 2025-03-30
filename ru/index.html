@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <!-- Language detection script -->
+    <script>
+      (function() {
+          var userLang = navigator.language || navigator.userLanguage;
+          userLang = userLang.toLowerCase().split('-')[0];
+
+          // If not Russian and on Russian version, redirect to English
+          if (userLang !== 'ru' && window.location.pathname.includes('/ru/')) {
+              window.location.href = '/';
+          }
+      })();
+    </script>
     <meta charset="utf-8">
     <title>Эволюция человека</title>
     <meta name="description" content="Научно-популярный проект о семи миллионах лет эволюции человека">
@@ -12,6 +24,9 @@
     <link rel="icon" type="image/png" href="../img/favicon.png" />
     <link rel="stylesheet" href="../styles/css/likely.css">
     <link rel="stylesheet" href="../styles/css/style.css">
+    <link rel="alternate" hreflang="en" href="https://human-evolution.net/" />
+    <link rel="alternate" hreflang="ru" href="https://human-evolution.net/ru/" />
+    <link rel="canonical" href="https://human-evolution.net/ru/" />
     <script src="../js/jquery.min.js"></script>
     <script src="../js/jquery-ui.min.js"></script>
     <script src="../js/jquery.ui.touch-punch.min.js"></script>
